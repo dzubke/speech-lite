@@ -1,0 +1,30 @@
+dataset_dir: /home/dzubke/awni_speech/data/speak_train/2020-12-29/ # directory where the dataset is located
+dataset_files:           # dataset filenames to be processed, files should be in dataset_dir
+    # key is dataset name, value is filename to be processed
+    speak-train_500K_2021-01-05: metadata-with-url_2020-12-24.tsv
+dataset_name: SpeakTrainMetadata # Name of dataset with a capitalized first letter
+lexicon_path: /home/dzubke/awni_speech/speech-lfs/examples/common-voice/cv-lex-extended_2020-07-16.txt #path to pronunciation lexicon
+force_convert: False    # DEPRACTED, too io-costly, Converts audio even if .wav file exists
+min_duration: 1         # minimum audio duration in seconds
+max_duration: 20        # maximum audio duration in seconds
+download_audio: True    # if the preprocessor should download audio from firestore
+dry-run: False          # if True, only the collection of audio will be performed, no dowloading
+# number of examples in filtered dataset
+dataset_size: 540750
+# interal to print progress updats
+print_modulus: 40000
+# max number of utterances for a single id
+constraints:
+  lesson: 0.005
+  target_sentence: 0.00008
+  speaker: 0.0005
+disjoint_metadata: /home/dzubke/awni_speech/data/speak_train/speak-train-test-eval_metadata-7rows_2020-12-18.tsv
+# the keys are the dataset-path and values are the id-names along with the output dataset will be disjoint
+# e.g. a key of `record` means output dataset will be disjiont with dataset-path for  record_ids
+disjoint_datasets:
+    /home/dzubke/awni_speech/data/speak_test_data/2019-11-29/speak-test_2019-11-29.json:
+        !!python/tuple ['record', 'target_sentence', 'speaker']
+    /home/dzubke/awni_speech/data/speak_test_data/2020-05-27/speak-test_2020-05-27.json:
+        !!python/tuple ['record', 'target_sentence', 'speaker']
+    /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/speak-eval2-v2_2020-12-07.json:
+        !!python/tuple ['target_sentence']

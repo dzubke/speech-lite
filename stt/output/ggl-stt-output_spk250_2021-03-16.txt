@@ -1,0 +1,602 @@
+----------
+0FuDq2XoXTSD9bqDJr6RFhM4yYJ2/0FuDq2XoXTSD9bqDJr6RFhM4yYJ2-1580611236.wav
+the coach was let down by his players
+the coach was the let down by his players
+0.9555
+(the, 0.9876) (coach, 0.9398) (was, 1.0) (the, 0.9209) (let, 0.9309) (down, 0.9473) (by, 0.9233) (his, 0.9615) (players, 0.9876)
+
+Ar6wpQMrB3e7IHPPcXaO9M0UagN2/09D1530F-E3BF-4A0B-AEAE-C5F2A79EC830.wav
+the movie starts at one
+the movie starts at
+0.9583
+(the, 0.9876) (movie, 0.9876) (starts, 0.8904) (at, 0.9675)
+
+PcgA0PkfWiROucvKYpuK5zM7zki1/174EB855-3319-4782-9269-615E705C1749.wav
+but i still didn't get it
+
+
+
+
+tFw0gIFtUPd0nAI0Qgl1vfTP4m92/21E7B03F-55C9-4FD2-BC69-32689ADCB567.wav
+be careful not to text while driving
+be careful not to talk to while driving
+0.7113
+(be, 0.9863) (careful, 0.9876) (not, 0.9876) (to, 0.9876) (talk, 0.2314) (to, 0.2974) (while, 0.6459) (driving, 0.5666)
+
+BrQgIOo0BoUYzreZoSDmNoBmCRv2/BrQgIOo0BoUYzreZoSDmNoBmCRv2-1548253585.wav
+the dessert was so delicious that i wanted to have it again
+the Deezer was so delicious that I wanted to have it again
+0.8452
+(the, 0.6798) (Deezer, 0.4936) (was, 0.7862) (so, 0.9876) (delicious, 0.9199) (that, 0.5625) (I, 0.8025) (wanted, 0.9876) (to, 0.9876) (have, 0.9876) (it, 0.9876) (again, 0.9603)
+
+25U35r5EWggY1w1xlRKnYsHHmu52/25U35r5EWggY1w1xlRKnYsHHmu52-1564453666.wav
+i think they're dead serious
+I think they're that serious
+0.811
+(I, 0.9876) (think, 0.9876) (they're, 0.5398) (that, 0.8902) (serious, 0.65)
+
+SlWetRcQd2TRNjcWs97zTm484P73/838BE05B-97DF-4CDE-8CA8-AAE15200BCC3.wav
+paul you have big arms
+do you have the arms
+0.9147
+(do, 0.9721) (you, 0.9387) (have, 1.0) (the, 0.7886) (arms, 0.8741)
+
+2nJLxcajHfU1lLvMwUsOhP41ibG3/2nJLxcajHfU1lLvMwUsOhP41ibG3-1582821469.wav
+san francisco's a great place to run
+San Francisco's a great place to learn
+0.8522
+(San, 0.9876) (Francisco's, 0.525) (a, 0.794) (great, 0.9743) (place, 0.9634) (to, 0.9876) (learn, 0.7333)
+
+w5qNuTFvPIgxyKo8easqFDaXhmw1/w5qNuTFvPIgxyKo8easqFDaXhmw1-1540160067.wav
+well i just missed the bus
+real I just missed the bus
+0.806
+(real, 0.2972) (I, 0.9493) (just, 0.8512) (missed, 0.7632) (the, 0.9876) (bus, 0.9876)
+
+MyFEMNHEcGS2CX7Yw2Tfj5piSP92/0EEC2C83-C649-4F61-BA89-D78AA6468F5D.wav
+she's going to take it up with the principal
+she's going to take it out with the principal
+0.9651
+(she's, 0.9799) (going, 0.9876) (to, 0.9838) (take, 0.9876) (it, 0.9844) (out, 0.9241) (with, 0.9876) (the, 0.9726) (principal, 0.8781)
+
+J1X1N9FMpzduQQUMXoPSdcka3Dm2/J1X1N9FMpzduQQUMXoPSdcka3Dm2-1587387814.wav
+if i pass the exam my mom will buy me a new phone
+if I passed exam my mom will buy me a new phone
+0.9297
+(if, 0.7969) (I, 0.7969) (passed, 0.8356) (exam, 0.8664) (my, 0.988) (mom, 0.9876) (will, 0.979) (buy, 0.982) (me, 0.9876) (a, 0.9876) (new, 0.9876) (phone, 0.9613)
+
+4JSXMTIo9Ncyc6iybcf6nbv5Sp72/4JSXMTIo9Ncyc6iybcf6nbv5Sp72-1542626911.wav
+wait are we walking there
+are we walking there
+0.9292
+(are, 0.9876) (we, 0.9876) (walking, 0.8889) (there, 0.8528)
+
+VSyssJXgQAOap2PHLvTW7pVEtHX2/VSyssJXgQAOap2PHLvTW7pVEtHX2-1566717271.wav
+this ring
+death ring
+0.8247
+(death, 0.7859) (ring, 0.8636)
+
+fAZrhfPbhoU4Srn0f9k1sToSvg62/06C01C13-C094-4F6F-8887-61E714B8EB97.wav
+he drinks coffee
+sweet dreams coffee
+0.8118
+(sweet, 0.7856) (dreams, 0.7856) (coffee, 0.8642)
+
+vWtpABQbrUhcsNcIx7OsfFIrs0o1/vWtpABQbrUhcsNcIx7OsfFIrs0o1-1557874971.wav
+is kim okay she looks pissed off
+is quinoa okay she looks pissed off
+0.9776 0.9726
+(is, 1.0) (quinoa, 1.0) (okay, 0.9328) (she, 1.0) (looks, 0.9377) (pissed, 0.9763) (off, 0.9763)
+
+3pbtSBE8dCS0UKExOVFjGTORnQF2/011CABEA-01A9-4F41-8F60-FC77FB77F119.wav
+my wallet is orange
+my wallet Orange
+0.8029
+(my, 0.8722) (wallet, 0.9364) (Orange, 0.6003)
+
+0fb3xjwplxVp6E5onzFik82u1Om2/0fb3xjwplxVp6E5onzFik82u1Om2-1572503619.wav
+we know him
+Reno King
+0.6505
+(Reno, 0.4987) (King, 0.8022)
+
+0HlvpqwP9xVSfDYz2GDxVlbVk6A2/0542DBEC-91EA-4102-88C4-5558BED18096.wav
+homemade food
+homemade Fair
+0.7963
+(homemade, 0.8038) (Fair, 0.7888)
+
+0z93G2EJ2NPUJL9fEHx06nEAfzC2/0z93G2EJ2NPUJL9fEHx06nEAfzC2-1586857787.wav
+jim's wedding's next monday
+James weddings next Monday
+0.9627
+(James, 0.8893) (weddings, 0.9738) (next, 0.9876) (Monday, 1.0)
+
+nShrQ2GdHVX2r2PEK9Ik9V2rvpi1/nShrQ2GdHVX2r2PEK9Ik9V2rvpi1-1589115488.wav
+the best thing about sony is its audio quality
+the best thing about Sony is it sodium quality
+0.8341
+(the, 0.9876) (best, 0.9876) (thing, 0.9876) (about, 0.9876) (Sony, 0.7948) (is, 0.9876) (it, 0.7337) (sodium, 0.3543) (quality, 0.6856)
+
+31ijfzb1SFWLzspU3PwQ5IXiW613/31ijfzb1SFWLzspU3PwQ5IXiW613-1583930693.wav
+buckingham palace was cool too
+Buckingham Palace was cool to
+0.8456
+(Buckingham, 0.9322) (Palace, 0.9697) (was, 0.8778) (cool, 0.8787) (to, 0.5695)
+
+hV22T0NnnGTvXM1tzurMl06yi872/475F1558-053F-4B5E-BDF7-7EB3D3EFBBD2.wav
+i've really enjoyed my time at ford
+I've really enjoyed my time at Fort
+0.947
+(I've, 0.9458) (really, 0.9876) (enjoyed, 0.9876) (my, 0.9016) (time, 0.9876) (at, 0.9876) (Fort, 0.8308)
+
+1KSfF2JTT5S1v9gn07iedX9W05c2/1KSfF2JTT5S1v9gn07iedX9W05c2-1549348700.wav
+could you get me some peanuts please
+could you give me some penis please
+0.814 0.7607
+(could, 0.4807) (you, 0.9377) (give, 0.7939) (me, 0.9291) (some, 0.9285) (penis, 0.5766) (please, 0.9449)
+
+08Fp7crDKjSkL5rKJiYBVrHRjd53/08Fp7crDKjSkL5rKJiYBVrHRjd53-1565359647.wav
+i'm going to stay for three days
+I'm going to stay for 3 days
+0.929
+(I'm, 0.9876) (going, 0.9876) (to, 0.9876) (stay, 0.9876) (for, 0.9876) (3, 0.577) (days, 0.9876)
+
+1EHA9rCLc8Xbvs0rfrSgyXeek7c2/1EHA9rCLc8Xbvs0rfrSgyXeek7c2-1582728952.wav
+they finished painting the house
+the biggest painting the house
+0.5846
+(the, 0.237) (biggest, 0.237) (painting, 0.8126) (the, 0.7853) (house, 0.8514)
+
+5PAk2MHAMLSqcaqCcQzQJQuEYHB3/0BDE57DF-1D5B-42B3-B550-D34DC0AC55EE.wav
+everyone in my family got behind my business idea
+everyone in my family got behind my business ID
+0.9329
+(everyone, 0.9876) (in, 0.9876) (my, 0.9876) (family, 0.9876) (got, 0.9556) (behind, 0.9729) (my, 0.9806) (business, 0.9737) (ID, 0.5625)
+
+tjFvnyBHfgWlci9zNAbBLSG0K7e2/0084CB31-F39D-49B6-83D0-D33F150487A3.wav
+todd's sad
+pause
+0.9006
+(pause, 0.9006)
+
+DaQVnhF3a4crwCHzEUCdJqVLbij1/DaQVnhF3a4crwCHzEUCdJqVLbij1-1579691142.wav
+sally made out that she finished the work
+finally made out that say finish the work
+0.7404
+(finally, 0.7861) (made, 0.6563) (out, 0.6751) (that, 0.5637) (say, 0.5637) (finish, 0.8001) (the, 0.8908) (work, 0.9876)
+
+FrgFGHdb5UZfTnBXRVfsyF8gmaz1/FrgFGHdb5UZfTnBXRVfsyF8gmaz1-1569327414.wav
+i tried to make up with my friend
+I try Jamaica with my friends
+0.7728
+(I, 0.9784) (try, 0.5415) (Jamaica, 0.5356) (with, 0.9684) (my, 0.9601) (friends, 0.6527)
+
+7cQptdZSAtQBMbei2Nx4BT7c2hD2/7cQptdZSAtQBMbei2Nx4BT7c2hD2-1544373053.wav
+would you turn off the light
+just turn off the light
+0.9591
+(just, 0.9641) (turn, 0.9509) (off, 0.9773) (the, 0.9364) (light, 0.9669)
+
+hY6mRCtT3oRefSVpSQV1cFwQMc53/25EDCBC6-8CAE-41C1-8413-E36AE70A187B.wav
+he couldn't answer any of the client's questions
+he couldn't answer any of the clients questions
+0.9657
+(he, 0.9731) (couldn't, 0.9876) (answer, 0.9876) (any, 0.9857) (of, 0.9876) (the, 0.9876) (clients, 0.8906) (questions, 0.9256)
+
+idnOrXhcmQVLD1eomcl9hnhBpCz1/0344A3D7-7596-4DC5-83B9-75FF0A79CBF9.wav
+i would love to but i have to do homework this weekend
+what I have to do homework this weekend
+0.9151
+(what, 0.5741) (I, 0.9748) (have, 0.9754) (to, 0.9876) (do, 0.8472) (homework, 0.9866) (this, 0.9876) (weekend, 0.9876)
+
+ezNbPEIIP3VdnaHWmdXEyJbZFCi2/3686C253-E874-4038-89BE-B707243321E2.wav
+where to get replacement trucks
+roadkill replacement props
+0.6593
+(roadkill, 0.3964) (replacement, 0.787) (props, 0.7944)
+
+MGH1dE63wbhqXubfcVX0EZ8pAxq1/18A46FFE-0534-4E14-A791-57CE14D49618.wav
+it's really hard for me to say this but we should stop seeing each other
+it's really hard for me to say this but this is the stuff seeing each other
+0.93
+(it's, 0.976) (really, 0.9876) (hard, 0.9863) (for, 0.9857) (me, 0.9824) (to, 0.9876) (say, 0.9876) (this, 0.9876) (but, 0.9876) (this, 0.8152) (is, 0.8152) (the, 0.8096) (stuff, 0.8115) (seeing, 0.8923) (each, 0.8848) (other, 0.9829)
+
+uaJPtBaJKKfP2J35jx6VVashP033/095702C1-1BE9-4083-AE5A-040C610C50BF.wav
+i can't pay in cash
+I can pay in cash
+0.9763
+(I, 0.9876) (can, 0.9651) (pay, 0.97) (in, 0.9711) (cash, 0.9876)
+
+MB83ojxV74dPbuYQmGlqw9JU2QJ3/1438C283-50FC-4DE8-8202-8739D7A37B4E.wav
+this diet helps me lose weight
+these tires
+0.3313
+(these, 0.4247) (tires, 0.238)
+
+ms2KfAoujLPriFIPOqfbL6bnLk63/1365047E-4F4D-45AE-AC63-04EC8E37C23A.wav
+i ran into my former coworker yesterday
+I ran into my formal coworker yesterday
+0.9389
+(I, 0.9876) (ran, 0.9458) (into, 0.9619) (my, 0.9335) (formal, 0.8903) (coworker, 0.9136) (yesterday, 0.9394)
+
+----------
+80H9NFrPdLfpPnhEp6Z55s3mDGB3/80H9NFrPdLfpPnhEp6Z55s3mDGB3-1553075981.wav
+wait are we walking there
+wait are we walking there
+0.9222
+(wait, 0.7914) (are, 0.9681) (we, 0.9745) (walking, 0.9777) (there, 0.8991)
+
+PuHUfsg8HMhAFH1TZvHCMBtkPmF3/FB77430E-CE55-45AE-9D0E-E6DE886320BB.wav
+he went over the top
+he went over the top
+0.926
+(he, 0.967) (went, 0.8862) (over, 0.9245) (the, 0.9245) (top, 0.9275)
+
+tuz09d2i37MwgUwV3TqPvmNp2QE3/0790AF59-68E1-4A5D-A84F-F2E0CD858FAE.wav
+my friend recommended me to buy this bag
+my friend recommended me to buy this bag
+0.9616
+(my, 0.9876) (friend, 0.9876) (recommended, 0.9876) (me, 0.9876) (to, 0.9388) (buy, 0.961) (this, 0.9503) (bag, 0.8917)
+
+QwedQQ8rsbQwN3B1DoqEpfXuVeA2/0407D534-E3C7-4FC0-93AD-A408CE3C3516.wav
+there's something wrong with my computer
+there's something wrong with my computer
+0.9758
+(there's, 0.9394) (something, 0.9876) (wrong, 0.9876) (with, 0.9716) (my, 0.9806) (computer, 0.9876)
+
+3ySowhLd8QYMvAn7YTPgBUP83MG2/3ySowhLd8QYMvAn7YTPgBUP83MG2-1574083166.wav
+i want you to pitch in
+I want you to pitch in
+0.7963
+(I, 0.9876) (want, 0.938) (you, 0.9413) (to, 0.9537) (pitch, 0.6056) (in, 0.3516)
+
+N57oJjgqfASD2GDuyUOnvRFceCq2/07E7B23C-FC1E-48F1-8DB7-EBCB0A9EA690.wav
+i tend to spend too much money when i go shopping
+I tend to spend too much money when I go shopping
+0.9835
+(I, 0.9747) (tend, 0.9812) (to, 0.9876) (spend, 0.9776) (too, 0.972) (much, 0.9876) (money, 0.9876) (when, 0.9876) (I, 0.9876) (go, 0.9876) (shopping, 0.9876)
+
+iXWFJmehKYSZ7gwnRcibAVJTAAC3/iXWFJmehKYSZ7gwnRcibAVJTAAC3-1541943949.wav
+my new apartment is so small that it's suffocating
+my new apartment is so small that it's suffocating
+0.9739
+(my, 0.9876) (new, 0.9876) (apartment, 0.9876) (is, 0.9876) (so, 0.9876) (small, 0.9876) (that, 0.9776) (it's, 0.8741) (suffocating, 0.9876)
+
+id0CNAyEltQ1pJEAMNdIMohMms93/10C4B7F8-F9E8-435F-8259-EC37C0911541.wav
+when it comes to chinese food dim sum might be the best option
+when it comes to Chinese food dim sum might be the best option
+0.9523
+(when, 0.9876) (it, 0.9876) (comes, 0.9876) (to, 0.9876) (Chinese, 0.9873) (food, 0.9876) (dim, 0.8039) (sum, 0.8005) (might, 0.9081) (be, 0.9827) (the, 0.9876) (best, 1.0) (option, 0.9709)
+
+VelOcptWU2P1BX8frgsRBrtORNA2/05B09ED8-97D4-480B-A4B7-8BEF49AC11C3.wav
+try not to
+try not to
+0.9719
+(try, 0.971) (not, 0.9745) (to, 0.9701)
+
+2cDOyZJPeYNlYQHeABbpOJ4WiWN2/BD909DAF-556E-4AED-9A0E-591DD50EBAE3.wav
+you can pave the way to a second date by taking her somewhere romantic
+you can pave the way to a second date by taking her somewhere romantic
+0.9116
+(you, 0.9876) (can, 0.9876) (pave, 0.8996) (the, 0.8847) (way, 0.8845) (to, 0.8884) (a, 0.6566) (second, 0.9496) (date, 0.9245) (by, 0.7629) (taking, 1.0) (her, 0.9876) (somewhere, 0.9607) (romantic, 0.9876)
+
+4Ai8ErRBzKhBWec0JIeAeZDOaxk2/4Ai8ErRBzKhBWec0JIeAeZDOaxk2-1548241889.wav
+please tell her that the meeting is canceled
+please tell her that the meeting is canceled
+0.9633
+(please, 0.9876) (tell, 0.9876) (her, 0.9876) (that, 0.9876) (the, 0.9876) (meeting, 0.9876) (is, 0.9876) (canceled, 0.7928)
+
+a2DU3NsQovUzO0nD4GgwpvJsUQI3/02FE3124-F8BC-45BD-B89D-3A37FA0F4F48.wav
+i guess you don't like spicy food
+I guess you don't like spicy food
+0.9876
+(I, 0.9876) (guess, 0.9876) (you, 0.9876) (don't, 0.9876) (like, 0.9876) (spicy, 0.9876) (food, 0.9876)
+
+e53sXIBUKoYdKwkpzpiLLqVMzEp1/e53sXIBUKoYdKwkpzpiLLqVMzEp1-1562448049.wav
+that i do not know
+that I do not know
+0.9499
+(that, 0.9241) (I, 0.9308) (do, 0.9728) (not, 0.9838) (know, 0.938)
+
+77pl8G9ujTRxJnhY6KWV2QchPN92/77pl8G9ujTRxJnhY6KWV2QchPN92-1548948195.wav
+what do you like the most about it
+what do you like the most about it
+0.8772
+(what, 0.8235) (do, 0.7853) (you, 0.9075) (like, 0.9174) (the, 0.9876) (most, 0.8303) (about, 0.8361) (it, 0.9299)
+
+TKBwwVX3rTY8T3fD6dsvSZX4gZD2/8CFFF9FC-39C4-4A65-83A6-C1FC77F32A46.wav
+we're almost there
+we're almost there
+0.6934
+(we're, 0.5708) (almost, 0.6517) (there, 0.8578)
+
+cP5xE0OBc0b6BqvxCCwRSiKuLJ72/08128237-5441-49D3-82AD-0AC61A153AAF.wav
+he just bought a house
+he just bought a house
+0.9764
+(he, 0.9473) (just, 0.9794) (bought, 1.0) (a, 0.9678) (house, 0.9876)
+
+6X6c05l41WXXWyjAtGWryLO43023/6X6c05l41WXXWyjAtGWryLO43023-1565762843.wav
+what do you like to watch on netflix
+what do you like to watch on Netflix
+0.9773
+(what, 0.9588) (do, 0.9714) (you, 0.9707) (like, 0.9727) (to, 0.9876) (watch, 0.9818) (on, 0.9876) (Netflix, 0.9876)
+
+MuwDoPWBRJgjYRQRMdDYTAnSmvM2/1CEBDE12-8623-441B-B21C-808640CFE398.wav
+even though i'm not a big fan of seafood
+even though I'm not a big fan of seafood
+0.9738
+(even, 0.9876) (though, 0.9388) (I'm, 0.9746) (not, 0.9876) (a, 0.9632) (big, 0.9876) (fan, 0.9876) (of, 0.9876) (seafood, 0.9496)
+
+uDn1EqDm5qaktvMk88rVxjp67c22/010AB796-7E52-4D13-817D-058F83262B9A.wav
+my daughter asked me to buy her a new computer
+my daughter asked me to buy her a new computer
+0.6598 0.8319
+(my, 0.7315) (daughter, 0.6426) (asked, 0.6054) (me, 1.0) (to, 0.8844) (buy, 0.907) (her, 0.7884) (a, 0.6659) (new, 0.7332) (computer, 0.8442)
+
+EnnXrDAOvPadN1el2DNUOpT6M3k1/09D91169-DFD9-4766-A0AB-66EBA4EEAE0C.wav
+i have a little time
+I have a little time
+0.9821
+(I, 1.0) (have, 0.9836) (a, 0.9876) (little, 0.9391) (time, 1.0)
+
+JDPSIZDuXHfdvrLH0ILsgx3SJTC3/JDPSIZDuXHfdvrLH0ILsgx3SJTC3-1561744273.wav
+i'm in the mood for some pork belly
+I'm in the mood for some pork belly
+0.9807
+(I'm, 0.9876) (in, 0.9876) (the, 0.9876) (mood, 0.9876) (for, 0.9876) (some, 0.9876) (pork, 0.9489) (belly, 0.9709)
+
+05unHmALZlfWFOQ0XhKq9bZ310x1/05unHmALZlfWFOQ0XhKq9bZ310x1-1589778895.wav
+just keep doing what you're doing and you'll be fine
+just keep doing what you're doing and you'll be fine
+0.9715
+(just, 0.9876) (keep, 1.0) (doing, 0.9876) (what, 1.0) (you're, 0.954) (doing, 0.9502) (and, 0.9393) (you'll, 0.9534) (be, 0.9555) (fine, 0.9876)
+
+2yilTtiSYNg0oKALTUsmwRIeVH82/2yilTtiSYNg0oKALTUsmwRIeVH82-1583463392.wav
+the chef made up an excuse for the burned steak
+the chef made up an excuse for the burned steak
+0.8744
+(the, 0.9567) (chef, 0.5215) (made, 0.84) (up, 0.9876) (an, 0.9876) (excuse, 0.9876) (for, 0.9876) (the, 0.9743) (burned, 0.713) (steak, 0.7876)
+
+eVXSHFUEUyV9vQ0ngxclC56v6Mm1/006C266B-E407-404E-A695-5B96F2692720.wav
+who did you have dinner with
+who did you have dinner with
+0.9549
+(who, 0.9315) (did, 0.9658) (you, 0.982) (have, 0.962) (dinner, 0.9551) (with, 0.9333)
+
+QI1UpwxiUIRPK1EmPxwaMTnh4J93/5BE8B7BA-B8EF-4947-B9F4-D006B4D331B1.wav
+the weather got hot
+the weather got hot
+0.9711
+(the, 0.9876) (weather, 0.9876) (got, 0.9876) (hot, 0.9213)
+
+0HvtVLjCR6cKLuq3jA6tOcvD3v23/0HvtVLjCR6cKLuq3jA6tOcvD3v23-1561708585.wav
+which country are you from
+which country are you from
+0.9876
+(which, 0.9876) (country, 0.9876) (are, 0.9876) (you, 0.9876) (from, 0.9876)
+
+C6tcg5wGBogeqPiI5eEXpk0G2vu1/C6tcg5wGBogeqPiI5eEXpk0G2vu1-1542431588.wav
+i'm so hungry that
+I'm so hungry that
+0.9876
+(I'm, 0.9876) (so, 0.9876) (hungry, 0.9876) (that, 0.9876)
+
+3G2m6tA0qcZvFNpUHVYZTwh8Hzr2/3G2m6tA0qcZvFNpUHVYZTwh8Hzr2-1548160826.wav
+i may be wrong but i think the students are protesting
+I may be wrong but I think the students are protesting
+0.9594
+(I, 0.9702) (may, 0.9761) (be, 0.9876) (wrong, 0.9503) (but, 0.9387) (I, 1.0) (think, 1.0) (the, 0.9299) (students, 0.9645) (are, 0.9121) (protesting, 0.9238)
+
+DJINu9xbCaN2SH51XAaxjFP2oMv1/0029E634-F008-494E-B7F1-490928455AD5.wav
+have you thought about going to grad school
+have you thought about going to grad school
+0.9654
+(have, 0.9702) (you, 0.9725) (thought, 0.9718) (about, 0.9216) (going, 0.9386) (to, 0.9876) (grad, 1.0) (school, 0.9607)
+
+qZiuye8kzde34JkY5PGaIr4CuyG2/0D17C5BB-7688-47A8-969B-C089F7864802.wav
+is this dress on sale
+is this dress on sale
+0.8753
+(is, 0.9617) (this, 0.9757) (dress, 0.9241) (on, 0.9424) (sale, 0.5724)
+
+lJXTAiKi0VNOhDsY0FDY3ZaRYoQ2/0328AAAA-30FC-47A7-8D77-514F4A7DD8D5.wav
+i have a habit of going shopping
+I have a habit of going shopping
+0.9541
+(I, 0.9876) (have, 0.9876) (a, 0.9876) (habit, 0.9083) (of, 0.9083) (going, 0.9766) (shopping, 0.9225)
+
+0d6b8dcclrhRGdNelkwHD9rcOhP2/0d6b8dcclrhRGdNelkwHD9rcOhP2-1545489524.wav
+for real
+for real
+0.9339
+(for, 0.9244) (real, 0.9435)
+
+vXeRO2pCJEM22DAdgA7p9OqVuEH2/06ACD9FC-EE00-420F-AA44-BAE38966C9D9.wav
+he is so stubborn that he won't listen to me
+he is so stubborn that he won't listen to me
+0.9544
+(he, 1.0) (is, 0.9866) (so, 0.9876) (stubborn, 0.9766) (that, 0.789) (he, 0.9876) (won't, 0.92) (listen, 0.9334) (to, 0.9751) (me, 0.9876)
+
+plaZkbdFUQMvM0DNrQc5wDTdlZx1/plaZkbdFUQMvM0DNrQc5wDTdlZx1-1548091768.wav
+he took this up with the dealer
+he took this up with the dealer
+0.9079
+(he, 0.9379) (took, 0.9876) (this, 0.9384) (up, 0.7933) (with, 0.9766) (the, 0.7873) (dealer, 0.9341)
+
+58GZ4vXqKdULltcJJG6d1ZmWh523/58GZ4vXqKdULltcJJG6d1ZmWh523-1539267426.wav
+about going on vacation
+about going on vacation
+0.9907
+(about, 1.0) (going, 0.9876) (on, 0.9876) (vacation, 0.9876)
+
+uzyxxBGVE7Ws3OHNIFmGpeNCcXu2/01E51FC6-81A5-4509-A61C-95988322D6BF.wav
+i'm on a strict diet of water and protein bars
+I'm on a strict diet of water and protein bars
+0.9469
+(I'm, 0.982) (on, 0.9817) (a, 0.9817) (strict, 1.0) (diet, 0.9539) (of, 0.9038) (water, 0.9791) (and, 0.8495) (protein, 0.8492) (bars, 0.9876)
+
+KJRr8OGpcyPBLXSTCc9gXnko4UM2/1076FC61-30ED-4176-AE0A-D56EE747EC3C.wav
+oh did you get a big fine
+oh did you get a big fine
+0.9606
+(oh, 0.8601) (did, 0.9876) (you, 0.9734) (get, 0.9795) (a, 0.9876) (big, 1.0) (fine, 0.9362)
+
+SR9TIlF8bSWApZa1tqEBIHOQs5z1/SR9TIlF8bSWApZa1tqEBIHOQs5z1-1584626885.wav
+filming and editing take up a lot of my time on weekends
+filming and editing take up a lot of my time on weekends
+0.9887
+(filming, 0.9876) (and, 1.0) (editing, 1.0) (take, 0.9759) (up, 0.9876) (a, 0.9876) (lot, 0.9623) (of, 0.9876) (my, 0.9876) (time, 0.9876) (on, 1.0) (weekends, 1.0)
+
+Y7Sm2uMMIQOl4YvnVq3hFsxKLim2/00E3970D-9C68-4726-A751-B7B476E1AE75.wav
+i can't play tennis at all
+I can't play tennis at all
+0.8672
+(I, 0.9876) (can't, 0.966) (play, 0.5557) (tennis, 0.9339) (at, 0.784) (all, 0.9761)
+
+0cb3smcdIJXw0cbzoKwcAZ8ZriD3/0cb3smcdIJXw0cbzoKwcAZ8ZriD3-1564362061.wav
+that's not what she said
+that's not what she said
+0.9862
+(that's, 0.9876) (not, 0.9876) (what, 0.9556) (she, 1.0) (said, 1.0)
+
+oCWYXVn7L5ZFbwp4mS8KgbOCZWg2/2A92D5A2-C6D1-490F-B24E-9BFAF089A386.wav
+i have to get back to the library
+I have to get back to the library
+0.9876
+(I, 0.9876) (have, 0.9876) (to, 0.9876) (get, 0.9876) (back, 0.9876) (to, 0.9876) (the, 0.9876) (library, 0.9876)
+
+1Ir2qrEfyycStqmDmNoBqJTc4eA2/1Ir2qrEfyycStqmDmNoBqJTc4eA2-1566390045.wav
+what are you going to study
+what are you going to study
+0.9641
+(what, 0.9258) (are, 0.9369) (you, 0.9873) (going, 0.9848) (to, 0.9876) (study, 0.9621)
+
+I3YDflrqDLaOemYD210uGnnqXu73/I3YDflrqDLaOemYD210uGnnqXu73-1550889398.wav
+yes i always have a bowl of cereal
+yes I always have a bowl of cereal
+0.9858
+(yes, 0.9733) (I, 0.9876) (always, 0.9876) (have, 0.9876) (a, 0.9876) (bowl, 0.9876) (of, 0.9876) (cereal, 0.9876)
+
+1mGx7uzKVuViib3WQ1s4Eoy1EGP2/1mGx7uzKVuViib3WQ1s4Eoy1EGP2-1565445320.wav
+this laptop is taking forever to restart
+this laptop is taking forever to restart
+0.9752
+(this, 0.9553) (laptop, 0.9598) (is, 0.9789) (taking, 0.9818) (forever, 0.9876) (to, 0.9876) (restart, 0.9753)
+
+LrUdh4cyaKRsJzBRDNMOAL3RdEI2/062184AB-9AA1-40E2-96EE-51A5F7ECB328.wav
+i go cycling on weekends
+I go cycling on weekends
+0.9525
+(I, 0.9814) (go, 0.914) (cycling, 0.9747) (on, 0.9049) (weekends, 0.9876)
+
+hSBu2oMflSNYBtrCP21PVZ6e5VF3/04E19C89-0913-4ABD-AAF0-326B35A39B49.wav
+i told you to go grocery shopping
+I told you to go grocery shopping
+0.9871
+(I, 0.9876) (told, 0.9876) (you, 1.0) (to, 0.9725) (go, 0.9876) (grocery, 0.9876) (shopping, 0.9864)
+
+NBm15u6EynVTTyupVupAVGbaxGu2/029CC4B6-F8F6-48AC-AE61-26F574EB17D5.wav
+no i don't have any money
+no I don't have any money
+0.9609
+(no, 0.9508) (I, 0.9584) (don't, 0.9531) (have, 0.9757) (any, 0.9764) (money, 0.9513)
+
+b6YxRdSzaqcglZErpW8q8KLyYXM2/00102602-AD45-43BD-9E64-C5622D0294CE.wav
+i cleaned the house
+I cleaned the house
+0.8006
+(I, 0.8866) (cleaned, 0.5518) (the, 0.7912) (house, 0.973)
+
+29LuJWOKBQOe5NLFw7jvhK8X9k53/29LuJWOKBQOe5NLFw7jvhK8X9k53-1545842715.wav
+i have to pay the rent by sunday
+I have to pay the rent by Sunday
+0.981 0.8073
+(I, 0.9629) (have, 0.9812) (to, 0.9789) (pay, 0.9876) (the, 0.9876) (rent, 0.9876) (by, 0.6454) (Sunday, 0.9692)
+
+IA7BOhKqgwOYOw8EZhxS0T30IRJ2/IA7BOhKqgwOYOw8EZhxS0T30IRJ2-1567948429.wav
+my friend made out that he got an a in the test
+my friend made out that he got an A in the test
+0.9258
+(my, 0.8865) (friend, 0.8409) (made, 0.9511) (out, 0.8649) (that, 0.864) (he, 0.9291) (got, 0.9529) (an, 0.9876) (A, 0.9745) (in, 0.9849) (the, 0.9459) (test, 0.9267)
+
+NPX97fLWsXWpgYl6ukCGF3cz72m1/NPX97fLWsXWpgYl6ukCGF3cz72m1-1546217303.wav
+everyone at the resort
+everyone at the resort
+0.9599
+(everyone, 0.9502) (at, 0.9876) (the, 0.9696) (resort, 0.9322)
+
+LlqsSAPtw0aAXimkuW2e5ZzPHbH2/LlqsSAPtw0aAXimkuW2e5ZzPHbH2-1564967074.wav
+i'm staying at the school dormitory
+I'm staying at the school dormitory
+0.9007
+(I'm, 0.9876) (staying, 0.9798) (at, 0.9738) (the, 0.9876) (school, 0.9776) (dormitory, 0.4977)
+
+11oB9AFnaJchu0Q8RC9hf7jbDO22/11oB9AFnaJchu0Q8RC9hf7jbDO22-1542939752.wav
+this game is boring
+this game is boring
+0.8442
+(this, 0.8442) (game, 0.8442) (is, 0.8442) (boring, 0.8442)
+
+KwTJE4GotXWQ8y0tpyjnhXbZ1Nz1/06182658-AFDA-4D07-95FD-6E89D63A72FB.wav
+and he has long curly hair
+and he has long curly hair
+0.9659
+(and, 0.9696) (he, 0.9876) (has, 0.9876) (long, 0.9217) (curly, 0.9508) (hair, 0.978)
+
+SGMbfpwn7KOdPSFMe0OEbSv9BU82/54F893D2-A6E8-428A-AADA-ACA9296817D7.wav
+i believe bmw is the best place to achieve my career goals
+I believe BMW is the best place to achieve my career goals
+0.97
+(I, 0.9844) (believe, 0.9634) (BMW, 0.9149) (is, 0.9726) (the, 0.9876) (best, 0.9546) (place, 0.9239) (to, 0.9876) (achieve, 0.9876) (my, 0.9876) (career, 0.9876) (goals, 0.9876)
+
+JcHAmRkPCfYRWQyNZR2bPsoltvW2/JcHAmRkPCfYRWQyNZR2bPsoltvW2-1554736155.wav
+i should eat breakfast
+I should eat breakfast
+0.8794
+(I, 0.9876) (should, 0.8113) (eat, 0.83) (breakfast, 0.8887)
+
+dH49mQYQS8RNRvI6DfqZOg8MumB2/dH49mQYQS8RNRvI6DfqZOg8MumB2-1543245338.wav
+dinner plans
+dinner plans
+0.9661
+(dinner, 0.949) (plans, 0.9831)
+
+ixuZjZtrzeY2DOzvX3j3DKmCxrY2/ixuZjZtrzeY2DOzvX3j3DKmCxrY2-1548684458.wav
+hey what game do you feel like playing
+hey what game do you feel like playing
+0.9777 0.9592
+(hey, 0.9753) (what, 0.9776) (game, 0.9803) (do, 0.9726) (you, 0.9179) (feel, 0.9876) (like, 0.9876) (playing, 0.9303)
+
+hcADTzGa7jeqJedIeC7IfQGTlAE2/hcADTzGa7jeqJedIeC7IfQGTlAE2-1557024987.wav
+i need to take down your name in my notebook
+I need to take down your name in my notebook
+0.9853
+(I, 0.9876) (need, 0.9876) (to, 0.9876) (take, 0.9876) (down, 1.0) (your, 1.0) (name, 1.0) (in, 0.9876) (my, 0.9876) (notebook, 0.9268)
+
+NW1j7o2SEQO0BD1actaBwJpRolm1/NW1j7o2SEQO0BD1actaBwJpRolm1-1562898891.wav
+i'm going to stay at an airbnb near the airport
+I'm going to stay at an Airbnb near the airport
+0.9869
+(I'm, 0.9876) (going, 0.9876) (to, 0.9876) (stay, 0.9876) (at, 0.9876) (an, 0.9798) (Airbnb, 0.9876) (near, 1.0) (the, 0.9756) (airport, 0.9876)
+
+La2RAso7nFhpKKYsmpaq8Dilx2G3/La2RAso7nFhpKKYsmpaq8Dilx2G3-1544636260.wav
+i don't know what to make of this present
+I don't know what to make of this present
+0.9872
+(I, 0.9876) (don't, 0.9876) (know, 0.9876) (what, 0.9876) (to, 0.9876) (make, 0.9876) (of, 0.9703) (this, 0.9887) (present, 1.0)
+
+jVHuz40WGKQB49celv2deWrZqEG3/01166318-0E07-4A93-AFBB-E62890D9C966.wav
+i didn't notice anything
+I didn't notice anything
+0.9654
+(I, 0.9876) (didn't, 0.9876) (notice, 0.9312) (anything, 0.9552)
+
+LKEISOpjqjZ8RK4J1aEtUZRBJVf2/106994A8-1249-4E49-A56C-E9531CE8F428.wav
+cats are not as friendly as dogs
+cats are not as friendly as dogs
+0.5076
+(cats, 0.3971) (are, 0.2348) (not, 0.4788) (as, 0.5492) (friendly, 0.4528) (as, 0.4528) (dogs, 0.9876)
+

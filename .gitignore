@@ -1,0 +1,152 @@
+# TODOs
+libs/
+notebooks/
+ssh
+.vscode/
+
+# vim
+.*.swp
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[od]
+*$py.class
+
+# C extensions
+*.so
+
+# desktop-services store files on mac
+.DS_Store
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+examples/wikipedia/code         # wikipedia dataset segmenting code
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Djiango stuff:
+/logs/*
+/tests/*.log
+#*.log
+    
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# dotenv
+.env
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+# pretrained models
+examples/librispeech/models/deepspeech_pretrained/librispeech_pretrained_v2.pth
+
+# onnx git examples
+onnx/examples
+
+# nohup.out files
+/*.out
+nohup_files/*
+
+#alexnet is tooo big
+alexnet*
+
+# models are saved to gcs
+models/*
+
+#large models
+examples/librispeech/models/ctc_models/20200625/ph4/*model
+examples/librispeech/models/ctc_models/20200625/ph4/*/*model
+examples/librispeech/models/ctc_models/20200715/ph2/*model
+examples/librispeech/models/ctc_models/20200715/ph2/*/*model
+examples/librispeech/models/ctc_models/null/
+examples/librispeech/models/ctc_models/20200806/ph4/20200907/best_model_state_dict.pth
+
+
+model_convert/torch_models/
+model_convert/onnx_models/
+model_convert/coreml_models/
+model_convert/validation_scripts/*.onnx
+model_convert/validation_scripts/*.mlmodel
+model_convert/output/
+model_convert/config/
+model_convert/preproc/
+model_convert/zips/

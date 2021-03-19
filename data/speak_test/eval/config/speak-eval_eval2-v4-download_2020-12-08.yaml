@@ -1,0 +1,19 @@
+num_examples: 1000
+target_eq_guess: True
+check_constraints: True
+constraints:
+    lesson: 0.05
+    target_sentence: 0.005
+    speaker: 0.005
+days_from_today: 1095
+disjoint_id_names:
+ - speaker
+disjoint_metadata_tsv: /home/dzubke/awni_speech/data/speak_train/train_data_trim_2020-09-22.tsv
+disjoint_datasets:
+ - /home/dzubke/awni_speech/data/speak_train/train-data_1M-examples_2020-10-06.json
+ - /home/dzubke/awni_speech/data/speak_train/train-data_1M-examples_2020-10-05.json
+ - /home/dzubke/awni_speech/data/speak_train/train-data_1M-examples_2020-09-25.json
+ - /home/dzubke/awni_speech/data/speak_train/train-data_500K-examples_2020-11-24.json
+ - /home/dzubke/awni_speech/data/speak_train/train-data_250K-examples_2020-11-24.json
+ - /home/dzubke/awni_speech/data/speak_train/train-data_100K-examples_2020-11-24.json
+ - /home/dzubke/awni_speech/data/speak_train/train-data_25K-examples_2020-11-24.json

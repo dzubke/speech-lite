@@ -1,0 +1,8 @@
+num_examples: 1000
+target_eq_guess: True
+check_constraints: True
+constraints:
+    lesson: 0.05
+    line: 0.005
+    speaker: 0.005
+days_from_today: 7

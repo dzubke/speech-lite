@@ -1,0 +1,42 @@
+# paths to train json, metadata, and new train, filtered json
+full_json_path: /home/dzubke/awni_speech/data/speak_train/train_data_trim_2020-09-22.json
+metadata_tsv_path: /home/dzubke/awni_speech/data/speak_train/speak-train-test_metadata_2020-09-22.tsv
+filter_json_path: /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/speak-eval2-v8_2020-12-16.json
+# Name of dataset with a capitalized first letter
+dataset_name: SpeakTrain 
+# number of examples in filtered dataset
+dataset_size: 1000
+# frequency to print updates of filter function
+print_modulus: 100
+# distribution-fitler sets the `key` in the example-dict and the `function` to apply to the key's value
+# as well as the percentages of examples to keep below and above the certain threshold
+dist_filter:
+  use: False
+  key: text
+  function: len
+  threshold: 22.5
+  percent-above-threshold: 1.00
+  percent-below-threshold: 0.05
+# max number of utterances for a single id
+constraints:
+  lesson: 0.1
+  target_sentence: 0.01
+  speaker: 0.01
+# the keys are the dataset-path and values are the id-names along with the output dataset will be disjoint
+# e.g. a key of `record` means output dataset will be disjiont with dataset-path for  record_ids
+# other values include `lesson` and `target-sentence`
+disjoint_datasets:
+    /home/dzubke/awni_speech/data/speak_test_data/2019-11-29/speak-test_2019-11-29.json:
+        !!python/tuple ['record']
+    /home/dzubke/awni_speech/data/speak_test_data/2020-05-27/speak-test_2020-05-27.json:
+        !!python/tuple ['record']
+    /home/dzubke/awni_speech/data/speak_train/speak-train_3M_2020-12-10.json:
+        !!python/tuple ['record', 'target_sentence']
+    /home/dzubke/awni_speech/data/speak_train/speak-train_1M_2020-12-10.json:
+        !!python/tuple ['record', 'target_sentence']
+    /home/dzubke/awni_speech/data/speak_train/speak-train_500K_2020-12-10.json:
+        !!python/tuple ['record', 'target_sentence']
+    /home/dzubke/awni_speech/data/speak_train/speak-train_250K_2020-12-10.json:
+        !!python/tuple ['record', 'target_sentence']
+    /home/dzubke/awni_speech/data/speak_train/speak-train_100K_2020-12-10.json:
+        !!python/tuple ['record', 'target_sentence']

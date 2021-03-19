@@ -1,0 +1,937 @@
+nohup: ignoring input
+Arguments
+list of datasets: ['/home/dzubke/awni_speech/data/speak_train/2020-12-29/speak-train_100K_2021-01-05.json', '/home/dzubke/awni_speech/data/speak_train/2020-12-29/speak-train_250K_2021-01-05.json', '/home/dzubke/awni_speech/data/speak_train/2020-12-29/speak-train_500K_2021-01-05.json', '/home/dzubke/awni_speech/data/speak_train/2020-12-29/speak-train_1M_2020-12-30.json', '/home/dzubke/awni_speech/data/speak_test_data/eval/eval2/eval2_data_2020-12-05.json', '/home/dzubke/awni_speech/data/speak_test_data/eval/eval2/speak-eval2-v2_2020-12-07.json', '/home/dzubke/awni_speech/data/speak_test_data/eval/eval2/speak-eval2-v3_2020-12-08.json', '/home/dzubke/awni_speech/data/speak_test_data/eval/eval2/v4/eval2-v4_data_2020-12-08.json', '/home/dzubke/awni_speech/data/speak_test_data/eval/eval2/v5/eval2-v5_data_2020-12-09.json', '/home/dzubke/awni_speech/data/speak_test_data/eval/eval2/speak-eval2-v6_2020-12-16.json', '/home/dzubke/awni_speech/data/speak_test_data/eval/eval2/speak-eval2-v7_2020-12-16.json', '/home/dzubke/awni_speech/data/speak_test_data/2020-05-27/speak-test_2020-05-27.json']
+metadata_paths: ['/home/dzubke/awni_speech/data/speak_train/2020-12-29/metadata-with-url_2020-12-24.tsv', '/home/dzubke/awni_speech/data/speak_train/speak-train-test-eval_metadata-7rows_2020-12-18.tsv']
+assessing overlap based on key: target_sentence
+header:  ['id', 'target', 'lessonId', 'lineId', 'uid', 'redWords_score', 'date', 'audio_url']
+header:  ['id', 'text', 'lessonId', 'lineId', 'uid', 'redWords_score', 'date']
+Reference dataset: train_100K_2021-01-05
+	Overlap dataset: train_100K_2021-01-05
+	% of Reference intersecting Overlap:1.0
+
+	Overlap dataset: train_250K_2021-01-05
+	% of Reference intersecting Overlap:1.0
+
+	Overlap dataset: train_500K_2021-01-05
+	% of Reference intersecting Overlap:0.984
+
+	Overlap dataset: train_1M
+	% of Reference intersecting Overlap:1.0
+
+	Overlap dataset: eval2-v1
+	% of Reference intersecting Overlap:0.045
+
+	Overlap dataset: eval2-v2
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v3
+	% of Reference intersecting Overlap:0.043
+
+	Overlap dataset: eval2-v4
+	% of Reference intersecting Overlap:0.022
+
+	Overlap dataset: eval2-v5
+	% of Reference intersecting Overlap:0.001
+
+	Overlap dataset: eval2-v6
+	% of Reference intersecting Overlap:0.033
+
+	Overlap dataset: eval2-v7
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: test
+	% of Reference intersecting Overlap:0.0
+
+Reference dataset: train_250K_2021-01-05
+	Overlap dataset: train_100K_2021-01-05
+	% of Reference intersecting Overlap:0.989
+
+	Overlap dataset: train_250K_2021-01-05
+	% of Reference intersecting Overlap:1.0
+
+	Overlap dataset: train_500K_2021-01-05
+	% of Reference intersecting Overlap:0.978
+
+	Overlap dataset: train_1M
+	% of Reference intersecting Overlap:0.995
+
+	Overlap dataset: eval2-v1
+	% of Reference intersecting Overlap:0.045
+
+	Overlap dataset: eval2-v2
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v3
+	% of Reference intersecting Overlap:0.043
+
+	Overlap dataset: eval2-v4
+	% of Reference intersecting Overlap:0.021
+
+	Overlap dataset: eval2-v5
+	% of Reference intersecting Overlap:0.001
+
+	Overlap dataset: eval2-v6
+	% of Reference intersecting Overlap:0.032
+
+	Overlap dataset: eval2-v7
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: test
+	% of Reference intersecting Overlap:0.0
+
+Reference dataset: train_500K_2021-01-05
+	Overlap dataset: train_100K_2021-01-05
+	% of Reference intersecting Overlap:0.992
+
+	Overlap dataset: train_250K_2021-01-05
+	% of Reference intersecting Overlap:0.997
+
+	Overlap dataset: train_500K_2021-01-05
+	% of Reference intersecting Overlap:1.0
+
+	Overlap dataset: train_1M
+	% of Reference intersecting Overlap:1.0
+
+	Overlap dataset: eval2-v1
+	% of Reference intersecting Overlap:0.046
+
+	Overlap dataset: eval2-v2
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v3
+	% of Reference intersecting Overlap:0.044
+
+	Overlap dataset: eval2-v4
+	% of Reference intersecting Overlap:0.022
+
+	Overlap dataset: eval2-v5
+	% of Reference intersecting Overlap:0.001
+
+	Overlap dataset: eval2-v6
+	% of Reference intersecting Overlap:0.033
+
+	Overlap dataset: eval2-v7
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: test
+	% of Reference intersecting Overlap:0.0
+
+Reference dataset: train_1M
+	Overlap dataset: train_100K_2021-01-05
+	% of Reference intersecting Overlap:0.987
+
+	Overlap dataset: train_250K_2021-01-05
+	% of Reference intersecting Overlap:0.994
+
+	Overlap dataset: train_500K_2021-01-05
+	% of Reference intersecting Overlap:0.98
+
+	Overlap dataset: train_1M
+	% of Reference intersecting Overlap:1.0
+
+	Overlap dataset: eval2-v1
+	% of Reference intersecting Overlap:0.045
+
+	Overlap dataset: eval2-v2
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v3
+	% of Reference intersecting Overlap:0.043
+
+	Overlap dataset: eval2-v4
+	% of Reference intersecting Overlap:0.021
+
+	Overlap dataset: eval2-v5
+	% of Reference intersecting Overlap:0.001
+
+	Overlap dataset: eval2-v6
+	% of Reference intersecting Overlap:0.032
+
+	Overlap dataset: eval2-v7
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: test
+	% of Reference intersecting Overlap:0.0
+
+Reference dataset: eval2-v1
+	Overlap dataset: train_100K_2021-01-05
+	% of Reference intersecting Overlap:0.981
+
+	Overlap dataset: train_250K_2021-01-05
+	% of Reference intersecting Overlap:0.981
+
+	Overlap dataset: train_500K_2021-01-05
+	% of Reference intersecting Overlap:0.981
+
+	Overlap dataset: train_1M
+	% of Reference intersecting Overlap:0.981
+
+	Overlap dataset: eval2-v1
+	% of Reference intersecting Overlap:1.0
+
+	Overlap dataset: eval2-v2
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v3
+	% of Reference intersecting Overlap:0.248
+
+	Overlap dataset: eval2-v4
+	% of Reference intersecting Overlap:0.118
+
+	Overlap dataset: eval2-v5
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v6
+	% of Reference intersecting Overlap:0.163
+
+	Overlap dataset: eval2-v7
+	% of Reference intersecting Overlap:0.019
+
+	Overlap dataset: test
+	% of Reference intersecting Overlap:0.015
+
+Reference dataset: eval2-v2
+	Overlap dataset: train_100K_2021-01-05
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: train_250K_2021-01-05
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: train_500K_2021-01-05
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: train_1M
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v1
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v2
+	% of Reference intersecting Overlap:1.0
+
+	Overlap dataset: eval2-v3
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v4
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v5
+	% of Reference intersecting Overlap:0.07
+
+	Overlap dataset: eval2-v6
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v7
+	% of Reference intersecting Overlap:0.01
+
+	Overlap dataset: test
+	% of Reference intersecting Overlap:0.003
+
+Reference dataset: eval2-v3
+	Overlap dataset: train_100K_2021-01-05
+	% of Reference intersecting Overlap:0.986
+
+	Overlap dataset: train_250K_2021-01-05
+	% of Reference intersecting Overlap:0.986
+
+	Overlap dataset: train_500K_2021-01-05
+	% of Reference intersecting Overlap:0.986
+
+	Overlap dataset: train_1M
+	% of Reference intersecting Overlap:0.986
+
+	Overlap dataset: eval2-v1
+	% of Reference intersecting Overlap:0.262
+
+	Overlap dataset: eval2-v2
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v3
+	% of Reference intersecting Overlap:1.0
+
+	Overlap dataset: eval2-v4
+	% of Reference intersecting Overlap:0.169
+
+	Overlap dataset: eval2-v5
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v6
+	% of Reference intersecting Overlap:0.199
+
+	Overlap dataset: eval2-v7
+	% of Reference intersecting Overlap:0.014
+
+	Overlap dataset: test
+	% of Reference intersecting Overlap:0.009
+
+Reference dataset: eval2-v4
+	Overlap dataset: train_100K_2021-01-05
+	% of Reference intersecting Overlap:0.983
+
+	Overlap dataset: train_250K_2021-01-05
+	% of Reference intersecting Overlap:0.983
+
+	Overlap dataset: train_500K_2021-01-05
+	% of Reference intersecting Overlap:0.983
+
+	Overlap dataset: train_1M
+	% of Reference intersecting Overlap:0.983
+
+	Overlap dataset: eval2-v1
+	% of Reference intersecting Overlap:0.249
+
+	Overlap dataset: eval2-v2
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v3
+	% of Reference intersecting Overlap:0.339
+
+	Overlap dataset: eval2-v4
+	% of Reference intersecting Overlap:1.0
+
+	Overlap dataset: eval2-v5
+	% of Reference intersecting Overlap:0.006
+
+	Overlap dataset: eval2-v6
+	% of Reference intersecting Overlap:0.217
+
+	Overlap dataset: eval2-v7
+	% of Reference intersecting Overlap:0.017
+
+	Overlap dataset: test
+	% of Reference intersecting Overlap:0.012
+
+Reference dataset: eval2-v5
+	Overlap dataset: train_100K_2021-01-05
+	% of Reference intersecting Overlap:0.449
+
+	Overlap dataset: train_250K_2021-01-05
+	% of Reference intersecting Overlap:0.449
+
+	Overlap dataset: train_500K_2021-01-05
+	% of Reference intersecting Overlap:0.449
+
+	Overlap dataset: train_1M
+	% of Reference intersecting Overlap:0.449
+
+	Overlap dataset: eval2-v1
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v2
+	% of Reference intersecting Overlap:0.551
+
+	Overlap dataset: eval2-v3
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v4
+	% of Reference intersecting Overlap:0.041
+
+	Overlap dataset: eval2-v5
+	% of Reference intersecting Overlap:1.0
+
+	Overlap dataset: eval2-v6
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v7
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: test
+	% of Reference intersecting Overlap:0.0
+
+Reference dataset: eval2-v6
+	Overlap dataset: train_100K_2021-01-05
+	% of Reference intersecting Overlap:0.948
+
+	Overlap dataset: train_250K_2021-01-05
+	% of Reference intersecting Overlap:0.948
+
+	Overlap dataset: train_500K_2021-01-05
+	% of Reference intersecting Overlap:0.948
+
+	Overlap dataset: train_1M
+	% of Reference intersecting Overlap:0.948
+
+	Overlap dataset: eval2-v1
+	% of Reference intersecting Overlap:0.219
+
+	Overlap dataset: eval2-v2
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v3
+	% of Reference intersecting Overlap:0.254
+
+	Overlap dataset: eval2-v4
+	% of Reference intersecting Overlap:0.138
+
+	Overlap dataset: eval2-v5
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v6
+	% of Reference intersecting Overlap:1.0
+
+	Overlap dataset: eval2-v7
+	% of Reference intersecting Overlap:0.052
+
+	Overlap dataset: test
+	% of Reference intersecting Overlap:0.044
+
+Reference dataset: eval2-v7
+	Overlap dataset: train_100K_2021-01-05
+	% of Reference intersecting Overlap:0.028
+
+	Overlap dataset: train_250K_2021-01-05
+	% of Reference intersecting Overlap:0.028
+
+	Overlap dataset: train_500K_2021-01-05
+	% of Reference intersecting Overlap:0.028
+
+	Overlap dataset: train_1M
+	% of Reference intersecting Overlap:0.037
+
+	Overlap dataset: eval2-v1
+	% of Reference intersecting Overlap:0.128
+
+	Overlap dataset: eval2-v2
+	% of Reference intersecting Overlap:0.037
+
+	Overlap dataset: eval2-v3
+	% of Reference intersecting Overlap:0.092
+
+	Overlap dataset: eval2-v4
+	% of Reference intersecting Overlap:0.055
+
+	Overlap dataset: eval2-v5
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v6
+	% of Reference intersecting Overlap:0.257
+
+	Overlap dataset: eval2-v7
+	% of Reference intersecting Overlap:1.0
+
+	Overlap dataset: test
+	% of Reference intersecting Overlap:0.798
+
+Reference dataset: test
+	Overlap dataset: train_100K_2021-01-05
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: train_250K_2021-01-05
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: train_500K_2021-01-05
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: train_1M
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v1
+	% of Reference intersecting Overlap:0.121
+
+	Overlap dataset: eval2-v2
+	% of Reference intersecting Overlap:0.011
+
+	Overlap dataset: eval2-v3
+	% of Reference intersecting Overlap:0.066
+
+	Overlap dataset: eval2-v4
+	% of Reference intersecting Overlap:0.044
+
+	Overlap dataset: eval2-v5
+	% of Reference intersecting Overlap:0.0
+
+	Overlap dataset: eval2-v6
+	% of Reference intersecting Overlap:0.264
+
+	Overlap dataset: eval2-v7
+	% of Reference intersecting Overlap:0.956
+
+	Overlap dataset: test
+	% of Reference intersecting Overlap:1.0
+
+Fully unique ouputs: 
+{'train_100K_2021-01-05': {'train_100K_2021-01-05': 1.0, 'train_250K_2021-01-05': 1.0, 'train_500K_2021-01-05': 0.984, 'train_1M': 1.0, 'eval2-v1': 0.045, 'eval2-v2': 0.0, 'eval2-v3': 0.043, 'eval2-v4': 0.022, 'eval2-v5': 0.001, 'eval2-v6': 0.033, 'eval2-v7': 0.0, 'test': 0.0}, 'train_250K_2021-01-05': {'train_100K_2021-01-05': 0.989, 'train_250K_2021-01-05': 1.0, 'train_500K_2021-01-05': 0.978, 'train_1M': 0.995, 'eval2-v1': 0.045, 'eval2-v2': 0.0, 'eval2-v3': 0.043, 'eval2-v4': 0.021, 'eval2-v5': 0.001, 'eval2-v6': 0.032, 'eval2-v7': 0.0, 'test': 0.0}, 'train_500K_2021-01-05': {'train_100K_2021-01-05': 0.992, 'train_250K_2021-01-05': 0.997, 'train_500K_2021-01-05': 1.0, 'train_1M': 1.0, 'eval2-v1': 0.046, 'eval2-v2': 0.0, 'eval2-v3': 0.044, 'eval2-v4': 0.022, 'eval2-v5': 0.001, 'eval2-v6': 0.033, 'eval2-v7': 0.0, 'test': 0.0}, 'train_1M': {'train_100K_2021-01-05': 0.987, 'train_250K_2021-01-05': 0.994, 'train_500K_2021-01-05': 0.98, 'train_1M': 1.0, 'eval2-v1': 0.045, 'eval2-v2': 0.0, 'eval2-v3': 0.043, 'eval2-v4': 0.021, 'eval2-v5': 0.001, 'eval2-v6': 0.032, 'eval2-v7': 0.0, 'test': 0.0}, 'eval2-v1': {'train_100K_2021-01-05': 0.981, 'train_250K_2021-01-05': 0.981, 'train_500K_2021-01-05': 0.981, 'train_1M': 0.981, 'eval2-v1': 1.0, 'eval2-v2': 0.0, 'eval2-v3': 0.248, 'eval2-v4': 0.118, 'eval2-v5': 0.0, 'eval2-v6': 0.163, 'eval2-v7': 0.019, 'test': 0.015}, 'eval2-v2': {'train_100K_2021-01-05': 0.0, 'train_250K_2021-01-05': 0.0, 'train_500K_2021-01-05': 0.0, 'train_1M': 0.0, 'eval2-v1': 0.0, 'eval2-v2': 1.0, 'eval2-v3': 0.0, 'eval2-v4': 0.0, 'eval2-v5': 0.07, 'eval2-v6': 0.0, 'eval2-v7': 0.01, 'test': 0.003}, 'eval2-v3': {'train_100K_2021-01-05': 0.986, 'train_250K_2021-01-05': 0.986, 'train_500K_2021-01-05': 0.986, 'train_1M': 0.986, 'eval2-v1': 0.262, 'eval2-v2': 0.0, 'eval2-v3': 1.0, 'eval2-v4': 0.169, 'eval2-v5': 0.0, 'eval2-v6': 0.199, 'eval2-v7': 0.014, 'test': 0.009}, 'eval2-v4': {'train_100K_2021-01-05': 0.983, 'train_250K_2021-01-05': 0.983, 'train_500K_2021-01-05': 0.983, 'train_1M': 0.983, 'eval2-v1': 0.249, 'eval2-v2': 0.0, 'eval2-v3': 0.339, 'eval2-v4': 1.0, 'eval2-v5': 0.006, 'eval2-v6': 0.217, 'eval2-v7': 0.017, 'test': 0.012}, 'eval2-v5': {'train_100K_2021-01-05': 0.449, 'train_250K_2021-01-05': 0.449, 'train_500K_2021-01-05': 0.449, 'train_1M': 0.449, 'eval2-v1': 0.0, 'eval2-v2': 0.551, 'eval2-v3': 0.0, 'eval2-v4': 0.041, 'eval2-v5': 1.0, 'eval2-v6': 0.0, 'eval2-v7': 0.0, 'test': 0.0}, 'eval2-v6': {'train_100K_2021-01-05': 0.948, 'train_250K_2021-01-05': 0.948, 'train_500K_2021-01-05': 0.948, 'train_1M': 0.948, 'eval2-v1': 0.219, 'eval2-v2': 0.0, 'eval2-v3': 0.254, 'eval2-v4': 0.138, 'eval2-v5': 0.0, 'eval2-v6': 1.0, 'eval2-v7': 0.052, 'test': 0.044}, 'eval2-v7': {'train_100K_2021-01-05': 0.028, 'train_250K_2021-01-05': 0.028, 'train_500K_2021-01-05': 0.028, 'train_1M': 0.037, 'eval2-v1': 0.128, 'eval2-v2': 0.037, 'eval2-v3': 0.092, 'eval2-v4': 0.055, 'eval2-v5': 0.0, 'eval2-v6': 0.257, 'eval2-v7': 1.0, 'test': 0.798}, 'test': {'train_100K_2021-01-05': 0.0, 'train_250K_2021-01-05': 0.0, 'train_500K_2021-01-05': 0.0, 'train_1M': 0.0, 'eval2-v1': 0.121, 'eval2-v2': 0.011, 'eval2-v3': 0.066, 'eval2-v4': 0.044, 'eval2-v5': 0.0, 'eval2-v6': 0.264, 'eval2-v7': 0.956, 'test': 1.0}}
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                      Unique intersection                                                                                      |
++-----------------------+----------+----------+----------+----------+----------+----------+----------+-------+-----------------------+----------+-----------------------+-----------------------+
+|  Intersect\Reference  | eval2-v1 | eval2-v2 | eval2-v3 | eval2-v4 | eval2-v5 | eval2-v6 | eval2-v7 |  test | train_100K_2021-01-05 | train_1M | train_250K_2021-01-05 | train_500K_2021-01-05 |
++-----------------------+----------+----------+----------+----------+----------+----------+----------+-------+-----------------------+----------+-----------------------+-----------------------+
+|        eval2-v1       |   1.0    |   0.0    |  0.262   |  0.249   |   0.0    |  0.219   |  0.128   | 0.121 |         0.045         |  0.045   |         0.045         |         0.046         |
+|        eval2-v2       |   0.0    |   1.0    |   0.0    |   0.0    |  0.551   |   0.0    |  0.037   | 0.011 |          0.0          |   0.0    |          0.0          |          0.0          |
+|        eval2-v3       |  0.248   |   0.0    |   1.0    |  0.339   |   0.0    |  0.254   |  0.092   | 0.066 |         0.043         |  0.043   |         0.043         |         0.044         |
+|        eval2-v4       |  0.118   |   0.0    |  0.169   |   1.0    |  0.041   |  0.138   |  0.055   | 0.044 |         0.022         |  0.021   |         0.021         |         0.022         |
+|        eval2-v5       |   0.0    |   0.07   |   0.0    |  0.006   |   1.0    |   0.0    |   0.0    |  0.0  |         0.001         |  0.001   |         0.001         |         0.001         |
+|        eval2-v6       |  0.163   |   0.0    |  0.199   |  0.217   |   0.0    |   1.0    |  0.257   | 0.264 |         0.033         |  0.032   |         0.032         |         0.033         |
+|        eval2-v7       |  0.019   |   0.01   |  0.014   |  0.017   |   0.0    |  0.052   |   1.0    | 0.956 |          0.0          |   0.0    |          0.0          |          0.0          |
+|          test         |  0.015   |  0.003   |  0.009   |  0.012   |   0.0    |  0.044   |  0.798   |  1.0  |          0.0          |   0.0    |          0.0          |          0.0          |
+| train_100K_2021-01-05 |  0.981   |   0.0    |  0.986   |  0.983   |  0.449   |  0.948   |  0.028   |  0.0  |          1.0          |  0.987   |         0.989         |         0.992         |
+|        train_1M       |  0.981   |   0.0    |  0.986   |  0.983   |  0.449   |  0.948   |  0.037   |  0.0  |          1.0          |   1.0    |         0.995         |          1.0          |
+| train_250K_2021-01-05 |  0.981   |   0.0    |  0.986   |  0.983   |  0.449   |  0.948   |  0.028   |  0.0  |          1.0          |  0.994   |          1.0          |         0.997         |
+| train_500K_2021-01-05 |  0.981   |   0.0    |  0.986   |  0.983   |  0.449   |  0.948   |  0.028   |  0.0  |         0.984         |   0.98   |         0.978         |          1.0          |
++-----------------------+----------+----------+----------+----------+----------+----------+----------+-------+-----------------------+----------+-----------------------+-----------------------+
+Reference dataset: train_100K_2021-01-05
+	Overlap dataset: train_100K_2021-01-05
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: train_250K_2021-01-05
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: train_500K_2021-01-05
+	Ratio of total intersect to total records: 0.996
+
+	Overlap dataset: train_1M
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: eval2-v1
+	Ratio of total intersect to total records: 0.049
+
+	Overlap dataset: eval2-v2
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v3
+	Ratio of total intersect to total records: 0.046
+
+	Overlap dataset: eval2-v4
+	Ratio of total intersect to total records: 0.023
+
+	Overlap dataset: eval2-v5
+	Ratio of total intersect to total records: 0.001
+
+	Overlap dataset: eval2-v6
+	Ratio of total intersect to total records: 0.035
+
+	Overlap dataset: eval2-v7
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: test
+	Ratio of total intersect to total records: 0.0
+
+Reference dataset: train_250K_2021-01-05
+	Overlap dataset: train_100K_2021-01-05
+	Ratio of total intersect to total records: 0.999
+
+	Overlap dataset: train_250K_2021-01-05
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: train_500K_2021-01-05
+	Ratio of total intersect to total records: 0.997
+
+	Overlap dataset: train_1M
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: eval2-v1
+	Ratio of total intersect to total records: 0.05
+
+	Overlap dataset: eval2-v2
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v3
+	Ratio of total intersect to total records: 0.048
+
+	Overlap dataset: eval2-v4
+	Ratio of total intersect to total records: 0.024
+
+	Overlap dataset: eval2-v5
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v6
+	Ratio of total intersect to total records: 0.036
+
+	Overlap dataset: eval2-v7
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: test
+	Ratio of total intersect to total records: 0.0
+
+Reference dataset: train_500K_2021-01-05
+	Overlap dataset: train_100K_2021-01-05
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: train_250K_2021-01-05
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: train_500K_2021-01-05
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: train_1M
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: eval2-v1
+	Ratio of total intersect to total records: 0.059
+
+	Overlap dataset: eval2-v2
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v3
+	Ratio of total intersect to total records: 0.057
+
+	Overlap dataset: eval2-v4
+	Ratio of total intersect to total records: 0.027
+
+	Overlap dataset: eval2-v5
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v6
+	Ratio of total intersect to total records: 0.042
+
+	Overlap dataset: eval2-v7
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: test
+	Ratio of total intersect to total records: 0.0
+
+Reference dataset: train_1M
+	Overlap dataset: train_100K_2021-01-05
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: train_250K_2021-01-05
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: train_500K_2021-01-05
+	Ratio of total intersect to total records: 0.999
+
+	Overlap dataset: train_1M
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: eval2-v1
+	Ratio of total intersect to total records: 0.06
+
+	Overlap dataset: eval2-v2
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v3
+	Ratio of total intersect to total records: 0.057
+
+	Overlap dataset: eval2-v4
+	Ratio of total intersect to total records: 0.027
+
+	Overlap dataset: eval2-v5
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v6
+	Ratio of total intersect to total records: 0.043
+
+	Overlap dataset: eval2-v7
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: test
+	Ratio of total intersect to total records: 0.0
+
+Reference dataset: eval2-v1
+	Overlap dataset: train_100K_2021-01-05
+	Ratio of total intersect to total records: 0.98
+
+	Overlap dataset: train_250K_2021-01-05
+	Ratio of total intersect to total records: 0.98
+
+	Overlap dataset: train_500K_2021-01-05
+	Ratio of total intersect to total records: 0.98
+
+	Overlap dataset: train_1M
+	Ratio of total intersect to total records: 0.98
+
+	Overlap dataset: eval2-v1
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: eval2-v2
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v3
+	Ratio of total intersect to total records: 0.354
+
+	Overlap dataset: eval2-v4
+	Ratio of total intersect to total records: 0.232
+
+	Overlap dataset: eval2-v5
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v6
+	Ratio of total intersect to total records: 0.215
+
+	Overlap dataset: eval2-v7
+	Ratio of total intersect to total records: 0.02
+
+	Overlap dataset: test
+	Ratio of total intersect to total records: 0.016
+
+Reference dataset: eval2-v2
+	Overlap dataset: train_100K_2021-01-05
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: train_250K_2021-01-05
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: train_500K_2021-01-05
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: train_1M
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v1
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v2
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: eval2-v3
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v4
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v5
+	Ratio of total intersect to total records: 0.089
+
+	Overlap dataset: eval2-v6
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v7
+	Ratio of total intersect to total records: 0.008
+
+	Overlap dataset: test
+	Ratio of total intersect to total records: 0.002
+
+Reference dataset: eval2-v3
+	Overlap dataset: train_100K_2021-01-05
+	Ratio of total intersect to total records: 0.988
+
+	Overlap dataset: train_250K_2021-01-05
+	Ratio of total intersect to total records: 0.988
+
+	Overlap dataset: train_500K_2021-01-05
+	Ratio of total intersect to total records: 0.988
+
+	Overlap dataset: train_1M
+	Ratio of total intersect to total records: 0.988
+
+	Overlap dataset: eval2-v1
+	Ratio of total intersect to total records: 0.402
+
+	Overlap dataset: eval2-v2
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v3
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: eval2-v4
+	Ratio of total intersect to total records: 0.331
+
+	Overlap dataset: eval2-v5
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v6
+	Ratio of total intersect to total records: 0.257
+
+	Overlap dataset: eval2-v7
+	Ratio of total intersect to total records: 0.012
+
+	Overlap dataset: test
+	Ratio of total intersect to total records: 0.006
+
+Reference dataset: eval2-v4
+	Overlap dataset: train_100K_2021-01-05
+	Ratio of total intersect to total records: 0.989
+
+	Overlap dataset: train_250K_2021-01-05
+	Ratio of total intersect to total records: 0.989
+
+	Overlap dataset: train_500K_2021-01-05
+	Ratio of total intersect to total records: 0.989
+
+	Overlap dataset: train_1M
+	Ratio of total intersect to total records: 0.989
+
+	Overlap dataset: eval2-v1
+	Ratio of total intersect to total records: 0.38
+
+	Overlap dataset: eval2-v2
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v3
+	Ratio of total intersect to total records: 0.534
+
+	Overlap dataset: eval2-v4
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: eval2-v5
+	Ratio of total intersect to total records: 0.002
+
+	Overlap dataset: eval2-v6
+	Ratio of total intersect to total records: 0.328
+
+	Overlap dataset: eval2-v7
+	Ratio of total intersect to total records: 0.011
+
+	Overlap dataset: test
+	Ratio of total intersect to total records: 0.009
+
+Reference dataset: eval2-v5
+	Overlap dataset: train_100K_2021-01-05
+	Ratio of total intersect to total records: 0.434
+
+	Overlap dataset: train_250K_2021-01-05
+	Ratio of total intersect to total records: 0.434
+
+	Overlap dataset: train_500K_2021-01-05
+	Ratio of total intersect to total records: 0.434
+
+	Overlap dataset: train_1M
+	Ratio of total intersect to total records: 0.434
+
+	Overlap dataset: eval2-v1
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v2
+	Ratio of total intersect to total records: 0.566
+
+	Overlap dataset: eval2-v3
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v4
+	Ratio of total intersect to total records: 0.038
+
+	Overlap dataset: eval2-v5
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: eval2-v6
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v7
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: test
+	Ratio of total intersect to total records: 0.0
+
+Reference dataset: eval2-v6
+	Overlap dataset: train_100K_2021-01-05
+	Ratio of total intersect to total records: 0.927
+
+	Overlap dataset: train_250K_2021-01-05
+	Ratio of total intersect to total records: 0.927
+
+	Overlap dataset: train_500K_2021-01-05
+	Ratio of total intersect to total records: 0.927
+
+	Overlap dataset: train_1M
+	Ratio of total intersect to total records: 0.927
+
+	Overlap dataset: eval2-v1
+	Ratio of total intersect to total records: 0.305
+
+	Overlap dataset: eval2-v2
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v3
+	Ratio of total intersect to total records: 0.362
+
+	Overlap dataset: eval2-v4
+	Ratio of total intersect to total records: 0.233
+
+	Overlap dataset: eval2-v5
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v6
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: eval2-v7
+	Ratio of total intersect to total records: 0.073
+
+	Overlap dataset: test
+	Ratio of total intersect to total records: 0.06
+
+Reference dataset: eval2-v7
+	Overlap dataset: train_100K_2021-01-05
+	Ratio of total intersect to total records: 0.003
+
+	Overlap dataset: train_250K_2021-01-05
+	Ratio of total intersect to total records: 0.003
+
+	Overlap dataset: train_500K_2021-01-05
+	Ratio of total intersect to total records: 0.003
+
+	Overlap dataset: train_1M
+	Ratio of total intersect to total records: 0.004
+
+	Overlap dataset: eval2-v1
+	Ratio of total intersect to total records: 0.153
+
+	Overlap dataset: eval2-v2
+	Ratio of total intersect to total records: 0.004
+
+	Overlap dataset: eval2-v3
+	Ratio of total intersect to total records: 0.094
+
+	Overlap dataset: eval2-v4
+	Ratio of total intersect to total records: 0.066
+
+	Overlap dataset: eval2-v5
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v6
+	Ratio of total intersect to total records: 0.292
+
+	Overlap dataset: eval2-v7
+	Ratio of total intersect to total records: 1.0
+
+	Overlap dataset: test
+	Ratio of total intersect to total records: 0.848
+
+Reference dataset: test
+	Overlap dataset: train_100K_2021-01-05
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: train_250K_2021-01-05
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: train_500K_2021-01-05
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: train_1M
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v1
+	Ratio of total intersect to total records: 0.121
+
+	Overlap dataset: eval2-v2
+	Ratio of total intersect to total records: 0.011
+
+	Overlap dataset: eval2-v3
+	Ratio of total intersect to total records: 0.066
+
+	Overlap dataset: eval2-v4
+	Ratio of total intersect to total records: 0.044
+
+	Overlap dataset: eval2-v5
+	Ratio of total intersect to total records: 0.0
+
+	Overlap dataset: eval2-v6
+	Ratio of total intersect to total records: 0.264
+
+	Overlap dataset: eval2-v7
+	Ratio of total intersect to total records: 0.956
+
+	Overlap dataset: test
+	Ratio of total intersect to total records: 1.0
+
+Total output is:
+{'train_100K_2021-01-05': {'train_100K_2021-01-05': 1.0, 'train_250K_2021-01-05': 1.0, 'train_500K_2021-01-05': 0.996, 'train_1M': 1.0, 'eval2-v1': 0.049, 'eval2-v2': 0.0, 'eval2-v3': 0.046, 'eval2-v4': 0.023, 'eval2-v5': 0.001, 'eval2-v6': 0.035, 'eval2-v7': 0.0, 'test': 0.0}, 'train_250K_2021-01-05': {'train_100K_2021-01-05': 0.999, 'train_250K_2021-01-05': 1.0, 'train_500K_2021-01-05': 0.997, 'train_1M': 1.0, 'eval2-v1': 0.05, 'eval2-v2': 0.0, 'eval2-v3': 0.048, 'eval2-v4': 0.024, 'eval2-v5': 0.0, 'eval2-v6': 0.036, 'eval2-v7': 0.0, 'test': 0.0}, 'train_500K_2021-01-05': {'train_100K_2021-01-05': 1.0, 'train_250K_2021-01-05': 1.0, 'train_500K_2021-01-05': 1.0, 'train_1M': 1.0, 'eval2-v1': 0.059, 'eval2-v2': 0.0, 'eval2-v3': 0.057, 'eval2-v4': 0.027, 'eval2-v5': 0.0, 'eval2-v6': 0.042, 'eval2-v7': 0.0, 'test': 0.0}, 'train_1M': {'train_100K_2021-01-05': 1.0, 'train_250K_2021-01-05': 1.0, 'train_500K_2021-01-05': 0.999, 'train_1M': 1.0, 'eval2-v1': 0.06, 'eval2-v2': 0.0, 'eval2-v3': 0.057, 'eval2-v4': 0.027, 'eval2-v5': 0.0, 'eval2-v6': 0.043, 'eval2-v7': 0.0, 'test': 0.0}, 'eval2-v1': {'train_100K_2021-01-05': 0.98, 'train_250K_2021-01-05': 0.98, 'train_500K_2021-01-05': 0.98, 'train_1M': 0.98, 'eval2-v1': 1.0, 'eval2-v2': 0.0, 'eval2-v3': 0.354, 'eval2-v4': 0.232, 'eval2-v5': 0.0, 'eval2-v6': 0.215, 'eval2-v7': 0.02, 'test': 0.016}, 'eval2-v2': {'train_100K_2021-01-05': 0.0, 'train_250K_2021-01-05': 0.0, 'train_500K_2021-01-05': 0.0, 'train_1M': 0.0, 'eval2-v1': 0.0, 'eval2-v2': 1.0, 'eval2-v3': 0.0, 'eval2-v4': 0.0, 'eval2-v5': 0.089, 'eval2-v6': 0.0, 'eval2-v7': 0.008, 'test': 0.002}, 'eval2-v3': {'train_100K_2021-01-05': 0.988, 'train_250K_2021-01-05': 0.988, 'train_500K_2021-01-05': 0.988, 'train_1M': 0.988, 'eval2-v1': 0.402, 'eval2-v2': 0.0, 'eval2-v3': 1.0, 'eval2-v4': 0.331, 'eval2-v5': 0.0, 'eval2-v6': 0.257, 'eval2-v7': 0.012, 'test': 0.006}, 'eval2-v4': {'train_100K_2021-01-05': 0.989, 'train_250K_2021-01-05': 0.989, 'train_500K_2021-01-05': 0.989, 'train_1M': 0.989, 'eval2-v1': 0.38, 'eval2-v2': 0.0, 'eval2-v3': 0.534, 'eval2-v4': 1.0, 'eval2-v5': 0.002, 'eval2-v6': 0.328, 'eval2-v7': 0.011, 'test': 0.009}, 'eval2-v5': {'train_100K_2021-01-05': 0.434, 'train_250K_2021-01-05': 0.434, 'train_500K_2021-01-05': 0.434, 'train_1M': 0.434, 'eval2-v1': 0.0, 'eval2-v2': 0.566, 'eval2-v3': 0.0, 'eval2-v4': 0.038, 'eval2-v5': 1.0, 'eval2-v6': 0.0, 'eval2-v7': 0.0, 'test': 0.0}, 'eval2-v6': {'train_100K_2021-01-05': 0.927, 'train_250K_2021-01-05': 0.927, 'train_500K_2021-01-05': 0.927, 'train_1M': 0.927, 'eval2-v1': 0.305, 'eval2-v2': 0.0, 'eval2-v3': 0.362, 'eval2-v4': 0.233, 'eval2-v5': 0.0, 'eval2-v6': 1.0, 'eval2-v7': 0.073, 'test': 0.06}, 'eval2-v7': {'train_100K_2021-01-05': 0.003, 'train_250K_2021-01-05': 0.003, 'train_500K_2021-01-05': 0.003, 'train_1M': 0.004, 'eval2-v1': 0.153, 'eval2-v2': 0.004, 'eval2-v3': 0.094, 'eval2-v4': 0.066, 'eval2-v5': 0.0, 'eval2-v6': 0.292, 'eval2-v7': 1.0, 'test': 0.848}, 'test': {'train_100K_2021-01-05': 0.0, 'train_250K_2021-01-05': 0.0, 'train_500K_2021-01-05': 0.0, 'train_1M': 0.0, 'eval2-v1': 0.121, 'eval2-v2': 0.011, 'eval2-v3': 0.066, 'eval2-v4': 0.044, 'eval2-v5': 0.0, 'eval2-v6': 0.264, 'eval2-v7': 0.956, 'test': 1.0}}
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                       Total intersection                                                                                      |
++-----------------------+----------+----------+----------+----------+----------+----------+----------+-------+-----------------------+----------+-----------------------+-----------------------+
+|  Intersect\Reference  | eval2-v1 | eval2-v2 | eval2-v3 | eval2-v4 | eval2-v5 | eval2-v6 | eval2-v7 |  test | train_100K_2021-01-05 | train_1M | train_250K_2021-01-05 | train_500K_2021-01-05 |
++-----------------------+----------+----------+----------+----------+----------+----------+----------+-------+-----------------------+----------+-----------------------+-----------------------+
+|        eval2-v1       |   1.0    |   0.0    |  0.402   |   0.38   |   0.0    |  0.305   |  0.153   | 0.121 |         0.049         |   0.06   |          0.05         |         0.059         |
+|        eval2-v2       |   0.0    |   1.0    |   0.0    |   0.0    |  0.566   |   0.0    |  0.004   | 0.011 |          0.0          |   0.0    |          0.0          |          0.0          |
+|        eval2-v3       |  0.354   |   0.0    |   1.0    |  0.534   |   0.0    |  0.362   |  0.094   | 0.066 |         0.046         |  0.057   |         0.048         |         0.057         |
+|        eval2-v4       |  0.232   |   0.0    |  0.331   |   1.0    |  0.038   |  0.233   |  0.066   | 0.044 |         0.023         |  0.027   |         0.024         |         0.027         |
+|        eval2-v5       |   0.0    |  0.089   |   0.0    |  0.002   |   1.0    |   0.0    |   0.0    |  0.0  |         0.001         |   0.0    |          0.0          |          0.0          |
+|        eval2-v6       |  0.215   |   0.0    |  0.257   |  0.328   |   0.0    |   1.0    |  0.292   | 0.264 |         0.035         |  0.043   |         0.036         |         0.042         |
+|        eval2-v7       |   0.02   |  0.008   |  0.012   |  0.011   |   0.0    |  0.073   |   1.0    | 0.956 |          0.0          |   0.0    |          0.0          |          0.0          |
+|          test         |  0.016   |  0.002   |  0.006   |  0.009   |   0.0    |   0.06   |  0.848   |  1.0  |          0.0          |   0.0    |          0.0          |          0.0          |
+| train_100K_2021-01-05 |   0.98   |   0.0    |  0.988   |  0.989   |  0.434   |  0.927   |  0.003   |  0.0  |          1.0          |   1.0    |         0.999         |          1.0          |
+|        train_1M       |   0.98   |   0.0    |  0.988   |  0.989   |  0.434   |  0.927   |  0.004   |  0.0  |          1.0          |   1.0    |          1.0          |          1.0          |
+| train_250K_2021-01-05 |   0.98   |   0.0    |  0.988   |  0.989   |  0.434   |  0.927   |  0.003   |  0.0  |          1.0          |   1.0    |          1.0          |          1.0          |
+| train_500K_2021-01-05 |   0.98   |   0.0    |  0.988   |  0.989   |  0.434   |  0.927   |  0.003   |  0.0  |         0.996         |  0.999   |         0.997         |          1.0          |
++-----------------------+----------+----------+----------+----------+----------+----------+----------+-------+-----------------------+----------+-----------------------+-----------------------+

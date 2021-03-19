@@ -1,0 +1,29 @@
+# paths to train json, metadata, and new train, filtered json
+full_json_path: /home/dzubke/awni_speech/data/speak_train/train_data_trim_2020-09-22.json
+metadata_tsv_path: /home/dzubke/awni_speech/data/speak_train/train_data_trim_2020-09-22.tsv
+filter_json_path: /home/dzubke/awni_speech/data/speak_test_data/eval/eval2-v2_1000/speak-eval2-v2_2020-12-07.json
+# Name of dataset with a capitalized first letter
+dataset_name: SpeakTrain 
+# number of examples in filtered dataset
+dataset_size: 1000
+# max number of utterances for a single id
+constraints:
+  lesson: 0.1
+  target_sentence: 0.01
+  speaker: 0.01
+# the ids that the output dataset will be disjoint along from the `disjoint_datasets`
+disjoint_id_names:
+ - record
+ - target_sentence
+# - speaker
+# paths to datasets whose samples will be excluded, this allows for non-overlapping datasets
+disjoint_datasets:
+ - /home/dzubke/awni_speech/data/speak_train/train-data_1M-examples_2020-10-06.json
+ - /home/dzubke/awni_speech/data/speak_train/train-data_1M-examples_2020-10-05.json
+ - /home/dzubke/awni_speech/data/speak_train/train-data_1M-examples_2020-09-25.json
+ - /home/dzubke/awni_speech/data/speak_train/train-data_500K-examples_2020-11-24.json
+ - /home/dzubke/awni_speech/data/speak_train/train-data_250K-examples_2020-11-24.json
+ - /home/dzubke/awni_speech/data/speak_train/train-data_100K-examples_2020-11-24.json
+ - /home/dzubke/awni_speech/data/speak_train/train-data_25K-examples_2020-11-24.json
+ - /home/dzubke/awni_speech/data/speak_test_data/2020-05-27/speak-test_2020-05-27.json
+ - /home/dzubke/awni_speech/data/speak_test_data/2019-11-29/speak-test_2019-11-29.json 

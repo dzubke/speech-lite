@@ -1,0 +1,23 @@
+# paths to train json, metadata, and new train, filtered json
+full_json_path: /home/dzubke/awni_speech/data/speak_train/train_data_trim_2020-09-22.json
+metadata_tsv_path: /home/dzubke/awni_speech/data/speak_train/speak-train-test-eval_metadata-7rows_2020-12-18.tsv
+filter_json_path: /home/dzubke/awni_speech/data/speak_train/speak-train_500K_2020-12-21.json
+# Name of dataset with a capitalized first letter
+dataset_name: SpeakTrain 
+# number of examples in filtered dataset
+dataset_size: 515000
+print_modulus: 50000
+# max number of utterances for a single id
+constraints:
+  lesson: 0.005
+  target_sentence: 0.00009
+  speaker: 0.0005
+# the keys are the dataset-path and values are the id-names along with the output dataset will be disjoint
+# e.g. a key of `record` means output dataset will be disjiont with dataset-path for  record_ids
+disjoint_datasets:
+    /home/dzubke/awni_speech/data/speak_test_data/2019-11-29/speak-test_2019-11-29.json:
+        !!python/tuple ['record', 'target_sentence', 'speaker']
+    /home/dzubke/awni_speech/data/speak_test_data/2020-05-27/speak-test_2020-05-27.json:
+        !!python/tuple ['record', 'target_sentence', 'speaker']
+dist_filter:
+    use: False

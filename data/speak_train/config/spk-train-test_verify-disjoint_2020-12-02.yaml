@@ -1,0 +1,16 @@
+full_dataset: /home/dzubke/awni_speech/data/speak_train/train_data_trim_2020-09-22.json
+disjoint_datasets:
+    - /home/dzubke/awni_speech/data/speak_train/train-data_1M-examples_2020-09-25.json
+    - /home/dzubke/awni_speech/data/speak_train/train-data_1M-examples_2020-10-05.json
+    - /home/dzubke/awni_speech/data/speak_train/train-data_1M-examples_2020-10-06.json
+    - /home/dzubke/awni_speech/data/speak_train/train-data_2M-examples_2020-10-06.json
+    - /home/dzubke/awni_speech/data/speak_train/train-data_500K-examples_2020-11-24.json
+    - /home/dzubke/awni_speech/data/speak_test_data/2020-05-27/speak-test_2020-05-27.json
+    - /home/dzubke/awni_speech/data/speak_test_data/2019-11-29/speak-test_2019-11-29.json
+non_disjoint_datasets:
+    - /home/dzubke/awni_speech/data/speak_train/train-data_250K-examples_2020-11-24.json
+    - /home/dzubke/awni_speech/data/speak_train/train-data_100K-examples_2020-11-24.json
+    - /home/dzubke/awni_speech/data/speak_train/train-data_25K-examples_2020-11-24.json
+    # testsets are added just to check that the non-disjoint datasets don't interesct with the testset
+    - /home/dzubke/awni_speech/data/speak_test_data/2020-05-27/speak-test_2020-05-27.json
+    - /home/dzubke/awni_speech/data/speak_test_data/2019-11-29/speak-test_2019-11-29.json

@@ -1,0 +1,38 @@
+eval_type: 'eval1' 
+models:
+    spk-100-na:
+        path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20210106/ph4/
+        tag: best
+        filename: model_state_dict.pth
+    spk-100-1230:
+        path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20210106/ph6/
+        tag: best
+        filename: model_state_dict.pth
+    spk-250-1230:
+        path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20210106/ph5/
+        tag: best
+        filename: model_state_dict.pth
+    spk-500-1230:
+        path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20210106/ph7/
+        tag: best
+        filename: model_state_dict.pth
+    spk-1000-1230:
+        path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20210101/ph5/
+        tag: best
+        filename: model_state_dict.pth
+    #model_0925:
+    #    path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20200925/ph3/
+    #    tag: best
+    #    filename: model_state_dict.pth
+    #model_0902:
+    #    path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20200826/ph2/20200902/
+    #    tag: 
+    #    filename: model_state_dict.pth
+    #model_0406:
+    #    path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20200406/20200409/
+    #    tag: best
+    #    filename: model
+dataset_path: /home/dzubke/awni_speech/data/speak_test_data/eval/eval1_400/eval1_data_2020-11-20.tsv
+output_path: /home/dzubke/awni_speech/speech-lfs/evaluate/eval1_2021-01-11.txt
+lexicon_path: /home/dzubke/awni_speech/speech-lfs/examples/master-lexicon_2020-08-05.txt
+n_top_beams: 1

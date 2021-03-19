@@ -1,0 +1,44 @@
+eval_type: 'eval2'
+models:
+    model_spk-100-v2:
+        path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20201217/ph6/
+        tag: best
+        filename: model_state_dict.pth
+    model_spk-250-v2:
+        path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20201216/ph5/
+        tag: best
+        filename: model_state_dict.pth
+    #model_spk-500-v2:
+    #    path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20201211/ph5/
+    #    tag: best
+    #    filename: model_state_dict.pth
+    #model_spk-1000-v2:
+    #    path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20201211/ph7/
+    #    tag: best
+    #    filename: model_state_dict.pth
+    #model_spk-3000-v2:
+    #    path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20201211/ph7/
+    #    tag: best
+    #    filename: model_state_dict.pth
+    #model_0902:
+    #    path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20200826/ph2/20200902/
+    #    tag: 
+    #    filename: model_state_dict.pth
+    #model_0406:
+    #    path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20200406/20200409/
+    #    tag: best
+    #    filename: model
+datasets: 
+    speak-eval2-v7: /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/speak-eval2-v7_2020-12-16.json
+    speak-eval2-v6: /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/speak-eval2-v6_2020-12-16.json
+    speak-eval2-v5: /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/v5/eval2-v5_data_2020-12-09.json
+    speak-eval2-v4: /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/v4/eval2-v4_data_2020-12-08.json
+    speak-eval2-v3: /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/speak-eval2-v3_2020-12-08.json
+    speak-eval2-v2: /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/speak-eval2-v2_2020-12-07.json
+    speak-eval2-v1: /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/eval2_data_2020-12-05.json
+    speak-test: /home/dzubke/awni_speech/data/speak_test_data/2020-05-27/speak-test_2020-05-27_dd.json
+    #lib-dev: /mnt/disks/data_disk/home/dzubke/awni_speech/data/LibriSpeech/dev-clean_dd.json
+    #ted-dev: /mnt/disks/data_disk/home/dzubke/awni_speech/data/tedlium/TEDLIUM_release-3/dev_dd.json
+    #cv-dev: /mnt/disks/data_disk/home/dzubke/awni_speech/data/common-voice/v5.1_2020-06-22/dev_dd.json
+output_path: /home/dzubke/awni_speech/speech-lfs/evaluate/output/eval2-v2_7-model_2020-12-07.txt
+lexicon_path: /home/dzubke/awni_speech/speech-lfs/examples/master-lexicon_2020-08-05.txt

@@ -1,0 +1,30 @@
+00F931A9-6EA9-4233-85B4-94015A257352-1
+label: f r ih t iy
+preds: f r ih t iy
+metrics: PER: 0.0, dist: 0, len: 5, conf: 1.073
+
+012C1AC5-13E0-4337-B6CC-BFD58A12A8BC-1
+label: t eh r
+preds: dh eh r
+metrics: PER: 0.333, dist: 1, len: 3, conf: 0.541
+
+054C13A4-9499-453F-90A0-950DA50C4576-1
+label: ay l iy d
+preds: ay l ih v ah
+metrics: PER: 0.75, dist: 3, len: 4, conf: 2.508
+
+16895C3F-1165-44CC-89B8-A812A200234D-1
+label: d ah z iy m
+preds: dh ow s iy m
+metrics: PER: 0.6, dist: 3, len: 5, conf: 1.748
+
+1DC83F33-A033-49EC-B087-A04421E252B9-1
+label: ay ih t
+preds: ay ih t
+metrics: PER: 0.0, dist: 0, len: 3, conf: 0.817
+
+00F931A9-6EA9-4233-85B4-94015A257352-1, 0.0
+012C1AC5-13E0-4337-B6CC-BFD58A12A8BC-1, 0.333
+054C13A4-9499-453F-90A0-950DA50C4576-1, 0.75
+16895C3F-1165-44CC-89B8-A812A200234D-1, 0.6
+1DC83F33-A033-49EC-B087-A04421E252B9-1, 0.0

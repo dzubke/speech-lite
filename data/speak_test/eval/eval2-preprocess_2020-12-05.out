@@ -1,0 +1,8 @@
+nohup: ignoring input
+INFO:root:label_path: /home/dzubke/awni_speech/data/speak_test_data/eval/eval2_1000/eval2_data_2020-12-05.tsv
+0it [00:00, ?it/s]1000it [00:00, 152006.09it/s]
+INFO:root:len of auddio_trans: 1000
+INFO:root:entering write_json for train. writing json to /home/dzubke/awni_speech/data/speak_test_data/eval/eval2_1000/eval2_data_2020-12-05.json
+INFO:root:Writing files to label json
+  0%|          | 0/1000 [00:00<?, ?it/s] 45%|████▌     | 450/1000 [00:00<00:00, 4491.90it/s] 92%|█████████▏| 917/1000 [00:00<00:00, 4540.88it/s]100%|██████████| 1000/1000 [00:00<00:00, 4583.16it/s]
+Count excluded because of duration bounds: 3.0

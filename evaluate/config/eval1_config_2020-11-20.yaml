@@ -1,0 +1,17 @@
+models:
+    model_0406:
+        path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20200406/20200409/
+        tag: best
+        filename: model
+    model_0902:
+        path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20200826/ph2/20200902/
+        tag: 
+        filename: model_state_dict.pth
+    model_1118:
+        path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20201029/ph7/20201118/
+        tag: best
+        filename: model_state_dict.pth
+dataset_path: /home/dzubke/awni_speech/data/speak_test_data/eval/eval1_400/eval1_data_2020-11-20.tsv
+output_path: /home/dzubke/awni_speech/speech-lfs/eval/eval1_v2_2020-11-20.txt
+lexicon_path: /home/dzubke/awni_speech/speech-lfs/examples/master-lexicon_2020-08-05.txt
+

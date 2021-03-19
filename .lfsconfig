@@ -1,0 +1,3 @@
+# ensures large files aren't automatically downloaded with `git pull`
+[lfs]
+    fetchexclude = *

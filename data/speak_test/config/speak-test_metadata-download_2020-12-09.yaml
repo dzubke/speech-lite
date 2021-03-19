@@ -1,0 +1,3 @@
+datasets:
+ - /home/dzubke/awni_speech/data/speak_test_data/2020-05-27/speak-test_2020-05-27.json
+ - /home/dzubke/awni_speech/data/speak_test_data/2019-11-29/speak-test_2019-11-29.json

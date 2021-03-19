@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+    name: pv-data
+    namespace: elastic-job
+spec:
+    storageClassName: "storage"
+    capacity:
+        storage: 4096G
+    accessModes:
+        - ReadOnlyMany
+    gcePersistentDisk:
+        pdName: data-disk-2021-02-17
+        fsType: ext4
+    claimRef:
+        namespace: elastic-job
+        name: pv-claim-train
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+    name: pv-claim-data
+    namespace: elastic-job
+spec:
+    storageClassName: "storage"
+    accessModes:
+        - ReadOnlyMany
+    resources:
+        requests:
+            storage: 4096G

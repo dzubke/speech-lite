@@ -1,0 +1,201 @@
+# this document will store various things related to managing the VM'store
+
+# the current list includes
+ 1. how to increase disk size (cannot decrease disk size)
+ 2. how to start/stop a VM
+ 3. how to setup a stackdriver monitoring agent
+ 4. how to setup gpu_utilization_agent
+ 5. how to combine two datasets
+ 6. how to install the wikipedia dataset script
+ 7. how to install git large-file-storage on ubuntu
+
+
+1. HOW TO INCREASE DISK SIZE
+## how to increase persistent disk size
+# go to Disks in GCP Compute in browser and increase the size. 
+# then resize the persistent disk and the file system: https://cloud.google.com/compute/docs/disks/add-persistent-disk#resize_partitions
+sudo lsblk                    # see the disk and partition sizes
+sudo df -h                    # see the current filesystem size
+sudo growpart /dev/sda 1		#sudo growpart /dev/[DEVICE_ID] [PARTITION_NUMBER]
+sudo resize2fs /dev/sda1		#sudo resize2fs /dev/[DEVICE_ID][PARTITION_NUMBER]
+sudo lsblk                    # can check the partition has increased
+sudo df -h                    # as well as the filesystem
+
+
+###########################
+2. HOW TO START/STOP A VM
+############################
+
+gcloud compute instances start phoneme-3
+gcloud compute instances stop phoneme-3
+gcloud compute ssh --project speak-ml-dev --zone us-central1-a  dzubke@phoneme-1
+
+
+##########################################
+3.  HOW TO SETUP STACKDRIVER MONITORING AGENT
+###########################################
+
+# installing stackdriver agent
+curl -sSO https://dl.google.com/cloudagents/add-monitoring-agent-repo.sh
+sudo bash add-monitoring-agent-repo.sh
+sudo apt-get update
+rm add-monitoring-agent-repo.sh
+
+# see available versions
+sudo apt-cache madison stackdriver-agent
+sudo apt-get install -y 'stackdriver-agent=6.*'
+
+# start stack driver
+sudo service stackdriver-agent start
+
+# verify it works
+sudo service stackdriver-agent status
+
+# examing logs and ensure no errors 
+grep collectd /var/log/{syslog,messages} | tail
+
+# to restart, 
+sudo service stackdriver-agent stop
+sudo service stackdriver-agent start
+
+
+3.1 REMOVE `WRITE_GCM: CAN NOT TAKE INFINITE VALUE` ERRORS
+
+# as per these instructions: https://myshittycode.com/2020/06/13/gcp-stackdriver-agent-write_gcm-can-not-take-infinite-value-error/
+# remove the "LoadPlugin swap" section by
+sudo vim /etc/stackdriver/collectd.conf
+
+# then restart the stackdriver service using:
+sudo service stackdriver-agent stop
+sudo service stackdriver-agent start
+
+# also uncomment the lines below: `# if you uncomment this, you will get collectd logs separate from syslog` 
+# which will create a separate log file
+
+
+######################################
+4. HOW TO SETUP GPU MONITORING 
+########################################
+
+# modified commands based on:  https://cloud.google.com/compute/docs/gpus/monitor-gpus
+
+# setup root user with python, pip, and google-could-monitoring
+sudo apt-get install -y python-pip
+sudo -H pip install --upgrade pip
+sudo -H  pip install --upgrade setuptools
+sudo pip install google-cloud-monitoring==0.30.1
+
+sudo cp ~/awni_speech/speech-lfs/dev_ops/report_gpu_metrics_editted.py /root/
+
+# create the service file
+sudo vim /lib/systemd/system/gpu_utilization_agent.service
+# inside vim paste the code below into the file: /lib/systemd/system/gpu_utilization_agent.service
+[Unit]
+Description=GPU Utilization Metric Agent
+[Service]
+PIDFile=/run/gpu_agent.pid
+ExecStart=/bin/bash --login -c '/usr/bin/python /root/report_gpu_metrics_editted.py'
+User=root
+Group=root
+WorkingDirectory=/
+Restart=always
+[Install]
+WantedBy=multi-user.target
+
+# when installing for the first time, run two commands below: 
+sudo systemctl daemon-reload
+sudo systemctl --no-reload --now enable /lib/systemd/system/gpu_utilization_agent.service
+
+# check the service status
+systemctl status gpu_utilization_agent.service
+
+# how to stop service and then re-start service
+sudo systemctl stop gpu_utilization_agent.service
+sudo systemctl daemon-reload
+sudo systemctl start gpu_utilization_agent.service
+
+
+5.  HOW TO COMBINE TWO DATASETS  
+cd ~/awni_speech/data/Librispeech
+cat train-clean-460.json train-other-500.json > ./train-other-960.json
+
+######
+6. HOW TO INSTALL WIKIPEDIA DATASET SCRIPT
+######
+
+# install mono
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+sudo apt install apt-transport-https ca-certificates
+echo "deb https://download.mono-project.com/repo/ubuntu stable-xenial main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+sudo apt update
+sudo apt install mono-devel
+
+# install maven
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get -y install maven
+
+sudo apt-get install -y trang
+sudo apt install openjdk-8-jdk
+
+sudo apt-get install bc
+
+
+######
+7.  HOW TO INSTALL git large file stroage on UBUNTU
+######
+
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+
+# how to pull a single file from git lfs
+git lfs pull --include <file_path>
+
+# how to pull all large files from git lfs
+git lfs pull
+
+#########
+8. INSTALL DOCKER
+##########
+
+Follow these instructions: https://docs.docker.com/engine/install/ubuntu/
+
+Version: 5:19.03.12~3-0~ubuntu-xenial
+
+
+############
+9. INSTAL GIT FILTER-repo
+#############
+# installed via pip 
+pip install git-filter-repo
+
+# update git, if necesssary
+sudo apt-get install -y1 python-software-properties software-properties-common
+sudo add-apt-repository ppa:git-core/ppa -y
+sudo apt-get update
+sudo apt-get install -y git
+
+# more info here: https://github.com/newren/git-filter-repo/blob/main/INSTALL.md
+
+
+
+
+X. MISC commands
+
+# how to see tensorboard file
+tensorboard --logdir ./  --port=8080
+
+# To see live GPU usage:
+watch -d -n 0.5 nvidia-smi
+
+#setting default zone
+gcloud compute project-info add-metadata --metadata google-compute-default-region=us-central1,google-compute-default-zone=us-central1-c
+
+# how to change git lfs file to pointer
+git lfs pointer --file=filename > filename.pt
+mv filename.pt filename 
+
+## how to replace carriage return with newline in out files
+sed 's/\r/\n/g' file.out
+
+nvidia-smi --query-gpu=utilization.memory -u --format=csv
+

@@ -1,0 +1,30 @@
+# the commented out files are to installable via conda, so they are installed in a separate command via pip
+cffi==1.11.2
+ipython==7.11.1
+numpy==1.13.3
+requests==2.23.0
+psutil==5.7.0
+py==1.4.34
+pycparser==2.18
+PyYAML==3.12
+six==1.11.0
+tqdm==4.19.4
+wget==1.19.5
+yaml==0.1.7
+# separating pip (above) and conda (below)
+cython==0.29.21
+editdistance==0.4
+firebase-admin
+future==0.18.2
+graphviz==0.14
+matplotlib==3.1.1
+numba==0.48.0
+prettytable
+protobuf==3.8.0
+pyaudio==0.2.11
+pytest==3.2.3
+python_speech_features==0.6
+scipy==1.4.1
+SoundFile==0.10.2
+tensorboardX==2.1
+tensorflow==1.15.3

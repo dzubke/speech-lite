@@ -1,0 +1,17 @@
+dataset_list:
+    - /home/dzubke/awni_speech/data/speak_train/2020-12-29/speak-train_100K_2021-01-05.json
+    - /home/dzubke/awni_speech/data/speak_train/2020-12-29/speak-train_250K_2021-01-05.json
+    - /home/dzubke/awni_speech/data/speak_train/2020-12-29/speak-train_500K_2021-01-05.json
+    - /home/dzubke/awni_speech/data/speak_train/2020-12-29/speak-train_1M_2020-12-30.json
+    - /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/eval2_data_2020-12-05.json
+    - /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/speak-eval2-v2_2020-12-07.json
+    - /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/speak-eval2-v3_2020-12-08.json
+    - /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/v4/eval2-v4_data_2020-12-08.json
+    - /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/v5/eval2-v5_data_2020-12-09.json
+    - /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/speak-eval2-v6_2020-12-16.json
+    - /home/dzubke/awni_speech/data/speak_test_data/eval/eval2/speak-eval2-v7_2020-12-16.json
+    - /home/dzubke/awni_speech/data/speak_test_data/2020-05-27/speak-test_2020-05-27.json
+metadata_paths:
+    - /home/dzubke/awni_speech/data/speak_train/2020-12-29/metadata-with-url_2020-12-24.tsv
+    - /home/dzubke/awni_speech/data/speak_train/speak-train-test-eval_metadata-7rows_2020-12-18.tsv
+overlap_key: target_sentence

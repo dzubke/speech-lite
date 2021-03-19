@@ -1,0 +1,208 @@
+ - SSH passphrase: pinkmartini
+
+
+# see tensorboard events file
+conda install tensorboard
+# copy log files to local
+gcloud compute scp --recurse dzubke@instance-9:~/awni_speech/speech/examples/timit/models/ctc_best/ /Users/dustin/CS/consulting/firstlayerai/phoneme_classification/src/awni_speech/speech/examples/timit/models/GCP_ctc_best
+tensorboard --logdir ./  --port=8080
+
+
+# eval command on my computer
+python test_preprocess.py ~/CS/consulting/firstlayerai/data/dustin_test_data/20191202_clean/ 
+python eval.py ./examples/timit/models/GCP_ctc_best/20191215_seq2seq  ~/CS/consulting/firstlayerai/data/timit/test.json --save ./predictions/seq2seq_predictions_20191216.json
+python score.py /Users/dustin/CS/consulting/firstlayerai/phoneme_classification/src/awni_speech/speech/drz_predictions_20191202.json
+
+### Notes
+###
+# 1. If there is an import error where `GLIBCXX_3.4.21' not found
+# run the command: conda install -c msarahan libgcc
+# which will install libgcc=5.2.0 from https://anaconda.org/msarahan/libgcc which has 
+
+
+Get info and transfer layers
+cd ~/CS/consulting/firstlayerai/phoneme_classification/src/awni_speech/speech/speech/utils 
+python model_transfer.py ~/CS/consulting/firstlayerai/phoneme_classification/src/awni_speech/speech/examples/librispeech/models/deepspeech_pretrained/librispeech_pretrained_v2.pth
+
+
+
+# eval the model on phoneme-2
+echo 'examples/librispeech/models/ctc_models/20200203/20200218/*model' >> .gitignore
+mkdir ./examples/librispeech/models/ctc_models/20200226/20200228
+cp ./examples/librispeech/models/ctc_models/20200226/* ./examples/librispeech/models/ctc_models/20200226/20200228
+python eval.py ./examples/librispeech/models/ctc_models/20200226/20200228 ~/awni_speech/data/LibriSpeech/test-combo.json --save ./predictions/20200226-0228_libsp-test-combo_predictions.json
+python eval.py ./examples/librispeech/models/ctc_models/20200226/20200302 ~/awni_speech/data/speak_test_data/speak_test.json --save ./predictions/20200226-20200302_speak_test_predictions.json
+python eval.py ./examples/librispeech/models/ctc_models/20200226/20200228 ~/awni_speech/data/dustin_test_data/20191202_clean/drz_test.json --save ./predictions/20200226-0228_1202_predictions.json
+python eval.py ./examples/librispeech/models/ctc_models/20200226/20200228 ~/awni_speech/data/dustin_test_data/20191118_plane/simple/drz_test.json --save ./predictions/20200226-0228_1118-simple_predictions.json
+
+python eval.py ./examples/librispeech/models/ctc_models/20200211/20200212 ~/awni_speech/data/LibriSpeech/test-clean.json --save ./predictions/20200211-0212_libsp-test_predictions.json
+
+# move files to onnx_coreml for processing
+
+In [76]: xub = x.unbind(dim=2)     
+In [77]: xcat = torch.cat(xub, dim=2)  
+
+x = torch.split(x,1, dim=2) 
+x = torch.cat(x, dim=3)
+x = x.squeeze(2)
+
+
+input = torch.randn(5, 3, 10)
+h0 = torch.randn(layer_count * 2, 3, 20)
+c0 = torch.randn(layer_count * 2, 3, 20)
+output, (hn, cn) = model(input, (h0, c0))
+
+
+#steps for different model size
+
+torch_to_onnx
+X) change freq_dim in model.CTC
+
+Validation.py
+X) change model.CTC freq_dim
+X) change log_spec in loader.py
+
+"train_set" : "/home/dzubke/awni_speech/data/lib-ted-cv-vox-tat/train_lib-ted-cv-vox-tat.json",
+"dev_set" : "/home/dzubke/awni_speech/data/LibriSpeech/dev-combo.json",
+
+# Noise inject debug 
+ffmpeg -y -i -ar 16000 -f wa
+
+# dataset sizes
+# phoneme-2
+77482556        common-voice
+29653068        voxforge
+26505924        tatoeba
+175808468       LibriSpeech
+52123796        tedlium/
+
+#phoneme-3
+77456124        common-voice/
+29652736        voxforge
+26499336        tatoeba
+
+python download.py --output-dir /home/dzubke/awni_speech/data/noise --dataset-name Demand
+python preprocess.py --dataset-dir /home/dzubke/awni_speech/data/tedlium/TEDLIUM_release-3 --dataset-name Tedlium --lexicon-path /home/dzubke/awni_speech/speech/examples/tedlium/TEDLIUM.162k.dic --min-duration 1 --max-duration 20
+
+# remove layers for retraining RNN
+ ["rnn.weight_ih_l0", "rnn.weight_hh_l0", "rnn.bias_ih_l0",
+            "rnn.bias_hh_l0", "rnn.weight_ih_l1", "rnn.weight_hh_l1", "rnn.bias_ih_l1",
+            "rnn.bias_hh_l1", "rnn.weight_ih_l2", "rnn.weight_hh_l2", "rnn.bias_ih_l2",
+            "rnn.bias_hh_l2", "rnn.weight_ih_l3", "rnn.weight_hh_l3", "rnn.bias_ih_l3",
+            "rnn.bias_hh_l3", "rnn.weight_ih_l4", "rnn.weight_hh_l4", "rnn.bias_ih_l4",
+            "rnn.bias_hh_l4", "fc.fc.weight", "fc.fc.bias"]
+
+
+
+# logging info
+logging.basicConfig(filename=None, filemode='w', level=10)
+logger = logging.getLogger("train_log")
+
+# data-disk prefix
+/mnt/disks/data_disk/
+
+
+# source: https://www.apoehlmann.com/blog/connecting-tensorboard-your-google-cloud-vm-port-forwarding/
+# 1 connect to tensorboard on VM
+nohup tensorboard --logdir=models/2021-03-05/ph2/   --port 6006 &> tb.out &
+
+# 2. on local run:
+gcloud compute ssh dzubke@phoneme-2 --zone=us-central1-c --project=speak-ml-dev -- -NfL 6002:localhost:6002
+
+# can kill the tunnel on local by look for process here:
+ps aux | grep tensorboard
+
+gsutil -m cp -r gs://phoneme-vm-backup/models/ctc_models/20201130/ph4/  examples/librispeech/models/ctc_models/20201029/
+# will cache password in memory for 10 days
+git config credential.helper 'cache --timeout 864000'
+
+# github password
+9!l2&YQCydRAkhr1f6%x
+
+nohup python -m torch.distributed.launch --nproc_per_node=4 --nnodes=1 --node_rank=0 --master_addr="10.128.0.10" --master_port=8888 train.py examples/librispeech/ctc_config_ph4.yaml &> 2020-10-19_large-model-mid-aug_lib-ted-cv-speak-5M-2020-09-25_2020-10-05-06.out &
+
+# how to kill at GPU-related processes
+for i in $(sudo lsof /dev/nvidia0 | grep python  | awk '{print $2}' | sort -u); do kill -9 $i; done
+
+# how to assess if linux reboot occured
+less /var/log/syslog | grep -n 'Unmounting /mnt/disks/data_disk...'
+
+##  DDP launch commands
+python -m torch.distributed.launch --nproc_per_node=2 --nnodes=1 --node_rank=0 train.py examples/librispeech/ctc_config_ph4.yaml
+
+echo $GOOGLE_APPLICATION_CREDENTIALS 
+
+ffmpeg -y -i "$SRC_FILE" -ac 1 -ar 16000 -sample_fmt s16 -f wav "$DST_FILE"
+
+# problems using python 3.7 in environment
+  - numpy==1.13.3 -> python[version='>=2.7,<2.8.0a0|>=3.5,<3.6.0a0|>=3.6,<3.7.0a0|>=3.8,<3.9.0a0']
+
+## upgrading to python 3.7, conflicting packages
+puffy
+conda install tornado==6.0.3=py37h7b6447c_0
+numpy-base 1.15.4 py37h2f8d375_0
+tbb4py 2020.3 py37hfd86e86_0
+conda install pyopenssl==19.0.0=py37_0
+conda install ipython_genutils==0.2.0=py37_0
+
+# second attempt to upgrade python 
+conda install cffi=1.11.5
+
+sed 's/\r/\n/g'
+
+python -m torch.distributed.launch --nproc_per_node=1 --nnodes=1 --node_rank=0 --master_addr="10.128.0.32" --master_port=8888 train.py examples/librispeech/ctc_config_ph4.yaml
+
+
+docker run --rm --gpus all \
+  --mount type=bind,\
+    source=/mnt/disks/data_disk/home/dzubke/awni_speech/data/,\
+    target=/mnt/disks/data_disk/home/dzubke/awni_speech/data/ \
+  -it speech bash
+
+
+python -m torch.distributed.launch --nproc_per_node=1 --nnodes=1 --node_rank=0 train.py ctc_config_ph4.yaml 
+
+200000 24
+
+
+
+cat lib-ted-cv-spk/train_lib-ted-cv-speak-250K-2021-01-05_dm.json ./swb/swb-train.json > lib-ted-cv-spk-swb/train_lib-ted-cv-spk250K-swb-2021-01-26_dm.json
+
+
+sed -i 's#/mnt/disks/data_disk/home/dzubke/awni_speech/data#/mnt/disks/data_master/data#g'
+
+sed -i 's#/home/dzubke/awni_speech/data#/mnt/disks/data_disk/data#g'
+
+sed -i 's#/mnt/disks/data_disk/home/dzubke/awni_speech/data#/mnt/disks/data_disk/data#g' *.json
+
+
+/mnt/disks/data_disk/data/swb/swb-train.json
+/mnt/disks/data_disk/data/lib-ted-cv-spk/train_lib-ted-cv-speak-250K-2021-01-05.json
+/mnt/disks/data_disk/data/lib-ted-cv-spk-swb/train_lib-ted-cv-spk250K-swb-2021-01-26.json
+
+
+2021-01-26_large-mid-aug-no-fn-naren-amp_lib-ted-cv-spk250K-swb-2021-01-26.
+
+
+182748  ./data
+532     ./tests
+272     ./speech
+4392    ./streaming
+5308    ./model_convert
+3148368 ./examples
+28      ./configs
+14616   ./evaluate
+12911728        ./.git
+96      ./dev_ops
+16268188        .
+
+
+-rw-rw-r-- 1 dzubke dzubke 92910239 Jan 28 11:22 model
+
+/home/dzubke/miniconda/envs/aligner/lib/python3.8/site-packag es/montreal_forced_aligner
+
+There were no wav files found 
+
+nohup mfa align  -j 16 /mnt/disks/data_disk/data/LibriSpeech/train-other-500/ /mnt/disks/data_disk/data/LibriSpeech/librispeech-lexicon.txt english ./train-500-textgrids  &> align_train-500.out &
+
+nohup mfa align  -j 50 /mnt/disks/data_disk/data/speak_train/2020-12-29/audio/  /home/dzubke/awni_speech/speech-lfs/data/lexicon/  english ./spk-train-textgrids &> spk-train_2021-02-04.out &

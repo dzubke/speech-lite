@@ -1,0 +1,16 @@
+dataset_name: Switchboard # Capitalized first letter
+dataset_dir: /mnt/disks/data_master/data/swb/
+dataset_files:           # dataset filenames to be processed, files should be in dataset_dir
+    # key is dataset name, value is filename to be processed
+    train: swb-train.csv
+    dev: swb-dev.csv
+    test: swb-test.csv
+lexicon_path: /mnt/disks/data_master/data/swb/swb_ms98_transcriptions/lexicon_updated-2021-01-25.txt
+force_convert: False    # Converts audio even if .wav file exists
+min_duration: 1         # second
+max_duration: 20        # seconds
+print_modulus: 40000
+process_transcript: False
+# max number of utterances for a single id
+constraints:
+  target_sentence: 0.001
