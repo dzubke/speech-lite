@@ -1,22 +1,28 @@
 seed: 2017
-save_path: /home/dzubke/awni_speech/speech-lfs/examples/librispeech/models/ctc_models/20210106/ph6/
+checkpoint:
+    local_save_path: "/home/dzubke/speech-lite/models/null"
+    gcs_bucket: "spk-models"
+    gcs_dir: "null"
+    checkpoints_per_epoch: 5
 data:
-    train_set: /mnt/disks/data_disk/home/dzubke/awni_speech/data/lib-ted-cv-spk/train_lib-ted-cv-speak-100K-2021-01-05_dd.json
+    train_set: /mnt/disks/data_disk/data/lib-ted-cv-spk/train_lib-ted-cv-speak-250K-2021-01-05.json
     dev_sets:
-        speak: /mnt/disks/data_disk/home/dzubke/awni_speech/data/speak_test_data/2020-05-27/speak-test_2020-05-27_dd.json
-        cv: /mnt/disks/data_disk/home/dzubke/awni_speech/data/common-voice/v5.1_2020-06-22/dev_dd.json
-        libsp: /mnt/disks/data_disk/home/dzubke/awni_speech/data/LibriSpeech/dev-clean_dd.json
-        ted: /mnt/disks/data_disk/home/dzubke/awni_speech/data/tedlium/TEDLIUM_release-3/dev_dd.json
+        speak: /mnt/disks/data_disk/data/speak_test_data/2020-05-27/speak-test_2020-05-27.json
+        cv: /mnt/disks/data_disk/data/common-voice/v5.1_2020-06-22/dev.json
+        libsp: /mnt/disks/data_disk/data/librispeech/dev-clean.json
+        ted: /mnt/disks/data_disk/data/tedlium/TEDLIUM_release-3/dev.json
+        #swb: /mnt/disks/data_disk/data/swb/swb-dev.json
+        #pps: "/mnt/disks/data_disk/data/pps/dev/data.json"
     dev_set_save_reference: speak
     start_and_end: False
     num_workers: 4
 logger:
     use_log: False
-    log_file: logs/2021-01-06_large-mid-aug-no-fn-naren-amp_spk-100K-2021-01-05.log
+    log_file: logs/2021-03-09_from-scratch_logmel_lib-ted-cv-spk-250.log
     level: error
     debug_mode: False
 preproc:
-    preprocessor: log_spectrogram
+    preprocessor: "log_spectrogram"
     blank_idx: last               # must be either 'first' for blank=0, or 'last' for blank=vocab_size
     window_size: 32
     step_size: 16
@@ -31,7 +37,7 @@ preproc:
     gauss_noise_prob: 0.5
     gauss_snr_db_range: [15, 50]
     background_noise: True
-    background_noise_dir: /mnt/disks/data_disk/home/dzubke/awni_speech/data/noise/feed_to_model/
+    background_noise_dir: "/mnt/disks/data_disk/data/noise/feed_to_model/"
     background_noise_prob: 0.5
     background_noise_range: [0.0, 0.5]
     spec_augment: True
@@ -41,11 +47,11 @@ preproc:
         1: {W: 20, F: 15, m_F: 2, T: 9, m_T: 2}
         2: {W: 20, F: 10, m_F: 3, T: 6, m_T: 3}
 optimizer:
-    batch_size: 18
+    batch_size: 22
     run_state: [0, 0]
-    best_so_far: 0.40
+    best_so_far: 1.0
     start_epoch: 0
-    epochs: 5
+    epochs: 25
     learning_rate: 0.0003
     momentum: 0.9
     dampening: 0.0
@@ -53,8 +59,8 @@ optimizer:
     sched_step: 1
 model:
     dropout: 0.4
-    load_trained: True
-    trained_path: examples/librispeech/models/ctc_models/20200806/ph4/best_model_state_dict.pth
+    load_trained: False
+    gcs_trained_path: "2020/20200806/ph4/best_model_state_dict.pth"  # path is from the ckpt gcs bucket
     remove_layers: []
     encoder: 
         conv:
@@ -62,12 +68,11 @@ model:
             - [64, 11, 21, 1, 2, 0, 10]
             - [128, 11, 21, 1, 1, 0, 10]
         rnn: 
-            type: LSTM
+            type: "LSTM"
             dim: 1024
             bidirectional: False
             layers: 5
 training:
-    loss_name: naren
+    loss_name: "naren"
     amp: True                 # turns on Pytorch's automatic mixed-precision
-    checkpoints_per_epoch: 5
-    OMP_NUM_THREADS: 5        # this should be equal to:  #_CPU / #_GPU
+    OMP_NUM_THREADS: 4       # this should be equal to:  #_CPU / #_GPU

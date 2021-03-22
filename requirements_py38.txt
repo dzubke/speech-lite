@@ -1,0 +1,20 @@
+# the commented out files are to installable via conda, so they are installed in a separate command via pip
+ipython
+numpy
+requests
+PyYAML
+tqdm
+# separating pip (above) and conda (below)
+editdistance
+firebase-admin
+graphviz
+matplotlib
+prettytable
+psutil
+#pyaudio==0.2.11
+pytest
+python_speech_features
+scipy
+SoundFile
+tensorboardX
+tensorflow
