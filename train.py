@@ -320,7 +320,7 @@ def run(local_rank:int, config:dict)->None:
     gcs_ckpt_handler = GCSCheckpointHandler(ckpt_cfg)
     
     # save the config to gcs
-    os.make_dirs(ckpt_cfg['local_save_path'], exist_ok=True)
+    os.makedirs(ckpt_cfg['local_save_path'], exist_ok=True)
     with open(os.path.join(ckpt_cfg['local_save_path'], "ctc_config.yaml"), 'w') as fid:
         yaml.dump(config, fid)
     gcs_ckpt_handler.upload_to_gcs("ctc_config.yaml")

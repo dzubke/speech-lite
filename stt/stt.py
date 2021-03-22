@@ -7,14 +7,17 @@ Author: Dustin Zubke
 # standard libs
 import argparse
 from collections import OrderedDict
+from datetime import datetime
 from functools import partial
 import io
 import json
 import multiprocessing as mp
 import os
 from pathlib import Path
+from queue import PriorityQueue
 import random
 import time
+from threading import Thread                                                                                                     
 from typing import Any, Dict, List
 # third-party libs
 import azure.cognitiveservices.speech as speechsdk
@@ -48,7 +51,8 @@ def stt_on_datasets(
         save_path: path to output json file
     """
     MULTI_PROCESS = False
-    CHUNK_SIZE = 5   # number of elements to feed into multiprocess pool
+    CHUNK_SIZE = 5  # number of elements to feed into multiprocess pool
+    SLEEP_TIME = 3  # sec
     
     assert stt_provider in ["google", "ibm"], "stt_provider must be 'google' or 'ibm'."
 
@@ -64,21 +68,11 @@ def stt_on_datasets(
             print("exiting")
             return None
 
-    # start from the `resume_audio_path`
-    resume_idx = -1
-    if resume_audio_path is not None:
-        for i, audio_path in enumerate(data_dict.keys()):
-            if audio_path == resume_audio_path:
-                resume_idx = i
-    # only use files after the `resume_idx`
-    audio_files = list(data_dict.keys())[resume_idx+1:]
-    print
+    audio_files = list(data_dict.keys())
     
     print(f"number of de-duplicated examples: {len(data_dict.values())}")
     print(f"number of examples to process: {len(audio_files)}")   
 
-    # call the STT API from `resume_audio_path` and write the formatted results to `save_path`
-    
     count = {"api_calls": 0}
     # multi-process implementation
     if MULTI_PROCESS:
@@ -109,14 +103,44 @@ def stt_on_datasets(
 
     # single-process implementation
     else:
-        with open(save_path, 'w') as fid:
+        if USE_ASYNC:
+            
+            global client
             client = get_stt_client(stt_provider)
-            for audio_path in tqdm(audio_files):
-                count['api_calls'] += 1
-                response = get_stt_response(audio_path, client, stt_provider)
-                out_dict = format_response_dict(audio_path, response, stt_provider)
-                json.dump(out_dict, fid)
-                fid.write('\n')
+            global q
+            q = PriorityQueue()
+            
+            JobCheckWriteThread.start()
+             
+            for start_idx in range(0, len(audio_files), CHUNK_SIZE):
+                for audio_file in audio_files[start_ix: start_ix+CHUNK_SIZE]:
+                    with open(audio_path, "rb") as fid:
+                        content = fid.read()
+                        
+                    response = client.create_job(
+                        audio=content,
+                        content_type='audio/wav',
+                        model="en-US_BroadbandModel",
+                        word_confidence=True
+                    )
+                
+                    create_time = datetime.strptime(response.result['created'], '%Y-%m-%dT%H:%M:%S.%fZ')
+                    q.put((create_time, response.result['id']))
+            
+                    
+                    time.sleep(SLEEP_TIME)        
+            # after all requests have been sent, wait until the queue is empty to shut it down
+            q.join()
+
+        else:
+            with open(save_path, 'w') as fid:
+                client = get_stt_client(stt_provider)
+                for audio_path in tqdm(audio_files):
+                    count['api_calls'] += 1
+                    response = get_stt_response(audio_path, client, stt_provider)
+                    out_dict = format_response_dict(audio_path, response, stt_provider)
+                    json.dump(out_dict, fid)
+                    fid.write('\n')
 
         print(f"number of api calls: {count['api_calls']}")
 
@@ -189,6 +213,23 @@ def stt_on_sample(
         audio_id = path_to_id(audio_path)
         id_plus_dir = os.path.join(*audio_path.split('/')[-2:])
 
+    data = read_data_json(data_path)
+    data_sample = random.choices(data, k=SAMPLE_SIZE)
+    print(f"sampling {len(data_sample)} samples from {data_path}")
+
+    # mapping from audio_id to transcript
+    metadata = get_record_ids_map(metadata_path, has_url=True)
+
+    client = get_stt_client(stt_provider)
+    
+    preds_with_two_trans = set()
+    match_trans_entries = list()       # output list for matching transcripts
+    diff_trans_entries = list()        # output list for non-matching transcripts
+    for datum in data_sample:
+        audio_path = datum['audio']
+        audio_id = path_to_id(audio_path)
+        id_plus_dir = os.path.join(*audio_path.split('/')[-2:])
+
         response = get_stt_response(audio_path, client, stt_provider)        
         resp_dict = format_response_dict(audio_path, response, stt_provider)
 
@@ -209,6 +250,20 @@ def stt_on_sample(
 
 
 #######    HELPER FUNCTIONS    #######
+
+
+class JobCheckWriteThread(Thread):
+    """Pulls job_id's from the global queue, checks that jobs status, writes"""
+    def run(self):
+        while True:
+            (create_time, job_id) = q.get()
+            response = client.check_job(job_id)
+            if response.result['status'] == 'completed':
+                pass
+            elif response.result['status'] == 'waiting':
+                pass
+            else:
+                raise ValueError(f"job status: {response.result['status']} is not recognized.")
 
 
 def combine_sort_datasets(data_paths: List[str])->Dict[str, dict]:
@@ -397,20 +452,3 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--stt-path", help="path to saved output speech-to-text file"
-    )
-    parser.add_argument(
-        "--stt-provider", help="name of company providing speech-to-text service"
-    )   
-
-    args = parser.parse_args()
-    
-    start_time = time.time()
-
-    if args.action == "filter-by-stt":
-        filter_datasets_by_stt(args.data_paths, args.metadata_path, args.stt_path, args.save_path)
-    elif args.action == "stt-on-datasets":
-        stt_on_datasets(args.data_paths, args.save_path, args.stt_provider, args.optional_arg)
-    elif args.action == "stt-on-sample":
-        stt_on_sample(args.data_paths[0], args.metadata_path, args.save_path, args.stt_provider)
-
-    print(f"processing time (min): {round((time.time() - start_time)/60, 2)}")
