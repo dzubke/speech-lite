@@ -7,7 +7,7 @@ Author: Dustin Zubke
 # standard libs
 import argparse
 from collections import OrderedDict
-from datetime import datetime
+import datetime
 from functools import partial
 import io
 import json
@@ -20,10 +20,11 @@ import time
 from threading import Thread                                                                                                     
 from typing import Any, Dict, List
 # third-party libs
-import azure.cognitiveservices.speech as speechsdk
+#import azure.cognitiveservices.speech as speechsdk
 from ibm_watson import SpeechToTextV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
-from google.cloud import speech_v1p1beta1 as speech
+import ibm_cloud_sdk_core as ibm_core
+#from google.cloud import speech_v1p1beta1 as speech
 from tqdm import tqdm
 # project libs
 from speech.utils.data_helpers import get_record_ids_map, path_to_id, process_text
@@ -51,8 +52,9 @@ def stt_on_datasets(
         save_path: path to output json file
     """
     MULTI_PROCESS = False
-    CHUNK_SIZE = 5  # number of elements to feed into multiprocess pool
-    SLEEP_TIME = 3  # sec
+    USE_ASYNC = True
+    CHUNK_SIZE = 25  # size of chunks to send to api call before sleeping
+    SLEEP_TIME = 0.5  # sec
     
     assert stt_provider in ["google", "ibm"], "stt_provider must be 'google' or 'ibm'."
 
@@ -64,9 +66,13 @@ def stt_on_datasets(
         print(f"The save path: {save_path} already exists.")
         print("Are you sure you wanted to overwrite it? (y/n)")
         inp = input()
-        if inp.lower() != "y":
+        if inp.lower() == "y":
+            with open(save_path, 'w') as fid:
+                fid.write("")
+        else:
             print("exiting")
             return None
+
 
     audio_files = list(data_dict.keys())
     
@@ -104,16 +110,15 @@ def stt_on_datasets(
     # single-process implementation
     else:
         if USE_ASYNC:
-            
-            global client
+            global client 
             client = get_stt_client(stt_provider)
-            global q
-            q = PriorityQueue()
-            
-            JobCheckWriteThread.start()
+            global heapq
+            heapq = PriorityQueue()
+            writer_thread = CheckJobWriteThread(save_path)
+            writer_thread.start()
              
             for start_idx in range(0, len(audio_files), CHUNK_SIZE):
-                for audio_file in audio_files[start_ix: start_ix+CHUNK_SIZE]:
+                for audio_path in audio_files[start_idx: start_idx+CHUNK_SIZE]:
                     with open(audio_path, "rb") as fid:
                         content = fid.read()
                         
@@ -123,15 +128,19 @@ def stt_on_datasets(
                         model="en-US_BroadbandModel",
                         word_confidence=True
                     )
-                
-                    create_time = datetime.strptime(response.result['created'], '%Y-%m-%dT%H:%M:%S.%fZ')
-                    q.put((create_time, response.result['id']))
-            
                     
-                    time.sleep(SLEEP_TIME)        
+                    # converting the creation time to a datetime object 
+                    create_time = datetime.datetime.strptime(response.result['created'], '%Y-%m-%dT%H:%M:%S.%fZ')
+                    heapq.put((create_time, response.result['id'], audio_path))
+                    
+                #time.sleep(SLEEP_TIME)        
+            print("finished creating jobs. waiting for check-write thread to complete")
+            writer_wait_start = time.time()
             # after all requests have been sent, wait until the queue is empty to shut it down
-            q.join()
-
+            heapq.put((datetime.datetime(datetime.MAXYEAR, 1, 1, 0, 0 ,0), "kill", 0))
+            writer_thread.join()
+            print(f"time to wait for writer thread: {round(time.time() - writer_wait_start, 3)} seconds")
+    
         else:
             with open(save_path, 'w') as fid:
                 client = get_stt_client(stt_provider)
@@ -252,16 +261,50 @@ def stt_on_sample(
 #######    HELPER FUNCTIONS    #######
 
 
-class JobCheckWriteThread(Thread):
+class CheckJobWriteThread(Thread):
     """Pulls job_id's from the global queue, checks that jobs status, writes"""
+
+    def __init__(self, save_path:str):
+        super().__init__()
+        self.save_path = save_path
+
+
     def run(self):
+        counter = 0
+        print("job-checker-writer thread started")
         while True:
-            (create_time, job_id) = q.get()
-            response = client.check_job(job_id)
-            if response.result['status'] == 'completed':
-                pass
-            elif response.result['status'] == 'waiting':
-                pass
+            if counter % 10 == 0:
+                print(f"heapq size: {heapq.qsize()}")
+            counter +=1 
+
+            if heapq.empty():
+                print("heap is empty sleeping for 0.1 sec")
+                time.sleep(0.1)
+
+            (create_time, job_id, audio_path) = heapq.get()
+            if job_id == "kill":
+                print("shutting down job-check-writer thread")
+                break
+            try:
+                response = client.check_job(job_id).get_result()
+            except ibm_core.ApiException as e:
+                print(f"job id: {job_id} raised api exception")
+                raise(e)
+                
+            if response['status'] == 'completed':
+                out_dict = format_response_dict(audio_path, response['results'][0], stt_provider='ibm')
+                with open(self.save_path, 'a') as fid:
+                    json.dump(out_dict, fid)
+                    fid.write('\n')
+                    fid.flush()
+
+            elif response['status'] in ['waiting', 'processing']:
+                # if the job is not ready, add three seconds and put it back in the heap
+                new_time = create_time + datetime.timedelta(seconds=1)
+                heapq.put((new_time, job_id, audio_path))
+            
+            elif response['status'] == 'failed':
+                print(f"job id: {job_id} failed")
             else:
                 raise ValueError(f"job status: {response.result['status']} is not recognized.")
 
@@ -280,7 +323,7 @@ def combine_sort_datasets(data_paths: List[str])->Dict[str, dict]:
                 data_dict[xmpl['audio']] = xmpl
             else:
                 # checks that same entry in different datasest have same labels
-                assert data_dict['audio']['text'] == xmpl['text'], \
+                assert data_dict[xmpl['audio']]['text'] == xmpl['text'], \
                     "same entry in different dataset differ in phonemes labels"
     
     print(f"number of total examples: {total_xmpls}")
@@ -452,3 +495,19 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--stt-path", help="path to saved output speech-to-text file"
+    )
+    parser.add_argument(
+        "--stt-provider", help="name of company providing speech-to-text service"
+    )  
+
+    args = parser.parse_args()    
+    start_time = time.time()
+
+    if args.action == "filter-by-stt":
+        filter_datasets_by_stt(args.data_paths, args.metadata_path, args.stt_path, args.save_path)
+    elif args.action == "stt-on-datasets":
+        stt_on_datasets(args.data_paths, args.save_path, args.stt_provider, args.optional_arg)
+    elif args.action == "stt-on-sample":
+        stt_on_sample(args.data_paths[0], args.metadata_path, args.save_path, args.stt_provider)
+
+    print(f"processing time (min): {round((time.time() - start_time)/60, 2)}")
