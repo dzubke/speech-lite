@@ -18,23 +18,23 @@ spec:
         spec:
           containers:
             - name: deepspeech
-              image: gcr.io/speak-ml-dev/speak-train_2021-03-11
+              image: drz1/train_no-cmd_2021-03-23
               imagePullPolicy: Always
-              command: ["while", "True;", "do", "echo", "hello;", "sleep 1;", "done;"]
-              #command: ["python", "-m", "torchelastic.distributed.launch"]
-              #args:
-              #  - "--nproc_per_node=1"
-              #  - "/workspace/speech-lfs/train.py" # CHANGE THIS
-              #  - "/workspace/speech-lfs/configs/ctc_config_ph4.yaml" # CHANGE THIS
+              command: ["python", "-m", "torchelastic.distributed.launch"]
+              args:
+                - "--nproc_per_node=1"
+                - "--nnodes=1" 
+                - "train.py"
+                - "configs/ctc_config_ph0.yaml"
               resources:
                 limits:
                   nvidia.com/gpu: 1
               volumeMounts:
                 - mountPath: "/mnt/disks/data_disk/"
-                  name: pv-data
-                  readOnly: true
+                  name: vol-data
+                  #readOnly: true
           volumes:
-            - name: pv-data
+            - name: vol-data
               gcePersistentDisk:
                 pdName: k8s-master-disk-2021-03-01
                 fsType: ext4

@@ -1,15 +1,15 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: demo-train-pod
+  name: demo
 spec:
   containers:
-  - image: drz1/pod-stats-gpu-dir_2021-03-17
+  - image: drz1/train_update_2021-03-24
     name: test-container
     resources:
       limits:
         nvidia.com/gpu: 1 # requesting 1 GPU
-    #command: ["sudo", "date"] #["while", "True;", "do", "echo", "hello;", "sleep 1;", "done;"]
+    command: ["sleep", "infinity"]
     volumeMounts:
     - mountPath: /mnt/disks/data_disk/
       name: test-volume
@@ -17,7 +17,7 @@ spec:
   - name: test-volume
     # This GCE PD must already exist.
     gcePersistentDisk:
-      pdName: k8s-master-disk-2021-03-01
+      pdName: k8s-train-disk-2021-03-01
       fsType: ext4
   nodeSelector:
     cloud.google.com/gke-nodepool: gpu-pool
