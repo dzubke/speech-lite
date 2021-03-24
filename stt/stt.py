@@ -116,9 +116,10 @@ def stt_on_datasets(
             heapq = PriorityQueue()
             writer_thread = CheckJobWriteThread(save_path)
             writer_thread.start()
-             
-            for start_idx in range(0, len(audio_files), CHUNK_SIZE):
-                for audio_path in audio_files[start_idx: start_idx+CHUNK_SIZE]:
+            
+            job_id_path = save_path.replace("json", "ids")
+            with open(job_id_path, 'a') as job_fid:
+                for audio_path in audio_files:
                     with open(audio_path, "rb") as fid:
                         content = fid.read()
                         
@@ -129,9 +130,11 @@ def stt_on_datasets(
                         word_confidence=True
                     )
                     
-                    # converting the creation time to a datetime object 
+                    # converting the creation time to a datetime object and insert in heap
                     create_time = datetime.datetime.strptime(response.result['created'], '%Y-%m-%dT%H:%M:%S.%fZ')
                     heapq.put((create_time, response.result['id'], audio_path))
+                    # saving the job-id, audio_path pair to file
+                    job_fid.write(f"{response.result['id']},{audio_path}\n")
                     
                 #time.sleep(SLEEP_TIME)        
             print("finished creating jobs. waiting for check-write thread to complete")
@@ -268,45 +271,44 @@ class CheckJobWriteThread(Thread):
         super().__init__()
         self.save_path = save_path
 
-
     def run(self):
         counter = 0
         print("job-checker-writer thread started")
-        while True:
-            if counter % 10 == 0:
-                print(f"heapq size: {heapq.qsize()}")
-            counter +=1 
+        with open(self.save_path, 'a') as out_fid:
+            while True:
+                if counter % 10 == 0:
+                    print(f"heapq size: {heapq.qsize()}")
+                counter +=1 
 
-            if heapq.empty():
-                print("heap is empty sleeping for 0.1 sec")
-                time.sleep(0.1)
+                if heapq.empty():
+                    print("heap is empty sleeping for 0.1 sec")
+                    time.sleep(0.1)
 
-            (create_time, job_id, audio_path) = heapq.get()
-            if job_id == "kill":
-                print("shutting down job-check-writer thread")
-                break
-            try:
-                response = client.check_job(job_id).get_result()
-            except ibm_core.ApiException as e:
-                print(f"job id: {job_id} raised api exception")
-                raise(e)
+                (create_time, job_id, audio_path) = heapq.get()
+                if job_id == "kill":
+                    print("shutting down job-check-writer thread")
+                    break
+                try:
+                    response = client.check_job(job_id).get_result()
+                except ibm_core.ApiException as e:
+                    print(f"job id: {job_id} raised api exception")
+                    raise(e)
+                    
+                if response['status'] == 'completed':
+                    out_dict = format_response_dict(audio_path, response['results'][0], stt_provider='ibm')
+                    json.dump(out_dict, out_fid)
+                    out_fid.write('\n')
+                    out_fid.flush()
+                    
+                elif response['status'] in ['waiting', 'processing']:
+                    # if the job is not ready, add three seconds and put it back in the heap
+                    new_time = create_time + datetime.timedelta(seconds=1)
+                    heapq.put((new_time, job_id, audio_path))
                 
-            if response['status'] == 'completed':
-                out_dict = format_response_dict(audio_path, response['results'][0], stt_provider='ibm')
-                with open(self.save_path, 'a') as fid:
-                    json.dump(out_dict, fid)
-                    fid.write('\n')
-                    fid.flush()
-
-            elif response['status'] in ['waiting', 'processing']:
-                # if the job is not ready, add three seconds and put it back in the heap
-                new_time = create_time + datetime.timedelta(seconds=1)
-                heapq.put((new_time, job_id, audio_path))
-            
-            elif response['status'] == 'failed':
-                print(f"job id: {job_id} failed")
-            else:
-                raise ValueError(f"job status: {response.result['status']} is not recognized.")
+                elif response['status'] == 'failed':
+                    print(f"job id: {job_id} failed")
+                else:
+                    raise ValueError(f"job status: {response.result['status']} is not recognized.")
 
 
 def combine_sort_datasets(data_paths: List[str])->Dict[str, dict]:

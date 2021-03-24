@@ -361,7 +361,7 @@ def run(local_rank:int, config:dict)->None:
     best_so_far = train_state.get('best_so_far', opt_cfg['best_so_far'])
     start_epoch =  train_state.get('start_epoch', opt_cfg['start_epoch'])
     
-    # create the loaders
+    # create the preproc object and data loaders
     batch_size = opt_cfg["batch_size"]
     preproc = loader.Preprocessor(
         data_cfg["train_set"], 
@@ -380,20 +380,35 @@ def run(local_rank:int, config:dict)->None:
             dev_ldr_dict.update({dev_name: dev_ldr})
 
     # Model
-    model_cfg.update({'blank_idx': preproc_cfg['blank_idx']})   # add the blank_idx to model_cfg
+    # add the blank_idx to model_cfg 
+    model_cfg.update({'blank_idx': preproc_cfg['blank_idx']})
     model = CTC_train(
         preproc.input_dim,
         preproc.vocab_size,
         model_cfg
     )
-    if model_cfg["load_trained"]:
-        local_trained_path = gcs_ckpt_handler.download_from_gcs_bucket(model_cfg['gcs_trained_path'])
-        if not local_trained_path:
-            print(f"no model found at gcs location: {model_cfg['gcs_trained_path']}")
+    
+    # load a model from checkpoint, if it exists
+    model_ckpt_path = gcs_ckpt_handler.download_from_gcs_bucket(
+        os.path.join(ckpt_cfg['gcs_dir'], "ckpt_model_state_dict.pth")
+    )
+    if model_ckpt_path:
+        model_cfg['local_trained_path'] = model_ckpt_path
+        model = load_from_trained(model, model_cfg)
+        print(f"Succesfully loaded weights from checkpoint: {ckpt_cfg['gcs_dir']}")
+    # if a model checkpoint doesn't exist, load from trained if selected and possible
+    else:
+        if model_cfg["load_trained"]:
+            local_trained_path = gcs_ckpt_handler.download_from_gcs_bucket(model_cfg['gcs_trained_path'])
+            if local_trained_path:
+                model_cfg['local_trained_path'] = local_trained_path
+                model = load_from_trained(model, model_cfg)
+                print(f"Succesfully loaded weights from trained model: {model_cfg['gcs_trained_path']}")
+            else:
+                print(f"no model found at gcs location: {model_cfg['gcs_trained_path']}")
+
         else:
-            model_cfg['local_trained_path'] = local_trained_path
-            model = load_from_trained(model, model_cfg)
-            print(f"Succesfully loaded weights from trained model: {model_cfg['local_trained_path']}")
+            print("model trained from scratch")
     
     # Optimizer and learning rate scheduler
     learning_rate = opt_cfg['learning_rate']

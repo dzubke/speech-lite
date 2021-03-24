@@ -9,4 +9,3 @@ export PYTHONPATH=`pwd`/libs/apex:$PYTHONPATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`pwd`/libs/warp-ctc/build
 
 #export PYTHONPATH=$PYTHONPATH:/Users/dustin/CS/consulting/firstlayerai/phoneme_classification/src/awni_speech/speech
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`pwd`/libs/warp-ctc-naren/build
