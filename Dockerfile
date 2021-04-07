@@ -24,17 +24,19 @@ RUN rm gcsdk-apt-key.gpg
 RUN apt-get update
 RUN apt-get install -y google-cloud-sdk
 
+
 # install warp-CTC
 ENV CUDA_HOME=/usr/local/cuda
-RUN git clone https://github.com/SeanNaren/warp-ctc.git warp-ctc-naren
-RUN cd warp-ctc-naren
-# these sed commands are needed to remove GPU requirements that don't allow the use of CUDA 11
-RUN sed -i '35 s/./#&/' CMakeLists.txt
-RUN sed -i '36 s/./#&/' CMakeLists.txt
-RUN sed -i '37 s/./#&/' CMakeLists.txt
-RUN sed -i '38 s/./#&/' CMakeLists.txt
-RUN mkdir build; cd build; cmake ..; make
-RUN cd warp-ctc; cd pytorch_binding; python setup.py install
+RUN git clone https://github.com/SeanNaren/warp-ctc.git ./warp-ctc-naren
+## these sed commands are needed to remove GPU requirements that don't allow the use of CUDA 11
+RUN cd warp-ctc-naren; sed -i -e '35s/^/#/' -e '36s/^/#/' -e '37s/^/#/' -e '38s/^/#/' CMakeLists.txt
+RUN mkdir -p warp-ctc-naren/build 
+RUN cd warp-ctc-naren/build; cmake ..; make
+RUN cd warp-ctc-naren/pytorch_binding; python setup.py install
+# uncertain if I need the next two path additions, PYTHONPATH is essential
+ENV PATH=$PATH:/usr/local/cuda-11.2/bin
+ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.2/lib64
+ENV PYTHONPATH=$PYTHONPATH:/workspace/warp-ctc-naren/pytorch_binding/warpctc_pytorch/
 
 #add the main repo
 ADD . /workspace/
@@ -42,6 +44,5 @@ ADD . /workspace/
 RUN pip install -r requirements_py38.txt
 
 
-CMD python kubernetes/scripts/pod_stats.py 
-#CMD sh hello.sh 
-#CMD python -m torch.distributed.launch --nproc_per_node=1 --nnodes=1 --node_rank=0 train.py configs/ctc_config_ph0.yaml 
+#CMD python -u kubernetes/scripts/pod_stats.py 
+#CMD python -m torch.distributed.launch --nproc_per_node=4 --nnodes=1 --node_rank=0 train.py configs/ctc_config_ph0.yaml 

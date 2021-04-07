@@ -1,0 +1,10 @@
+# choosing what to include rather than what to exclude
+*
+!configs/
+!Dockerfile
+!LICENSE
+!models
+!setup.sh
+!requirements_py38.txt
+!speech/
+!train.py

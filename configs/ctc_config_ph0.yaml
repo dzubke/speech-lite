@@ -1,16 +1,16 @@
 seed: 2017
 checkpoint:
-    local_save_path: "/home/dzubke/speech-lite/models/null"
+    local_save_path: "/workspace/models/null/" #"/home/dzubke/speech-lite/models/null"
     gcs_bucket: "spk-models"
-    gcs_dir: "null"
+    gcs_dir: "k8s_test"
     checkpoints_per_epoch: 5
 data:
-    train_set: /mnt/disks/data_disk/data/lib-ted-cv-spk/train_lib-ted-cv-speak-250K-2021-01-05.json
+    train_set: /mnt/disks/data_disk/data/librispeech/train-clean-100.json
     dev_sets:
-        speak: /mnt/disks/data_disk/data/speak_test_data/2020-05-27/speak-test_2020-05-27.json
-        cv: /mnt/disks/data_disk/data/common-voice/v5.1_2020-06-22/dev.json
+        #speak: /mnt/disks/data_disk/data/speak_test_data/2020-05-27/speak-test_2020-05-27.json
+        #cv: /mnt/disks/data_disk/data/common-voice/v5.1_2020-06-22/dev.json
         libsp: /mnt/disks/data_disk/data/librispeech/dev-clean.json
-        ted: /mnt/disks/data_disk/data/tedlium/TEDLIUM_release-3/dev.json
+        #ted: /mnt/disks/data_disk/data/tedlium/TEDLIUM_release-3/dev.json
         #swb: /mnt/disks/data_disk/data/swb/swb-dev.json
         #pps: "/mnt/disks/data_disk/data/pps/dev/data.json"
     dev_set_save_reference: speak
