@@ -24,7 +24,7 @@ from typing import Any, Dict, List
 from ibm_watson import SpeechToTextV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 import ibm_cloud_sdk_core as ibm_core
-#from google.cloud import speech_v1p1beta1 as speech
+from google.cloud import speech_v1p1beta1 as speech
 from tqdm import tqdm
 # project libs
 from speech.utils.data_helpers import get_record_ids_map, path_to_id, process_text
@@ -38,7 +38,8 @@ def stt_on_datasets(
     data_paths:List[str], 
     save_path:str, 
     stt_provider:str="ibm", 
-    resume_audio_path:str=None)->None:
+    resume_audio_path:str=None,
+    use_async:bool=False)->None:
     """This function calls Google's STT on all the audio files in the datasets in
     `data_paths` with the output formated and written in json format. 
     The combined datasets audio will be sorted and processed sequentially.
@@ -50,9 +51,9 @@ def stt_on_datasets(
         resume_audio_path: audio path where the api calls will be resumed from
         stt_provider: name of company providing stt service
         save_path: path to output json file
+        use_async: determines if async api calls are used for ibm stt
     """
     MULTI_PROCESS = False
-    USE_ASYNC = True
     CHUNK_SIZE = 25  # size of chunks to send to api call before sleeping
     SLEEP_TIME = 0.5  # sec
     
@@ -109,7 +110,9 @@ def stt_on_datasets(
 
     # single-process implementation
     else:
-        if USE_ASYNC:
+        if use_async:
+            assert stt_provider == 'ibm', "only ibm api is setup to use async"
+
             global client 
             client = get_stt_client(stt_provider)
             global heapq
@@ -482,7 +485,11 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--action", help="desired function to be called"
-    )    
+    )   
+    parser.add_argument(
+        "--use-async", action="store_true", default=False, 
+        help="if flag is present, stt-on-dataset will use async method for ibm stt api calls"
+    )  
     parser.add_argument(
         "--data-paths", nargs="*", help="path to training json where audio examples will be samples from"
     )
@@ -508,7 +515,7 @@ if __name__ == "__main__":
     if args.action == "filter-by-stt":
         filter_datasets_by_stt(args.data_paths, args.metadata_path, args.stt_path, args.save_path)
     elif args.action == "stt-on-datasets":
-        stt_on_datasets(args.data_paths, args.save_path, args.stt_provider, args.optional_arg)
+        stt_on_datasets(args.data_paths, args.save_path, args.stt_provider, args.optional_arg, args.use_async)
     elif args.action == "stt-on-sample":
         stt_on_sample(args.data_paths[0], args.metadata_path, args.save_path, args.stt_provider)
 

@@ -1,0 +1,294 @@
+nohup: ignoring input
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/home/dzubke/miniconda/envs/pyt_18/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "stt.py", line 298, in run
+    raise(e)
+  File "stt.py", line 295, in run
+    response = client.check_job(job_id).get_result()
+  File "/home/dzubke/miniconda/envs/pyt_18/lib/python3.8/site-packages/ibm_watson/speech_to_text_v1.py", line 1142, in check_job
+    response = self.send(request)
+  File "/home/dzubke/miniconda/envs/pyt_18/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 267, in send
+    raise ApiException(response.status_code, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: job not found, Code: 404 , X-global-transaction-id: 72936a2c14f673d9cd9e4492087720c6
+number of total examples: 5633
+number of de-duplicated examples: 5633
+number of examples to process: 5633
+job-checker-writer thread started
+heapq size: 0
+heap is empty sleeping for 0.1 sec
+heapq size: 6
+heapq size: 9
+heapq size: 12
+heapq size: 11
+heapq size: 12
+heapq size: 11
+heapq size: 11
+heapq size: 11
+heapq size: 11
+heapq size: 11
+heapq size: 8
+heapq size: 11
+heapq size: 10
+heapq size: 9
+heapq size: 9
+heapq size: 11
+heapq size: 10
+heapq size: 10
+heapq size: 11
+heapq size: 9
+heapq size: 8
+heapq size: 6
+heapq size: 8
+heapq size: 10
+heapq size: 13
+heapq size: 15
+heapq size: 12
+heapq size: 7
+heapq size: 11
+heapq size: 11
+heapq size: 11
+heapq size: 9
+heapq size: 9
+heapq size: 10
+heapq size: 11
+heapq size: 11
+heapq size: 14
+heapq size: 10
+heapq size: 11
+heapq size: 10
+heapq size: 15
+heapq size: 11
+heapq size: 12
+heapq size: 12
+heapq size: 9
+heapq size: 8
+heapq size: 9
+heapq size: 10
+heapq size: 8
+heapq size: 11
+heapq size: 13
+heapq size: 12
+heapq size: 11
+heapq size: 10
+heapq size: 9
+heapq size: 8
+heapq size: 9
+heapq size: 9
+heapq size: 9
+heapq size: 12
+heapq size: 12
+heapq size: 8
+heapq size: 9
+heapq size: 8
+heapq size: 10
+heapq size: 12
+heapq size: 12
+heapq size: 10
+heapq size: 11
+heapq size: 10
+heapq size: 12
+heapq size: 12
+heapq size: 6
+heapq size: 9
+heapq size: 8
+heapq size: 9
+heapq size: 9
+heapq size: 8
+heapq size: 10
+heapq size: 9
+heapq size: 11
+heapq size: 11
+heapq size: 11
+heapq size: 11
+heapq size: 11
+heapq size: 10
+heapq size: 12
+heapq size: 9
+heapq size: 12
+heapq size: 11
+heapq size: 15
+heapq size: 13
+heapq size: 10
+heapq size: 11
+heapq size: 12
+heapq size: 11
+heapq size: 12
+heapq size: 15
+heapq size: 14
+heapq size: 13
+heapq size: 13
+heapq size: 12
+heapq size: 13
+heapq size: 11
+heapq size: 10
+heapq size: 11
+heapq size: 10
+heapq size: 10
+heapq size: 7
+heapq size: 10
+heapq size: 11
+heapq size: 10
+heapq size: 11
+heapq size: 11
+heapq size: 9
+heapq size: 11
+heapq size: 11
+heapq size: 9
+heapq size: 11
+heapq size: 8
+heapq size: 11
+heapq size: 13
+heapq size: 8
+heapq size: 10
+heapq size: 11
+heapq size: 12
+heapq size: 10
+heapq size: 10
+heapq size: 12
+heapq size: 11
+heapq size: 9
+heapq size: 10
+heapq size: 12
+heapq size: 10
+heapq size: 10
+heapq size: 11
+heapq size: 9
+heapq size: 10
+heapq size: 11
+heapq size: 9
+heapq size: 9
+heapq size: 13
+heapq size: 10
+heapq size: 8
+heapq size: 10
+heapq size: 9
+heapq size: 11
+heapq size: 10
+heapq size: 12
+heapq size: 11
+heapq size: 10
+heapq size: 12
+heapq size: 9
+heapq size: 9
+heapq size: 11
+heapq size: 10
+heapq size: 6
+heapq size: 9
+heapq size: 9
+heapq size: 11
+heapq size: 9
+heapq size: 5
+heapq size: 7
+heapq size: 11
+heapq size: 12
+heapq size: 9
+heapq size: 9
+heapq size: 7
+heapq size: 12
+heapq size: 14
+heapq size: 12
+heapq size: 9
+heapq size: 9
+heapq size: 9
+heapq size: 9
+heapq size: 7
+heapq size: 9
+heapq size: 9
+heapq size: 12
+heapq size: 11
+heapq size: 11
+heapq size: 10
+heapq size: 9
+heapq size: 10
+heapq size: 12
+heapq size: 12
+heapq size: 10
+heapq size: 9
+heapq size: 11
+heapq size: 12
+heapq size: 9
+heapq size: 8
+heapq size: 11
+heapq size: 15
+heapq size: 12
+heapq size: 15
+heapq size: 12
+heapq size: 11
+heapq size: 6
+heapq size: 7
+heapq size: 10
+heapq size: 11
+heapq size: 10
+heapq size: 12
+heapq size: 13
+heapq size: 13
+heapq size: 10
+heapq size: 9
+heapq size: 9
+heapq size: 9
+heapq size: 8
+heapq size: 10
+heapq size: 7
+heapq size: 10
+heapq size: 11
+heapq size: 9
+heapq size: 6
+heapq size: 9
+heapq size: 11
+heapq size: 14
+heapq size: 17
+heapq size: 12
+heapq size: 11
+heapq size: 9
+heapq size: 7
+heapq size: 9
+heapq size: 10
+heapq size: 9
+heapq size: 7
+heapq size: 11
+heapq size: 9
+heapq size: 10
+heapq size: 9
+heapq size: 8
+heapq size: 10
+heapq size: 10
+heapq size: 9
+heapq size: 14
+heapq size: 10
+heapq size: 11
+heapq size: 8
+heapq size: 9
+heapq size: 10
+heapq size: 14
+heapq size: 12
+heapq size: 13
+heapq size: 11
+heapq size: 8
+heapq size: 6
+heapq size: 9
+heapq size: 10
+heapq size: 11
+heapq size: 12
+heapq size: 13
+heapq size: 11
+heapq size: 12
+heapq size: 11
+heapq size: 10
+heapq size: 9
+heapq size: 7
+heapq size: 9
+heapq size: 9
+heapq size: 9
+job id: ef3a20c4-979e-11eb-a792-a3dd7c8e2b62 raised api exception
+Traceback (most recent call last):
+  File "stt.py", line 518, in <module>
+    stt_on_datasets(args.data_paths, args.save_path, args.stt_provider, args.optional_arg, args.use_async)
+  File "stt.py", line 129, in stt_on_datasets
+    response = client.create_job(
+  File "/home/dzubke/miniconda/envs/pyt_18/lib/python3.8/site-packages/ibm_watson/speech_to_text_v1.py", line 1060, in create_job
+    response = self.send(request)
+  File "/home/dzubke/miniconda/envs/pyt_18/lib/python3.8/site-packages/ibm_cloud_sdk_core/base_service.py", line 267, in send
+    raise ApiException(response.status_code, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unable to access database, Code: 500 , X-global-transaction-id: 41359425cf88eabf7e60d61cb8552634

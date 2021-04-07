@@ -1,6 +1,7 @@
 # standard libraries
 import argparse
 from collections import defaultdict, OrderedDict
+import glob
 import os
 import csv 
 from pathlib import Path
@@ -82,6 +83,9 @@ def eval1(config:dict)->None:
                 output_dict[rec_id]['infer'].update({model_name: top_beams})
 
 
+    write_output_dict(output_dict, output_path)
+
+def write_output_dict(output_dict, output_path)->None:
     # write the PER predictions to a txt file
     # sort the dictionary to ease of matching audio file with formatted output
     output_dict = OrderedDict(sorted(output_dict.items()))
@@ -89,7 +93,7 @@ def eval1(config:dict)->None:
     with open(output_path, 'w') as out_file:  
         for rec_id in output_dict.keys():  
             out_file.write(f"rec_id:\t\t\t{rec_id}\n")
-            # write the header
+            # write the header 
             for name, values in output_dict[rec_id]['header'].items():
                 out_file.write(f"{name}:\t\t\t{values}\n")
             # write predictions from each model. writing multiple search-beams, if specified
@@ -116,6 +120,7 @@ def eval1(config:dict)->None:
             per = round(per_dict['total_diff'] / per_dict['total_phones'], 3)
             out_file.write(f"{model_name}\t{per}\n")
         out_file.write("------------------\n")
+
 
 def output_dict_from_tsv(tsv_dataset_path:str, lexicon_path:str)->dict:
     """This function returns a formatted output dict using a tsv dataset path
@@ -259,6 +264,59 @@ def eval2(config:dict)->None:
     print_nonsym_table(per_dict, title="PER values", row_name="Data\\Model")
 
 
+def format_w2v_hypos(
+    metadata_tsv_path:str, 
+    w2v_tsv_path:str, 
+    hypo_paths:list, 
+    model_names:list)->None:
+    """This function takes in a directory with predictions (hypos) from a wav2vec2.0 model
+    and writes a file in the format of the mispronunciation evaluation (eval1). 
+
+    Args:
+        metadata_tsv_path: path to speak metadata tsv path
+        w2v_tsv_path: path to wav2vec tsv file
+        hypo_paths: list of paths to the wav2vec model predictions (hypos)
+        model_names: list of model names corresponding to hypo_dirs entries
+        
+    """
+    metadata_tsv_path = config['metadata_tsv_path']
+    w2v_tsv_path = config['w2v_tsv_path ']
+    hypo_paths = config['hypo_paths']
+    model_names = config['model_names']
+
+    output_dict = output_dict_from_tsv(metadata_tsv_path, lexicon_path)
+    
+    model_hypos = list()
+    hypo_len == None
+    for model_name, hypo_path in zip(model_names, hypo_paths):
+        with open(hypo_path) as hypo_f:
+            # splits and removes '(None 36)' at the end of the line
+            hypos = [line.strip().split()[:-1] for line in hypo_f]
+
+            # check that all hypos are the same length
+            if hypo_len is None:
+                hypo_len = len(hypos)
+            assert hypo_len == len(hypos), "hypos are not the same length"
+            hypo_len = len(hypos)
+
+            model_hypos.append((model_name, hypos))
+
+    filtered_output_dict = {}
+    with open(w2v_tsv_path) as tsv_f:
+        root = next(tsv_f).strip()
+        tsv_f = list(tsv_f)
+        assert len(tsv_f) == hypo_len, "tsv file and hypos are not same length"
+       
+        for i, sub_path in enumerate(tsv_f):
+            full_path = os.path.join(root, sub_path)
+            rec_id = path_to_id(full_path)
+            filtered_output_dict[rec_id] = output_dict[rec_id]
+            filtered_output_dict[rec_id]['infer'] = {}
+            for model_name, hypos in model_hypos:
+                filtered_output_dict[rec_id]['infer'][model_name] = hypos[i]
+
+    write_output_dict(filtered_output_dict, output_path)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
@@ -273,5 +331,7 @@ if __name__ == "__main__":
         eval1(config)
     elif config['eval_type'] == 'eval2':
         eval2(config)
+    elif config['eval_type'] == 'format_w2v_hypos':
+        format_w2v_hypos(config)
     else:
         raise ValueError(f'eval types must be either "eval1" or "eval2", not {config["eval_type"]}')

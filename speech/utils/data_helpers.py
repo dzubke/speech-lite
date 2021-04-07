@@ -1,3 +1,7 @@
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+
 # standard libraries
 from collections import defaultdict
 import csv
@@ -514,18 +518,16 @@ def get_record_ids_map(metadata_path:str, id_names:list=None, has_url:bool=False
 
     return record_ids_map
 
-def total_duration(data: List[dict])->float:
-    """Returns the total time (in hours) of the input data list. 
-    The data list has the typical training format, which is a list of dictionaries
-    the a "duration" key.
+def dataset_duration(data_path:str)->float:
+    """Returns the total time (in hours) of the input data path.
 
     Args:
-        data (List[Dict[str, Any]]): list of dicts with key "duration"
+        data_path: path to dataset
     
     Returns:
         (float): total duration of the dataset in hours
     """
-
+    data = read_data_json(data_path)
     total_duration_s = sum([xmpl['duration'] for xmpl in data])
     return round(total_duration_s/3600, 3)
 
@@ -552,4 +554,15 @@ def getsize(obj):
                 need_referents.append(obj)
         objects = get_referents(*need_referents)
     return size
+
+
+def convert_full_set(path, pattern, new_ext="wav", **kwargs):
+    """Function from Awni's original codebase that is used to convert TIMIT
+    """
+    pattern = os.path.join(path, pattern)
+    audio_files = glob.glob(pattern)
+    for af in tqdm.tqdm(audio_files):
+        base, ext = os.path.splitext(af)
+        wav = base + os.path.extsep + new_ext
+        convert.to_wave(af, wav, **kwargs)
 
