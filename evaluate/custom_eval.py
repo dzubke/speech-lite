@@ -1,6 +1,7 @@
 # standard libraries
 import argparse
 from collections import defaultdict, OrderedDict
+import copy
 import glob
 import os
 import csv 
@@ -264,11 +265,7 @@ def eval2(config:dict)->None:
     print_nonsym_table(per_dict, title="PER values", row_name="Data\\Model")
 
 
-def format_w2v_hypos(
-    metadata_tsv_path:str, 
-    w2v_tsv_path:str, 
-    hypo_paths:list, 
-    model_names:list)->None:
+def format_w2v_hypos(config)->None:
     """This function takes in a directory with predictions (hypos) from a wav2vec2.0 model
     and writes a file in the format of the mispronunciation evaluation (eval1). 
 
@@ -280,40 +277,50 @@ def format_w2v_hypos(
         
     """
     metadata_tsv_path = config['metadata_tsv_path']
-    w2v_tsv_path = config['w2v_tsv_path ']
-    hypo_paths = config['hypo_paths']
-    model_names = config['model_names']
+    w2v_tsv_path = config['w2v_tsv_path']
+    models = config['models']
+    output_path = config['output_path']
 
-    output_dict = output_dict_from_tsv(metadata_tsv_path, lexicon_path)
+    output_dict = output_dict_from_tsv(metadata_tsv_path, config['lexicon_path'])
     
     model_hypos = list()
-    hypo_len == None
-    for model_name, hypo_path in zip(model_names, hypo_paths):
-        with open(hypo_path) as hypo_f:
+    hypo_len = None
+    for model_name, hypo_path in models.items():
+        tgt_path = hypo_path.replace("hypo.", "ref.")
+        with open(hypo_path, 'r') as hypo_f, open(tgt_path, 'r') as tgt_f:
             # splits and removes '(None 36)' at the end of the line
             hypos = [line.strip().split()[:-1] for line in hypo_f]
+            tgts = [line.strip().split()[:-1] for line in tgt_f]
 
             # check that all hypos are the same length
             if hypo_len is None:
                 hypo_len = len(hypos)
-            assert hypo_len == len(hypos), "hypos are not the same length"
-            hypo_len = len(hypos)
+            assert hypo_len == len(hypos) == len(tgts), "hypos or targets are not the same length"
+            
+            # need to make mapping from targets to hypos as the ordering of hypos doesn't
+            # match the file ordering of the `w2v_tsv` file
+            tgts_to_hypos = {tuple(tgt): hypo for tgt, hypo in zip(tgts, hypos)}
+            model_hypos.append((model_name, tgts_to_hypos ))
 
-            model_hypos.append((model_name, hypos))
-
+        
     filtered_output_dict = {}
-    with open(w2v_tsv_path) as tsv_f:
+    w2v_phn_path = w2v_tsv_path.replace(".tsv", ".phn")
+    with open(w2v_tsv_path, 'r') as tsv_f, open(w2v_phn_path, 'r') as phn_f:
         root = next(tsv_f).strip()
-        tsv_f = list(tsv_f)
-        assert len(tsv_f) == hypo_len, "tsv file and hypos are not same length"
+        tsv_f = [line.strip().split()[0] for line in tsv_f]
+        phn_f = [line.strip().split() for line in phn_f]
+        assert len(tsv_f) == len(phn_f) == hypo_len, "tsv file and hypos are not same length"
        
-        for i, sub_path in enumerate(tsv_f):
+        for i, (sub_path, phones) in enumerate(zip(tsv_f, phn_f)):
             full_path = os.path.join(root, sub_path)
             rec_id = path_to_id(full_path)
             filtered_output_dict[rec_id] = output_dict[rec_id]
-            filtered_output_dict[rec_id]['infer'] = {}
-            for model_name, hypos in model_hypos:
-                filtered_output_dict[rec_id]['infer'][model_name] = hypos[i]
+            filtered_output_dict[rec_id]['infer'] = {}       
+
+            dummy_conf = -1.0   # placeholder confidence value
+            for model_name, tgts_to_hypos in model_hypos:
+                matching_hypo = tgts_to_hypos[tuple(phones)]
+                filtered_output_dict[rec_id]['infer'][model_name] = [(matching_hypo, dummy_conf)]
 
     write_output_dict(filtered_output_dict, output_path)
 

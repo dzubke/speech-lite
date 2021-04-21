@@ -100,9 +100,11 @@ def run_eval(
 
 
     # create model
-    model = CTC_train(preproc.input_dim,
-                        preproc.vocab_size,
-                        model_cfg)
+    model = CTC_train(
+        preproc.input_dim,
+        preproc.vocab_size,
+        model_cfg
+    )
 
     state_dict = load_state_dict(model_path, device=device)
     model.load_state_dict(state_dict)
@@ -155,7 +157,6 @@ def format_save(results, dataset_json, out_file):
     """This function writes the results to a file in a human-readable format.
     """
     out_file = create_filename(out_file, "compare", "txt")
-    out_file = os.path.join("predictions", out_file)
     print(f"file saved to: {out_file}")
     with open(out_file, 'w') as fid:
         write_list = list()
@@ -223,7 +224,12 @@ def match_filename(label:list, dataset_json:str, return_order=False) -> str:
             matches.append(sample["audio"])
             order = i
     
-    assert len(matches) < 2, f"multiple matches found {matches} for label {label}"
+    if len(matches) > 1:
+        print(f"multiple matches found {matches} for label {label}")
+        print("Would you like to continue? (y/n)")
+        response = input()
+        if response.lower() == "n":
+            raise AssertionError
     assert len(matches) >0, f"no matches found for {label}"
     if return_order:
         output = (matches[0], order)

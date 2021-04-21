@@ -1,0 +1,14 @@
+dataset_name: SpeakEval1 # Capitalized first letter
+dataset_dir: /mnt/disks/data_disk/data/speak_test_data/eval/eval1_400/
+dataset_files:           # dataset filenames to be processed, files should be in dataset_dir
+    # key is dataset name, value is filename to be processed
+    eval1: eval1_data_2020-11-20.tsv 
+lexicon_path: /home/dzubke/awni_speech/speech-lfs/data/lexicons/unstressed-lexicons/master-cmu-lib-ted-oov-lexicon_2021-03-03.txt
+force_convert: False    # Converts audio even if .wav file exists
+min_duration: 0.1         # second
+max_duration: 30       # seconds
+print_modulus: 10
+process_transcript: True  # if true, most punctuation will be removed from target sentence
+# max number of occurances based on the given constraint
+# constraints:
+#  target_sentence: 0.001

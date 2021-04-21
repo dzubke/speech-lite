@@ -1,0 +1,13 @@
+eval_type: 'format_w2v_hypos'
+metadata_tsv_path: /mnt/disks/data_disk/data/speak_test_data/eval/eval1_400/eval1_metadata_2020-11-20.tsv  
+w2v_tsv_path: /mnt/disks/data_disk/data/speak_test_data/eval/eval1_400/fair/eval1_data_2021-04-12.tsv
+models:
+    l_dvc-spk-0.7f: /home/dzubke/fairseq/outputs/2021-04-08/14-40-57/results/spk-eval1/hypo.units-checkpoint_best.pt-eval1_data_2021-04-12.txt
+    l_dvc-spk-0.7: /home/dzubke/fairseq/outputs/2021-04-09/09-19-11/results/spk-eval1/hypo.units-checkpoint_best.pt-eval1_data_2021-04-12.txt
+    s_dvc-spk-3K: /home/dzubke/fairseq/outputs/2021-04-08/08-32-33/results/spk-eval1/hypo.units-checkpoint_best.pt-eval1_data_2021-04-12.txt
+    l_t100-spk-3K: /home/dzubke/fairseq/outputs/2021-04-07/20-10-18/results/spk-eval1/hypo.units-checkpoint_best.pt-eval1_data_2021-04-12.txt
+    l_dvc-spk-3K: /home/dzubke/fairseq/outputs/2021-04-07/20-26-20/results/spk-eval1/hypo.units-checkpoint_best.pt-eval1_data_2021-04-12.txt
+    lrg_train-100: /home/dzubke/fairseq/outputs/2021-04-05/14-18-14/results/spk-eval1/hypo.units-checkpoint_best.pt-eval1_data_2021-04-12.txt
+    lrg_dev-clean: /home/dzubke/fairseq/outputs/2021-04-06/05-49-42/results/spk-eval1/hypo.units-checkpoint_last.pt-eval1_data_2021-04-12.txt
+lexicon_path: /home/dzubke/speech-lite/data/lexicons/master-lexicon_2020-08-05.txt
+output_path: /home/dzubke/speech-lite/evaluate/output/eval1_7-model-w2v-output_2021-04-12.txt

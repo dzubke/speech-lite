@@ -1,0 +1,752 @@
+rec_id:			008F3ACC-321C-4FA6-B9BF-5656B7823342
+target:			But it was fun.
+guess:			But it was fun
+tar_pn:			b ah t ih t w aa z f ah n
+ges_pn:			b ah t ih t w aa z f ah n
+l_dvc-spk-0.7f:	(0.0)	b ah t ih t w aa z f ah n
+l_dvc-spk-0.7:	(0.0)	b ah t ih t w aa z f ah n
+s_dvc-spk-3K:	(0.0)	b ah t ih t w aa z f ah n
+l_t100-spk-3K:	(0.0)	b ah t ih t w aa z f ah n
+l_dvc-spk-3K:	(0.0)	b ah t ih t w aa z f ah n
+lrg_train-100:	(0.45)	b ae dh ih r ah z f ah n
+lrg_dev-clean:	(0.55)	b ae dh ih r ah z f ah ng
+
+
+rec_id:			00F931A9-6EA9-4233-85B4-94015A257352
+target:			He's pretty short.
+guess:			He's a pretty's short
+tar_pn:			hh iy z p r ih t iy sh ao r t
+ges_pn:			hh iy z ah p r ih t iy z sh ao r t
+l_dvc-spk-0.7f:	(0.0)	hh iy z p r ih t iy sh ao r t
+l_dvc-spk-0.7:	(0.17)	hh iy z f r iy t iy sh ao r t
+s_dvc-spk-3K:	(0.0)	hh iy z p r ih t iy sh ao r t
+l_t100-spk-3K:	(0.0)	hh iy z p r ih t iy sh ao r t
+l_dvc-spk-3K:	(0.08)	hh iy s p r ih t iy sh ao r t
+lrg_train-100:	(0.42)	hh ih s f r iy l iy sh ao r t
+lrg_dev-clean:	(0.25)	iy z f r iy t iy sh ao r t
+
+
+rec_id:			012C1AC5-13E0-4337-B6CC-BFD58A12A8BC
+target:			Could you tell me where the bathroom is?
+guess:			Could you tell me where are the best
+tar_pn:			k uh d y uw t eh l m iy w eh r dh ah b ae th r uw m ih z
+ges_pn:			k uh d y uw t eh l m iy w eh r aa r dh ah b eh s t
+l_dvc-spk-0.7f:	(0.35)	k uh d y uw t eh l m iy w eh r aa r dh ah b eh s t s th r uw m r uw
+l_dvc-spk-0.7:	(0.39)	k uh d y uw t eh l m iy w eh r aa r dh ah b eh s t s ao m iy
+s_dvc-spk-3K:	(0.22)	k uh d y uw t eh l m iy w eh r dh ah b eh s t th r uw m
+l_t100-spk-3K:	(0.26)	k uh d y uw t eh l m iy w eh r dh ah b eh s t s r uw m
+l_dvc-spk-3K:	(0.13)	k uh d y uw t eh l m iy w eh r dh ah b ae th s r uw m uw uw
+lrg_train-100:	(0.39)	k uh d y uw t eh l m iy hh w eh r aa r dh ah b eh s t s r uw m iy
+lrg_dev-clean:	(0.57)	k uh d y uw t eh l m iy hh w eh aa r dh ah b eh s t s r uw m iy r uw uw uw uw uw
+
+
+rec_id:			054C13A4-9499-453F-90A0-950DA50C4576
+target:			I read neither newspapers nor magazines.
+guess:			I need a read a neither a newspapers a nor a i
+tar_pn:			ay r eh d n iy dh er n uw z p ey p er z n ao r m ae g ah z iy n z
+ges_pn:			ay n iy d ah r eh d ah n iy dh er ah n uw z p ey p er z ah n ao r ah ay
+l_dvc-spk-0.7f:	(0.89)	jh ah s ah ay l iy v d uw ay r eh d ah d iy d ah n uw z p ey p er z s ow n ao b ah
+l_dvc-spk-0.7:	(0.93)	jh ah s ah ay r iy dh ah ay r iy d ah dh iy d ah n uw z p ey p er s r ow l aa b ah t
+s_dvc-spk-3K:	(0.81)	jh ih s ah ay l iy d ay r iy d dh ah d ah n uw z iy p ey p er s ow n ao r dh ah b ah t
+l_t100-spk-3K:	(0.89)	z ih z s ah ay l ih dh ah ay r iy d ah d iy d n uw z p ey p er s er n ao r b ah t b b ah
+l_dvc-spk-3K:	(0.74)	jh iy s ah ay iy dh ah ay r eh d dh ah n iy dh ah n uw z p ey p er s ow n ao r b ah
+lrg_train-100:	(0.93)	d eh s ah f ay l eh d dh ah ay r eh d ah d iy d ah n uw z p ey p er s er n ao r b eh b eh
+lrg_dev-clean:	(1.11)	d uw s d ah s ay l iy d dh ah ay r iy d ah l iy d ah n uw s ah p ey p er s t r ah l ao b eh b eh eh
+
+
+rec_id:			125577CF-D7A3-4E95-9AAC-1EA298239BE7
+target:			I'm not an actor.
+guess:			I am not a actor
+tar_pn:			ay m n aa t ae n ae k t er
+ges_pn:			ay ae m n aa t ah ae k t er
+l_dvc-spk-0.7f:	(0.64)	ay eh m n aa t ao eh k t er k k t er
+l_dvc-spk-0.7:	(0.45)	ay ae m n aa t ah ih k t er k
+s_dvc-spk-3K:	(0.36)	ay ae m n aa t ah eh k t er
+l_t100-spk-3K:	(0.55)	ay ae m n aa t ah v ih k t er v v
+l_dvc-spk-3K:	(0.73)	ay ae m n aa t ah eh k t er p k k t
+lrg_train-100:	(0.36)	ay ih m n aa t ow ih k t er
+lrg_dev-clean:	(0.73)	ay eh m n ah ow ih k t er k k
+
+
+rec_id:			16895C3F-1165-44CC-89B8-A812A200234D
+target:			It's over there across the street from the gym.
+guess:			It's over there across the street from the scene
+tar_pn:			ih t s ow v er dh eh r ah k r ao s dh ah s t r iy t f r ah m dh ah jh ih m
+ges_pn:			ih t s ow v er dh eh r ah k r ao s dh ah s t r iy t f r ah m dh ah s iy n
+l_dvc-spk-0.7f:	(0.43)	ih t s y uw ao v er d iy y ah k r ao s t ah s t r ey f r aa m d ah s iy m
+l_dvc-spk-0.7:	(0.4)	ih t s y ao v r ih d iy ah k r ao s d ah s t r ey f r ah m dh ah z iy n
+s_dvc-spk-3K:	(0.13)	ih t s ow v er dh iy ah k r ao s dh ah s t r iy t f r ah m dh ah z iy m
+l_t100-spk-3K:	(0.17)	ih t s y ow v er dh eh r k r ao s dh ah s t r iy t f r ah m dh ah z iy n
+l_dvc-spk-3K:	(0.17)	ih t s y uw ow v er dh y eh r ah k r ao s dh ah s t r ey t f r ah m dh ah z ih m
+lrg_train-100:	(0.5)	ih t y uw ow v er d iy ah k r ao s d ah s t w ey p er m d ah s iy m
+lrg_dev-clean:	(0.6)	eh t y uw ao v ao r d y ah k r ao s d ah s ch w iy p r aa m d ah s iy ng
+
+
+rec_id:			1A416C3F-03C7-4D3D-9EDF-0431C09A1402
+target:			Would you have said no?
+guess:			Would you have said no
+tar_pn:			w uh d y uw hh ae v s eh d n ow
+ges_pn:			w uh d y uw hh ae v s eh d n ow
+l_dvc-spk-0.7f:	(0.23)	w uh d y uw hh ae v s t eh d iy n ow n
+l_dvc-spk-0.7:	(0.31)	w uh d y uw hh ae v s t eh d ih n ao l
+s_dvc-spk-3K:	(0.08)	w uh d y uw hh ae v s eh d ih n ow
+l_t100-spk-3K:	(0.15)	w uh d y uw hh ae v s eh d ih n ow n
+l_dvc-spk-3K:	(0.31)	w uh d y uw hh ae v s eh d ih t ao n
+lrg_train-100:	(0.38)	ow ih z y uw hh ae v er s eh d iy n ow
+lrg_dev-clean:	(0.38)	uw jh uw hh ae v s eh d eh n ow
+
+
+rec_id:			1B9643B4-75FF-4E5C-8737-306551A36741
+target:			Could you give me a few more minutes, please?
+guess:			Can I have cry have a few more minutes please
+tar_pn:			k uh d y uw g ih v m iy ah f y uw m ao r m ih n ah t s p l iy z
+ges_pn:			k ae n ay hh ae v k r ay hh ae v ah f y uw m ao r m ih n ah t s p l iy z
+l_dvc-spk-0.7f:	(0.59)	k r ey hh ah b k r ey hh ae v ah f y uw m ao r m ih n ah t p l iy z r k r ey
+l_dvc-spk-0.7:	(0.48)	k r ay hh aa k uh d ay hh ae v ah f y uw m ao r m ih n ah t p l iy z ay
+s_dvc-spk-3K:	(0.48)	k r ay hh ah k uh ay hh ae v ah f y uw m ao r m ih n iy p l iy z
+l_t100-spk-3K:	(0.52)	k r ay hh ah p k r ay hh ae v ah f y uw m ao r m iy n ah t p l iy z ay
+l_dvc-spk-3K:	(0.44)	k r ay hh ah k uh d ay hh ae v ah f y uw m ao r m ih n ah t p l iy z
+lrg_train-100:	(0.67)	n ow k r ay ah hh ah b k r ay ah hh ae v ah l ah f y uw m ao r m ih n ah t p l iy z ay
+lrg_dev-clean:	(0.7)	jh ow k r ay hh ah b k r ay hh ae v ah f y uw m ao r m iy n ih p l iy z r ay
+
+
+rec_id:			1CEB4E72-10DF-48FB-ACAC-CF3B7943ECD9
+target:			I read neither newspapers nor magazines.
+guess:			I read the neither a newspapers the neither a magazines
+tar_pn:			ay r eh d n iy dh er n uw z p ey p er z n ao r m ae g ah z iy n z
+ges_pn:			ay r eh d dh ah n iy dh er ah n uw z p ey p er z dh ah n iy dh er ah m ae g ah z iy n z
+l_dvc-spk-0.7f:	(0.89)	jh ah s ah ay l iy v d uw ay r eh d ah d iy d ah n uw z p ey p er z s ow n ao b ah
+l_dvc-spk-0.7:	(0.93)	jh ah s ah ay r iy dh ah ay r iy d ah dh iy d ah n uw z p ey p er s r ow l aa b ah t
+s_dvc-spk-3K:	(0.81)	jh ih s ah ay l iy d ay r iy d dh ah d ah n uw z iy p ey p er s ow n ao r dh ah b ah t
+l_t100-spk-3K:	(0.89)	z ih z s ah ay l ih dh ah ay r iy d ah d iy d n uw z p ey p er s er n ao r b ah t b b ah
+l_dvc-spk-3K:	(0.74)	jh iy s ah ay iy dh ah ay r eh d dh ah n iy dh ah n uw z p ey p er s ow n ao r b ah
+lrg_train-100:	(0.93)	d eh s ah f ay l eh d dh ah ay r eh d ah d iy d ah n uw z p ey p er s er n ao r b eh b eh
+lrg_dev-clean:	(1.11)	d uw s d ah s ay l iy d dh ah ay r iy d ah l iy d ah n uw s ah p ey p er s t r ah l ao b eh b eh eh
+
+
+rec_id:			1DC83F33-A033-49EC-B087-A04421E252B9
+target:			I eat out every other week.
+guess:			I eat a out a every a other a week
+tar_pn:			ay iy t aw t eh v er iy ah dh er w iy k
+ges_pn:			ay iy t ah aw t ah eh v er iy ah ah dh er ah w iy k
+l_dvc-spk-0.7f:	(0.13)	ay eh t aw t eh v r iy ah dh er w iy k
+l_dvc-spk-0.7:	(0.2)	ay eh t aw t eh v r iy ah n er w iy k
+s_dvc-spk-3K:	(0.27)	ay iy t aw t eh v r iy ah n d er w iy
+l_t100-spk-3K:	(0.13)	ay iy t aw t eh v er iy aa n er w iy k
+l_dvc-spk-3K:	(0.07)	ay iy t aw t eh v er iy ah d er w iy k
+lrg_train-100:	(0.27)	ay ih t aw t eh v er iy ao n er w iy
+lrg_dev-clean:	(0.47)	ay ih t aw t eh v iy ah l ah n er r w iy
+
+
+rec_id:			1F3FAE4A-DFA3-41A9-A50C-494944C9BEFA
+target:			For appetizer, I'll have the soup.
+guess:			For a appetizer a the a have the soup
+tar_pn:			f ao r ae p ah t ay z er ay l hh ae v dh ah s uw p
+ges_pn:			f ao r ah ae p ah t ay z er ah dh ah ah hh ae v dh ah s uw p
+l_dvc-spk-0.7f:	(0.2)	f ao r ae p iy t ay z er ay w ih l hh ae v dh ah s uw f
+l_dvc-spk-0.7:	(0.25)	f ao r ae p iy t ay z er ay w ah l hh ae v dh ah s l uw v
+s_dvc-spk-3K:	(0.2)	f ao r ae p iy t ay z er ay w ih l hh ae v dh ah s uw f
+l_t100-spk-3K:	(0.15)	f ao r ae p ah t ay z er ay w ih l hh ae v dh ah s uw f
+l_dvc-spk-3K:	(0.2)	f ao r ae p ah t ay z er ay w ih l hh ae v dh ah s uh f
+lrg_train-100:	(0.3)	f ao r eh p ah t ay t er ay w ah l hh ae v dh ah s l uw f
+lrg_dev-clean:	(0.35)	f ao r eh p ih t ay z er ay w ah l hh ae v dh ah s l uh f
+
+
+rec_id:			1FDCD134-800F-49D3-AA47-84B9ECF1DC69
+target:			I showed my phone to my friend.
+guess:			I showed my phone to my a friend
+tar_pn:			ay sh ow d m ay f ow n t uw m ay f r eh n d
+ges_pn:			ay sh ow d m ay f ow n t uw m ay ah f r eh n d
+l_dvc-spk-0.7f:	(0.11)	ay sh ow m ay f ow m t uw m ay f r eh n d
+l_dvc-spk-0.7:	(0.22)	ay s iy l m ay f ow m t uw m ay f r eh n d
+s_dvc-spk-3K:	(0.11)	ay sh iy m ay f ow n t uw m ay f r eh n d
+l_t100-spk-3K:	(0.17)	ay n sh ow m ay f ow m t uw m ay f r eh n d
+l_dvc-spk-3K:	(0.06)	ay sh ow m ay f ow n t uw m ay f r eh n d
+lrg_train-100:	(0.22)	ay sh iy l m ay f ow m t ah m ay f r eh n d
+lrg_dev-clean:	(0.28)	ay s iy l m ay f ow ng t ah m ay f r eh n d
+
+
+rec_id:			234DD0F7-62B2-4E64-B612-2226FFD59D5D
+target:			Could I have a glass of water, please?
+guess:			Can I have a glass of water please
+tar_pn:			k uh d ay hh ae v ah g l ae s ah v w ao t er p l iy z
+ges_pn:			k ae n ay hh ae v ah g l ae s ah v w ao t er p l iy z
+l_dvc-spk-0.7f:	(0.0)	k uh d ay hh ae v ah g l ae s ah v w ao t er p l iy z
+l_dvc-spk-0.7:	(0.05)	k uh d ay hh ae v ah g l ae s t ah v w ao t er p l iy z
+s_dvc-spk-3K:	(0.09)	k uh d ay hh ae v ah g l eh s t ah v w ao t er p l iy z
+l_t100-spk-3K:	(0.05)	k uh d ay hh ae v ah g l ae s t ah v w ao t er p l iy z
+l_dvc-spk-3K:	(0.0)	k uh d ay hh ae v ah g l ae s ah v w ao t er p l iy z
+lrg_train-100:	(0.45)	k r ay hh ae v ah l g ih v ah s dh aw b ah w ao t er p l iy z
+lrg_dev-clean:	(0.41)	k r ay hh aw v ah l g v ah s dh ah b iy w ao t er p l iy z
+
+
+rec_id:			2383C84F-938C-4CAA-9E0F-FD453BE4F69F
+target:			Rent is cheap.
+guess:			Rent it cheap
+tar_pn:			r eh n t ih z ch iy p
+ges_pn:			r eh n t ih t ch iy p
+l_dvc-spk-0.7f:	(0.33)	r eh n t iy ch ih p
+l_dvc-spk-0.7:	(0.22)	r eh n t ah ch iy p
+s_dvc-spk-3K:	(0.11)	r eh n t ih t ch iy p
+l_t100-spk-3K:	(0.33)	r eh n t iy ch ih p
+l_dvc-spk-3K:	(0.0)	r eh n t ih z ch iy p
+lrg_train-100:	(0.22)	r eh n t ih t ch ih p
+lrg_dev-clean:	(0.44)	r eh n t iy t sh ih p
+
+
+rec_id:			29D6DE39-3207-4B37-9071-3DAB7EB262FA
+target:			She'll soon start telling me what to wear and what to eat.
+guess:			So I'll see you start telling me what to wear and want to eat
+tar_pn:			sh iy l s uw n s t aa r t t eh l ih ng m iy w ah t t uw w eh r ah n d w ah t t uw iy t
+ges_pn:			s ow ay l s iy y uw s t aa r t t eh l ih ng m iy w ah t t uw w eh r ah n d w aa n t t uw iy t
+l_dvc-spk-0.7f:	(0.28)	s ow s iy z t ao t eh l ih ng m iy w ah t t uw w eh r ae n d w ah t t uw iy t
+l_dvc-spk-0.7:	(0.39)	s ow t uw y uw s d aa t eh l ih ng m iy w ah t t uw b iy aa r ih n w ah t t uw iy t
+s_dvc-spk-3K:	(0.25)	sh iy w aa z t iy n s t aa t eh l ih ng m iy w ah t t uw iy r ah n d w ah t t uw iy t
+l_t100-spk-3K:	(0.19)	sh iy w aa s iy n s t aa t eh l ih ng m iy w ah t t uw w eh r ih n d w t t uw iy t
+l_dvc-spk-3K:	(0.19)	s ow s iy n s t ah t eh l ih ng m iy w ah t t uw w eh r ah n d w ah t t uw iy t
+lrg_train-100:	(0.61)	s ow s iy z d d aw t eh l ah m iy w ao t t ah b iy r ae n d w aa t t ah iy t ow ow ow
+lrg_dev-clean:	(0.58)	s ow s iy z d ah t aa l aa m iy w aa t t ah v ih r ae n d w aa t t ah iy t ow ow
+
+
+rec_id:			2B411043-B9CD-4C24-B8F2-6E2D1870202F
+target:			I eat either bananas or apples.
+guess:			I eat the eat the bananas the or a apples
+tar_pn:			ay iy t iy dh er b ah n ae n ah z ao r ae p ah l z
+ges_pn:			ay iy t dh ah iy t dh ah b ah n ae n ah z dh ah ao r ah ae p ah l z
+l_dvc-spk-0.7f:	(0.75)	ay iy t t uw iy t uw b aa n ah n ao r s eh f f er s ah
+l_dvc-spk-0.7:	(0.6)	ay iy t t uw iy dh er b ah n ao n er s t uw eh f er s ah
+s_dvc-spk-3K:	(0.45)	ay iy t t uw iy dh er b ah n ah n er s ao r eh f ah s uh
+l_t100-spk-3K:	(0.45)	ay iy t t uw iy dh er b ah n ah n er z ao r eh f er s er
+l_dvc-spk-3K:	(0.35)	ay iy t iy dh er b ah n ah n ah s ao r ae f er iy s er
+lrg_train-100:	(0.6)	ay iy t ah iy dh er b ah n ah n er s t ah ao r eh f er s ah ay
+lrg_dev-clean:	(0.7)	ay iy t ah iy d er b aa n ah n ah s t ah ow r eh f r s t ah
+
+
+rec_id:			2F7CD1CA-1F1B-4CE6-94A6-6FB6D2D88515
+target:			I rarely eat breakfast.
+guess:			I rarely it breakfast
+tar_pn:			ay r eh r l iy iy t b r eh k f ah s t
+ges_pn:			ay r eh r l iy ih t b r eh k f ah s t
+l_dvc-spk-0.7f:	(0.12)	ay r ih l iy iy t b r eh k f ah s t
+l_dvc-spk-0.7:	(0.12)	ay r ow l iy iy t b r eh k f ah s t
+s_dvc-spk-3K:	(0.12)	ay r ih l iy iy t b r eh k f ah s t
+l_t100-spk-3K:	(0.12)	ay r ih l iy iy t b r eh k f ah s t
+l_dvc-spk-3K:	(0.12)	ay r ih l iy iy t b r eh k f ah s t
+lrg_train-100:	(0.25)	ay ow l iy ey t b r eh k f ah s t
+lrg_dev-clean:	(0.25)	ay r eh d ah l iy iy t b r eh k f ah s t ah ah
+
+
+rec_id:			34244070-1737-4DCE-94FA-76CC0543631E
+target:			I'm free all weekend.
+guess:			I free artist weekend
+tar_pn:			ay m f r iy ao l w iy k eh n d
+ges_pn:			ay f r iy aa r t ih s t w iy k eh n d
+l_dvc-spk-0.7f:	(0.31)	ay m f r iy ao r d ih s w iy k eh n d
+l_dvc-spk-0.7:	(0.46)	ah m f r r ah dh ih s w iy k eh n d
+s_dvc-spk-3K:	(0.38)	ih m f r iy er dh ih s w iy k eh n d
+l_t100-spk-3K:	(0.54)	ay f r iy y er r dh ih s w iy k eh n d
+l_dvc-spk-3K:	(0.46)	aa m y uw f r iy dh ih s w iy k eh n d
+lrg_train-100:	(0.62)	ah m f r iy ao r d iy s r ih k hh ae n d
+lrg_dev-clean:	(0.62)	ah m f r iy ow d ih s r ah k ah n d
+
+
+rec_id:			3693C53D-00E8-4610-AA6B-420C557760B2
+target:			How's your job?
+guess:			How's your job with her
+tar_pn:			hh aw z y ao r jh aa b
+ges_pn:			hh aw z y ao r jh aa b w ih dh hh er
+l_dvc-spk-0.7f:	(1.0)	ah s sh uh r jh aa v ih d ah
+l_dvc-spk-0.7:	(0.78)	ah t s y uh r jh aa b ih d er
+s_dvc-spk-3K:	(0.33)	hh aw z y ao r jh aa b ah t er
+l_t100-spk-3K:	(0.56)	aw s y ao r jh aa b ah t er
+l_dvc-spk-3K:	(0.44)	hh aw z y ao r jh aa b ih dh eh r
+lrg_train-100:	(1.0)	ao l s t er r ah jh aa b ah d er
+lrg_dev-clean:	(0.89)	aa s sh y uh r ah ch aa b t ah
+
+
+rec_id:			388F9518-0E77-4CC6-A743-A225FF20DA42
+target:			Yes. I'm still at Naver.
+guess:			Yes I'm still at neighbor
+tar_pn:			y eh s ay m s t ih l ae t n ey v er
+ges_pn:			y eh s ay m s t ih l ae t n ey b er
+l_dvc-spk-0.7f:	(0.33)	y eh s ih m s t ih r ae t dh ah n ey b er
+l_dvc-spk-0.7:	(0.27)	y eh s ih m s t ih r ae t ah n ey b er
+s_dvc-spk-3K:	(0.27)	y eh s ih m s t ih r ae t ah n ey b er
+l_t100-spk-3K:	(0.2)	y eh s ih m s t ih r ae t n ey b er
+l_dvc-spk-3K:	(0.13)	y eh s ay m s t ih r ae t n ey b er
+lrg_train-100:	(0.27)	y eh s ay m s t ih r ae t m ah n ey b er
+lrg_dev-clean:	(0.4)	y eh s ay ah m s ih t ih r ae t dh ah n ey b er
+
+
+rec_id:			397A600B-2753-4734-98AD-0FBBA7EB81A3
+target:			We might have to live with my mom at first.
+guess:			Remind have to live with my mom and post
+tar_pn:			w iy m ay t hh ae v t uw l ay v w ih dh m ay m aa m ae t f er s t
+ges_pn:			r iy m ay n d hh ae v t uw l ay v w ih dh m ay m aa m ah n d p ow s t
+l_dvc-spk-0.7f:	(0.22)	w iy m ay t hh ae v t uw r l iy v w ih dh m ay m aa m ah z p ow s t
+l_dvc-spk-0.7:	(0.11)	w iy m ay t hh ae v t uw l iy v w ih dh m ay m aa m ah f er s t
+s_dvc-spk-3K:	(0.07)	w iy m ay t hh ae v t uw l ay v w ih dh m ay m aa m ah z f er s t
+l_t100-spk-3K:	(0.11)	w iy m ay t hh ae v t uw l ay v w ih dh m ay m aa m ah t p ow s t
+l_dvc-spk-3K:	(0.15)	w iy m ay t hh ae v t uw l ay v w ih dh m ay m aa m z p ow s t
+lrg_train-100:	(0.37)	w iy m ay n hh ae l t uw l iy ah r ih d m ay m aa m ah d p ow s t
+lrg_dev-clean:	(0.7)	r iy m ay n hh ae l p t uh r er l iy ah g r iy d m ay m aa m ah d p aa r z t
+
+
+rec_id:			3F553895-5053-4508-B46B-ED0353C326F5
+target:			I wouldn’t have met my boyfriend.
+guess:			I wouldn't have met my boyfriend
+tar_pn:			ay w uh d ah n t hh ae v m eh t m ay b oy f r eh n d
+ges_pn:			ay w uh d ah n t hh ae v m eh t m ay b oy f r eh n d
+l_dvc-spk-0.7f:	(0.18)	ay w uh d ah n t hh ae v m eh t m ay b uw f ih n
+l_dvc-spk-0.7:	(0.05)	ay w uh d ah n t hh ae v m eh t m ay b uh f r eh n d
+s_dvc-spk-3K:	(0.18)	ay w uh d n t hh ae v m eh t m ay b oy f ih n
+l_t100-spk-3K:	(0.27)	ay w uh d n t hh ae v m eh t m ay b uh l f ih n
+l_dvc-spk-3K:	(0.05)	ay w uh d n t hh ae v m eh t m ay b oy f r eh n d
+lrg_train-100:	(0.32)	ay uh d ah n hh ae v m eh t m ay b uh l f ey n n n
+lrg_dev-clean:	(0.32)	ay uh d ah n hh ae v m eh t m ay b uw l f iy n
+
+
+rec_id:			46F82565-F953-448C-B66A-83E657351367
+target:			How's the weather?
+guess:			How's the weather
+tar_pn:			hh aw z dh ah w eh dh er
+ges_pn:			hh aw z dh ah w eh dh er
+l_dvc-spk-0.7f:	(0.11)	hh aw z dh ah w eh d er
+l_dvc-spk-0.7:	(0.22)	hh aw z dh ah l eh t er
+s_dvc-spk-3K:	(0.0)	hh aw z dh ah w eh dh er
+l_t100-spk-3K:	(0.0)	hh aw z dh ah w eh dh er
+l_dvc-spk-3K:	(0.0)	hh aw z dh ah w eh dh er
+lrg_train-100:	(0.44)	hh aw s t ah w ih t er
+lrg_dev-clean:	(0.44)	hh aw s t ow w eh t er
+
+
+rec_id:			496D952A-57EE-400E-90F8-99FAB5FC2D6D
+target:			I've always dreamed of traveling around the world.
+guess:			I've always dreamed of traveling around the world
+tar_pn:			ay v ao l w ey z d r iy m d ah v t r ae v ah l ih ng er aw n d dh ah w er l d
+ges_pn:			ay v ao l w ey z d r iy m d ah v t r ae v ah l ih ng er aw n d dh ah w er l d
+l_dvc-spk-0.7f:	(0.44)	ay v ah r eh s t r ey n t ah v t r ah v er er l iy ih ng er aw n d dh ah w ao l d
+l_dvc-spk-0.7:	(0.25)	ay v ao r ih t s d r iy m ah v t r ah v er l ih ng er aw n d dh ah w ow l d
+s_dvc-spk-3K:	(0.06)	ay v ao l w ey z d r iy m ah v t r ae v er l ih ng er aw n d dh ah w er l d
+l_t100-spk-3K:	(0.12)	ay v ao l w ey z d r iy m ah v t r ae v l ih ng er aw n dh ah w ao l d
+l_dvc-spk-3K:	(0.06)	ay v ao l w ey z d r iy m ah v t r ae v ah ih ng er aw n d dh ah w er l d
+lrg_train-100:	(0.41)	ay m ah r ay s t r iy m ah v t r ae v er l ih ng r aw n d w ao l d
+lrg_dev-clean:	(0.34)	ay v ah r ah s d r iy m ah v t r ae v ah er l ih ng ah r aw n dh ah w ao l d
+
+
+rec_id:			4A962372-3625-4C9C-B3E1-BBAD8BD36CB3
+target:			But I left home early, so it was okay.
+guess:			OK but I left him only felt it was OK
+tar_pn:			b ah t ay l eh f t hh ow m er l iy s ow ih t w aa z ow k ey
+ges_pn:			ow k ey b ah t ay l eh f t hh ih m ow n l iy f eh l t ih t w aa z ow k ey
+l_dvc-spk-0.7f:	(0.38)	d ow k ey b ah t ay l eh f t hh ow m ow n l iy th ao t ih t w aa z ow k ey
+l_dvc-spk-0.7:	(0.38)	ow l k ey b ah t ay l eh f t hh ow m ow n l iy th ow ih t w aa z ow k ey t iy
+s_dvc-spk-3K:	(0.29)	d aa k ih ng b ah t ay l eh f t hh ow m ow n l iy s ow ih t w aa z ow k ey
+l_t100-spk-3K:	(0.25)	ow k ey b ah t ay l eh f t hh ow m ow n l iy th ow ih t w aa z ow k ey
+l_dvc-spk-3K:	(0.29)	ow k ey b ah t ay l eh f t hh ow m ow n l iy th ao ih t w aa z ow k ey
+lrg_train-100:	(0.67)	ae l k ey b ah t ay l ae f t hh ah m ow n l iy f eh l ih d w aa t z ae l k ey l
+lrg_dev-clean:	(0.88)	d ah l k ey b ah t aw l eh f t hh ah m ow n l iy dh aw l eh t w ah t s d aw l k ey n iy
+
+
+rec_id:			4EBF9BEF-CDDE-42CC-9D00-B538848A31ED
+target:			I spent most of the weekend cleaning the house.
+guess:			I spend most of the weekend cleaning the house
+tar_pn:			ay s p eh n t m ow s t ah v dh ah w iy k eh n d k l iy n ih ng dh ah hh aw s
+ges_pn:			ay s p eh n d m ow s t ah v dh ah w iy k eh n d k l iy n ih ng dh ah hh aw s
+l_dvc-spk-0.7f:	(0.13)	ay s p eh n t m ow s t ow ah v dh ah w iy k ih n k l iy n ih ng dh ah hh aw s p
+l_dvc-spk-0.7:	(0.1)	ay s p eh n t m ow s t ow ah v dh ah w iy k ih n k l iy n ih ng dh ah hh aw s
+s_dvc-spk-3K:	(0.0)	ay s p eh n t m ow s t ah v dh ah w iy k eh n d k l iy n ih ng dh ah hh aw s
+l_t100-spk-3K:	(0.1)	ay s p eh n t m ow s t ah v dh ah w iy k ih n k l iy n ih ng dh ah hh aw s p
+l_dvc-spk-3K:	(0.03)	ay s p eh n t m ow s t ah v dh ah w iy k ih n d k l iy n ih ng dh ah hh aw s
+lrg_train-100:	(0.29)	ay s p eh n d m ow s ah v t ah w iy k ih n k l iy n ih ng dh ah hh aw s n n n n
+lrg_dev-clean:	(0.19)	ay s p eh n d m ow s ah v t ah w iy k ih n k l iy n ih ng t ah hh aw s
+
+
+rec_id:			53646E61-CE54-41AB-A970-4D2AF1D4A535
+target:			look for a job abroad
+guess:			Look for a job a abroad
+tar_pn:			l uh k f ao r ah jh aa b ah b r ao d
+ges_pn:			l uh k f ao r ah jh aa b ah ah b r ao d
+l_dvc-spk-0.7f:	(0.13)	l uh k f ao r ah jh aa b ah b ao r d
+l_dvc-spk-0.7:	(0.13)	l uh k f ao r ah jh aa b ah b ao r d
+s_dvc-spk-3K:	(0.13)	l uh k f ao r ah jh aa b ah b ao r d
+l_t100-spk-3K:	(0.13)	l uh k f ao r ah jh aa b ah b ao r d
+l_dvc-spk-3K:	(0.13)	l uh k f ao r ah jh aa b ah b ao r d
+lrg_train-100:	(0.2)	l uh k f ao r ah jh aa b ah v ao r d
+lrg_dev-clean:	(0.33)	l uh k f ao r ah ch aa p ah l v ao r d
+
+
+rec_id:			54748997-5146-41E0-BDAF-FE55EC192C87
+target:			I have a sore throat.
+guess:			I had a sore a throat
+tar_pn:			ay hh ae v ah s ao r th r ow t
+ges_pn:			ay hh ae d ah s ao r ah th r ow t
+l_dvc-spk-0.7f:	(0.33)	ay hh ae d ah s ow s r ow t
+l_dvc-spk-0.7:	(0.58)	ay hh ae d ah s ow t ah l t r ao t
+s_dvc-spk-3K:	(0.42)	ay hh ae d ah s ow s t r ao t
+l_t100-spk-3K:	(0.5)	ay hh ae d ah s ao l sh l ao r t
+l_dvc-spk-3K:	(0.42)	ay hh ae d ah s ow l s r ao t
+lrg_train-100:	(0.5)	ay hh ae d ah s ow l v th ao r t
+lrg_dev-clean:	(0.67)	ay hh eh d ah s ow l z t r ao l t
+
+
+rec_id:			55A42749-B30E-4A89-B154-FFB91C468B13
+target:			I do a lot of weight training.
+guess:			I do a lot a weight an training
+tar_pn:			ay d uw ah l aa t ah v w ey t t r ey n ih ng
+ges_pn:			ay d uw ah l aa t ah w ey t ae n t r ey n ih ng
+l_dvc-spk-0.7f:	(0.06)	ay d uw ah l aa t ah v w ey t t r ey n ih ng z
+l_dvc-spk-0.7:	(0.06)	ay d uw ah l aa t ah v w ey t t r ey n ih ng z
+s_dvc-spk-3K:	(0.17)	ay d uw ah l aa t ah w ey t r ey n ih ng z
+l_t100-spk-3K:	(0.11)	ay d uw ah l aa t ah v w ey t r ey n ih ng z
+l_dvc-spk-3K:	(0.11)	ay d uw ah l aa t ah v w ey t r ey n ih ng z
+lrg_train-100:	(0.17)	ay d uw ah l aa t ah w ay t t r ey n ih ng z
+lrg_dev-clean:	(0.39)	ay d ow n ao t ao w ey t t r ey n ih ng z
+
+
+rec_id:			566D960D-CD69-4635-9CA2-6226DAA9E962
+target:			I learn quickly.
+guess:			I am romantically I'll learn quickly
+tar_pn:			ay l er n k w ih k l iy
+ges_pn:			ay ae m r ow m ae n t ih k ah l iy ay l l er n k w ih k l iy
+l_dvc-spk-0.7f:	(1.5)	ay r ah n t w ih k l ih ng ay l ah n t w ih k l ih ng
+l_dvc-spk-0.7:	(1.1)	ay r ah n k w ih k l iy ay l ah n k w ih k l iy
+s_dvc-spk-3K:	(1.2)	ay r ah n p iy k l iy ay l ah n p iy k l iy
+l_t100-spk-3K:	(0.7)	ay ah k ih k l iy ay r n k w ih k l iy
+l_dvc-spk-3K:	(1.1)	ay r ah n w ih k l ih t ay r n k w ih k l ih
+lrg_train-100:	(1.3)	ay m r ao n k w ih k l iy ay m v ao n k w ih k l iy
+lrg_dev-clean:	(1.4)	ay r ah ow n t iy k l iy ay l ah n t r iy k l iy
+
+
+rec_id:			56CD7BA6-A574-42CC-ACAF-8A84B6076813
+target:			I've always wanted to try skydiving.
+guess:			I've always wanted to try skydiving
+tar_pn:			ay v ao l w ey z w ao n t ih d t uw t r ay s k ay d ay v ih ng
+ges_pn:			ay v ao l w ey z w ao n t ih d t uw t r ay s k ay d ay v ih ng
+l_dvc-spk-0.7f:	(0.08)	ay v ao l w ey z w aa n t ah d t uw t r ay s k ay d ay v ih ng
+l_dvc-spk-0.7:	(0.04)	ay v ao l w ey z w aa n t ih d t uw t r ay s k ay d ay v ih ng
+s_dvc-spk-3K:	(0.08)	ay v ao l w ey z w ao n t ih d t uw d r ay v k ay d ay v ih ng
+l_t100-spk-3K:	(0.08)	ay v ao l w ey z w aa n t ih d t uw t r ay f k ay d ay v ih ng
+l_dvc-spk-3K:	(0.0)	ay v ao l w ey z w ao n t ih d t uw t r ay s k ay d ay v ih ng
+lrg_train-100:	(0.27)	ay v ao l r ey z w aa n ah d t ah t r ay k ay th ay v ih ng
+lrg_dev-clean:	(0.46)	ay hh ae v ao l r ih jh w aa n ah d t ah t r ay f r k ay t ay v ih ng
+
+
+rec_id:			57AABF81-2B3B-414A-817A-EED59F3593E9
+target:			We ended up sleeping at the airport.
+guess:			We ended up sleeping at the airport
+tar_pn:			w iy eh n d ah d ah p s l iy p ih ng ae t dh ah eh r p ao r t
+ges_pn:			w iy eh n d ah d ah p s l iy p ih ng ae t dh ah eh r p ao r t
+l_dvc-spk-0.7f:	(0.16)	w iy eh n d ah d ah p s l ih p ih ng ae t dh ah eh r f er t
+l_dvc-spk-0.7:	(0.2)	w iy eh n d ah d ah p s l ih p iy ih ng ae t dh ah eh r f er t
+s_dvc-spk-3K:	(0.04)	w iy eh n d ah d ah p s l iy p ih ng ae t dh ah eh r f ao r t
+l_t100-spk-3K:	(0.12)	w iy eh n d ah d ah p s l iy p ih ng ae t dh ah eh r f er t
+l_dvc-spk-3K:	(0.08)	w iy eh n d ah d ah p s s l iy p ih ng ae t dh ah eh r f ao r t
+lrg_train-100:	(0.28)	w iy eh n d ih t ah p s aa l ah p ih ng ae t dh ah eh r f er t
+lrg_dev-clean:	(0.28)	w iy eh n d ah d ah p s s aa l ah p iy ih ng ae t dh ah eh r f er t
+
+
+rec_id:			58070A17-E25C-4B9C-B1A1-4F6EB401AB35
+target:			I exercise in the morning.
+guess:			I exercise in the morning
+tar_pn:			ay eh k s er s ay z ih n dh ah m ao r n ih ng
+ges_pn:			ay eh k s er s ay z ih n dh ah m ao r n ih ng
+l_dvc-spk-0.7f:	(0.72)	ay ae n s ow s p ay ih g ay ah w ah uw
+l_dvc-spk-0.7:	(0.78)	ay ae f ao s p ay b ay dh ah k aa l iy l
+s_dvc-spk-3K:	(0.83)	ay ae ay ay l ah v iy
+l_t100-spk-3K:	(0.5)	ay eh k s er s ay z ih b eh d v aa l uw
+l_dvc-spk-3K:	(0.61)	ay eh n s s er s ay iy v ih k ao r iy
+lrg_train-100:	(0.94)	ay ae th er z f ay w ih d ah n iy d ay d b ao d y uw ih ng hh
+lrg_dev-clean:	(0.89)	ay ae m th ah f ay iy ih ay g ah l ah d ih ih ng ih n eh n
+
+
+rec_id:			5A7332D2-E62C-4920-A811-8ED2947DF19B
+target:			I really wanna get toned.
+guess:			I really want to get it towed
+tar_pn:			ay r ih l iy w aa n ah g eh t t ow n d
+ges_pn:			ay r ih l iy w aa n t t uw g eh t ih t t ow d
+l_dvc-spk-0.7f:	(0.38)	ay r ih l iy w aa n t uw g eh t ih t ay l d d
+l_dvc-spk-0.7:	(0.31)	ay r ih l iy w aa n t ah n t g eh t t ay d
+s_dvc-spk-3K:	(0.19)	ay r ih l iy w aa n t uw g eh t t ow l d
+l_t100-spk-3K:	(0.25)	ay r ih l iy w aa n t t uw g eh t t ow l d
+l_dvc-spk-3K:	(0.31)	ay r ih l iy w aa n t t uw g eh t t ow l d d
+lrg_train-100:	(0.19)	ay r ih l iy w aa n t ah g eh t t ao l d
+lrg_dev-clean:	(0.19)	ay r ih l iy w ow n ah g eh t t ao l d
+
+
+rec_id:			5C76D7AF-FF2B-4E12-A8FA-693BCBEACE66
+target:			Could we have the check, please?
+guess:			Could we have the check please
+tar_pn:			k uh d w iy hh ae v dh ah ch eh k p l iy z
+ges_pn:			k uh d w iy hh ae v dh ah ch eh k p l iy z
+l_dvc-spk-0.7f:	(0.06)	k uh d w iy hh ae v dh ah t ch eh k p l iy z
+l_dvc-spk-0.7:	(0.0)	k uh d w iy hh ae v dh ah ch eh k p l iy z
+s_dvc-spk-3K:	(0.0)	k uh d w iy hh ae v dh ah ch eh k p l iy z
+l_t100-spk-3K:	(0.06)	k uh d w iy hh ae v dh ah ch eh k p l iy s
+l_dvc-spk-3K:	(0.0)	k uh d w iy hh ae v dh ah ch eh k p l iy z
+lrg_train-100:	(0.18)	k uh d dh ey hh ae v dh ah ch eh k p l iy th
+lrg_dev-clean:	(0.12)	k uh d w iy hh ae v dh ah t ch eh k p l iy z uh
+
+
+rec_id:			5CE84F44-F401-4CD1-B1BD-28757F959BE4
+target:			living in another country
+guess:			Living a another a country
+tar_pn:			l ih v ih ng ih n ah n ah dh er k ah n t r iy
+ges_pn:			l ih v ih ng ah ah n ah dh er ah k ah n t r iy
+l_dvc-spk-0.7f:	(0.11)	l ih v ih ng ah n ah dh er k ah n t r iy
+l_dvc-spk-0.7:	(0.17)	l ih v ih ng ah n ah dh er k ah n t r iy l
+s_dvc-spk-3K:	(0.11)	l ih v ih ng ah n ah dh er k ah n t r iy
+l_t100-spk-3K:	(0.11)	l ih v ih ng ah n ah dh er k ah n t r iy
+l_dvc-spk-3K:	(0.11)	l ih v ih ng ah n ah dh er k ah n t r iy
+lrg_train-100:	(0.11)	l ih v ih ng ah n ah dh er k ah n t r iy
+lrg_dev-clean:	(0.28)	l ih v ih ng aa n n ah dh er k aa n t r uw iy l
+
+
+rec_id:			5F82FEF4-5E65-444C-9D60-D5D152EF62C3
+target:			What are you up to this weekend?
+guess:			What are you up to this weekend
+tar_pn:			w ah t aa r y uw ah p t uw dh ih s w iy k eh n d
+ges_pn:			w ah t aa r y uw ah p t uw dh ih s w iy k eh n d
+l_dvc-spk-0.7f:	(0.15)	w uh r y uw ah p t uw dh ih s w iy k eh n d
+l_dvc-spk-0.7:	(0.0)	w ah t aa r y uw ah p t uw dh ih s w iy k eh n d
+s_dvc-spk-3K:	(0.0)	w ah t aa r y uw ah p t uw dh ih s w iy k eh n d
+l_t100-spk-3K:	(0.0)	w ah t aa r y uw ah p t uw dh ih s w iy k eh n d
+l_dvc-spk-3K:	(0.0)	w ah t aa r y uw ah p t uw dh ih s w iy k eh n d
+lrg_train-100:	(0.45)	hh w eh dh er y iy ah p t ah dh ih s w iy k ae n
+lrg_dev-clean:	(0.3)	hh w eh dh aa r y uw ah p t ah dh ih s w iy k hh ae n d
+
+
+rec_id:			614459EA-D662-409E-B04A-5A130EEAF65A
+target:			Who is the teacher?
+guess:			I is the teacher
+tar_pn:			hh uw ih z dh ah t iy ch er
+ges_pn:			ay ih z dh ah t iy ch er
+l_dvc-spk-0.7f:	(0.4)	ih t s dh ah t iy ch er
+l_dvc-spk-0.7:	(0.4)	ih t s dh ah t iy ch er
+s_dvc-spk-3K:	(0.2)	ih z dh ah t iy ch er
+l_t100-spk-3K:	(0.2)	ih z dh ah t iy ch er
+l_dvc-spk-3K:	(0.2)	ih z dh ah t iy ch er
+lrg_train-100:	(0.4)	ih s t ah t iy ch er
+lrg_dev-clean:	(0.6)	ih s t ah t iy ch uh er r
+
+
+rec_id:			66870487-E8AB-4E67-9969-50A8DD3E5A66
+target:			I let down my parents.
+guess:			I'll let my parents
+tar_pn:			ay l eh t d aw n m ay p eh r ah n t s
+ges_pn:			ay l l eh t m ay p eh r ah n t s
+l_dvc-spk-0.7f:	(0.12)	ay l eh t t aw n m ay p eh r ah n t
+l_dvc-spk-0.7:	(0.0)	ay l eh t d aw n m ay p eh r ah n t s
+s_dvc-spk-3K:	(0.0)	ay l eh t d aw n m ay p eh r ah n t s
+l_t100-spk-3K:	(0.0)	ay l eh t d aw n m ay p eh r ah n t s
+l_dvc-spk-3K:	(0.0)	ay l eh t d aw n m ay p eh r ah n t s
+lrg_train-100:	(0.19)	ay l eh t d ah m m ay p eh r ah n t
+lrg_dev-clean:	(0.25)	ay l eh t ae m m ay p eh r ah n t
+
+
+rec_id:			66942053-D970-4E49-B5E0-C225C803EA47
+target:			I do a lot of pull-ups.
+guess:			I do a lot a pull a ups
+tar_pn:			ay d uw ah l aa t ah v p uh l ah p s
+ges_pn:			ay d uw ah l aa t ah p uh l ah ah p s
+l_dvc-spk-0.7f:	(0.13)	ay d uw ah l aa t ah v p uh l ah v z
+l_dvc-spk-0.7:	(0.2)	ay d uw ah l aa t ah v k uh r ah v s
+s_dvc-spk-3K:	(0.27)	ay d uw ah l aa t ah v k l aa s
+l_t100-spk-3K:	(0.2)	ay d uw ah l aa t ah v p uh ah v z
+l_dvc-spk-3K:	(0.2)	ay d uw ah l aa t ah v p uh ah b z
+lrg_train-100:	(0.47)	ay d uw aa r aa d ah l p uh r aa f s
+lrg_dev-clean:	(0.67)	ah t ih aa r aa d ow l p uh r ah f s
+
+
+rec_id:			69A965B4-37C0-417C-8BA5-99691FB99735
+target:			I go ice skating all the time.
+guess:			I go skateboarding all the time
+tar_pn:			ay g ow ay s s k ey t ih ng ao l dh ah t ay m
+ges_pn:			ay g ow s k ey t b ao r d ih ng ao l dh ah t ay m
+l_dvc-spk-0.7f:	(0.44)	ay g ow s k ey p b ao r d ih ng ao r dh ah t ay m
+l_dvc-spk-0.7:	(0.5)	ay g ow s k ey ih ng b ao r d ih ng ao r dh ah t ay m
+s_dvc-spk-3K:	(0.28)	ay g ow s k ey t b ow d ih ng ao l dh ah t ay m
+l_t100-spk-3K:	(0.39)	ay g ow s k ey t b ao r d ih ng ao er dh ah t ay m
+l_dvc-spk-3K:	(0.44)	ay g ow s k ey t b ao r d ih ng ao v er dh ah t ay m
+lrg_train-100:	(0.39)	ay g ow s k ey p b oy l ih ng ao r dh ah t ay m
+lrg_dev-clean:	(0.44)	ah g ow s k ey b ao r d ih ng ao r dh ah t ay m
+
+
+rec_id:			6A0D6FFE-86CB-4105-8759-07582E861A9E
+target:			I might visit my parents this Saturday.
+guess:			I am I bitching my parents this Saturday
+tar_pn:			ay m ay t v ih z ih t m ay p eh r ah n t s dh ih s s ae t er d iy
+ges_pn:			ay ae m ay b ih ch ih ng m ay p eh r ah n t s dh ih s s ae t er d iy
+l_dvc-spk-0.7f:	(0.11)	ay m ay t b ih t ih m ay p eh r ah n t s dh ih s s ae t er d iy
+l_dvc-spk-0.7:	(0.19)	m ay b ih z ah n m ay p eh r ah n t s dh ih s s ae t er d iy
+s_dvc-spk-3K:	(0.15)	ay m ay b ih t t m ay p eh r ah n t s dh ih s s ae t er d iy
+l_t100-spk-3K:	(0.11)	ay m ay t b ih t m ay p eh r ah n t s dh ih s s ae t er d iy
+l_dvc-spk-3K:	(0.0)	ay m ay t v ih z ih t m ay p eh r ah n t s dh ih s s ae t er d iy
+lrg_train-100:	(0.44)	ay m ay b ih t ah n m ay p eh r ah n t s d ih s eh r dh ey
+lrg_dev-clean:	(0.33)	ah m ay b iy t m ay p eh r ah n t s dh ih s s eh t er dh ey
+
+
+rec_id:			6E05DDBE-91AC-4C72-95E2-73099AEF65DF
+target:			Good to see you, too! Welcome to Shanghai!
+guess:			Good to see you too welcome to Shanghai
+tar_pn:			g uh d t uw s iy y uw t uw w eh l k ah m t uw sh ae ng hh ay
+ges_pn:			g uh d t uw s iy y uw t uw w eh l k ah m t uw sh ae ng hh ay
+l_dvc-spk-0.7f:	(0.25)	t uw s iy y uw t uw w eh r k ah m ih ng t uw sh ae ng hh ay
+l_dvc-spk-0.7:	(0.25)	g uh d t uw s iy y uw t uw w eh r k ah m ih ng t uw jh aa ng ay
+s_dvc-spk-3K:	(0.25)	g uh d t uw s iy y uw t uw w iy r k ah m ih ng t uw sh ae m p ay
+l_t100-spk-3K:	(0.21)	b ah t t uw s iy y uw t uw w eh r k ah m t uw sh ae n hh ay
+l_dvc-spk-3K:	(0.17)	g ow t uw s iy y uw t uw w iy r k ah m t uw sh ae ng hh ay
+lrg_train-100:	(0.33)	g ih d t ah s iy y uw t uw hh w eh r k ah m t ah sh ae n hh ey uw
+lrg_dev-clean:	(0.38)	g ow t ah s t iy y t uw m eh r k ah m t ah ch ae ng hh ay
+
+
+rec_id:			6E814FD9-0E39-4106-AE66-927CD04CBBD7
+target:			Also, could you tell me where the fitting room is?
+guess:			Where is the could could you tell me where are where are the fitting an is
+tar_pn:			ao l s ow k uh d y uw t eh l m iy w eh r dh ah f ih t ih ng r uw m ih z
+ges_pn:			w eh r ih z dh ah k uh d k uh d y uw t eh l m iy w eh r aa r w eh r aa r dh ah f ih t ih ng ae n ih z
+l_dvc-spk-0.7f:	(0.45)	w er s ow k uw k uh d y uw t eh l m iy w eh r w iy aa r dh ah f iy d ih n uw m iy z
+l_dvc-spk-0.7:	(0.52)	w er s ow k uw k uh d y uw t eh l m iy w eh r w iy aa r dh ah v iy v y ih m uw m iy z
+s_dvc-spk-3K:	(0.34)	er s ow k uh d k uh d y uw t eh l m iy w eh r w iy r dh ah v ih t ih ng r uw m ih s
+l_t100-spk-3K:	(0.41)	ao r s ow k uw d k uh d y uw t eh l m iy w eh r w iy aa r dh ah f iy t ih n uw m iy z
+l_dvc-spk-3K:	(0.31)	w er s ow k uw k uh d y uw t eh l m iy w eh r w eh r dh ah f iy d ih ng r uw m ih z
+lrg_train-100:	(0.55)	ao r s ow k uw p k uh d y uw t eh l m iy w iy aa r w iy aa r d ah f ih v uw n uw m iy z
+lrg_dev-clean:	(0.62)	m ao r s ow k uw p k uw d y uw t eh l m iy w iy aa r w iy aa r dh ah f iy r iy n uw m iy z
+
+
+rec_id:			7EC91B8F-EA9F-4504-9781-250662210530
+target:			Drivers really should be more careful.
+guess:			Wiebers Lily should be more careful
+tar_pn:			d r ay v er z r ih l iy sh uh d b iy m ao r k eh r f ah l
+ges_pn:			<UNK> l ih l iy sh uh d b iy m ao r k eh r f ah l
+l_dvc-spk-0.7f:	(0.21)	ay b er z l ih l iy sh uh d uw b iy m ao r k eh r f ah l
+l_dvc-spk-0.7:	(0.25)	ao b er z l ih t l iy sh uh d b iy m ao r k eh r f ah l
+s_dvc-spk-3K:	(0.33)	l ay b r er z l ih t ih sh uw d b iy m ao r k eh r f ah l
+l_t100-spk-3K:	(0.17)	l ay b er z l ih l iy sh uh d b iy m ao r k eh r f ah l
+l_dvc-spk-3K:	(0.21)	m ay b er z l ih t l iy sh uh d b iy m ao r k eh r f ah l
+lrg_train-100:	(0.46)	l ay b er z l ih m ih t y uw t ah b iy m ao r k eh r f ah l
+lrg_dev-clean:	(0.46)	p ah b er er z l ih n ih sh y uw t ah b iy m ao r k eh r f ah l
+
+
+rec_id:			821C53A8-8EAB-4A87-93E9-3FB7A53E56D3
+target:			My husband sent me flowers.
+guess:			My husband says me a flower
+tar_pn:			m ay hh ah z b ah n d s eh n t m iy f l aw er z
+ges_pn:			m ay hh ah z b ah n d s eh z m iy ah f l aw er
+l_dvc-spk-0.7f:	(0.15)	m ay hh ah z b ah n d s eh n t m iy ah v f l aw er
+l_dvc-spk-0.7:	(0.2)	m ay hh ah z b ah n d s eh n d z m iy ah f l aw er
+s_dvc-spk-3K:	(0.1)	m ay hh ah z b ah n d s eh n t m iy ah f l aw er
+l_t100-spk-3K:	(0.1)	m ay hh ah z b ah n d s eh n t m iy ah f l aw er
+l_dvc-spk-3K:	(0.1)	m ay hh ah z b ah n d s eh n t m iy ah f l aw er
+lrg_train-100:	(0.25)	m ay hh ah z b ah n d s ae d n iy ah f l aw er z
+lrg_dev-clean:	(0.3)	m ay hh ah z b ah n d s ae d n iy ah f l aw er
+
+
+rec_id:			8371D4DB-8125-4DCA-B342-09C105D1DD3A
+target:			You should see a doctor.
+guess:			You should see a doctor
+tar_pn:			y uw sh uh d s iy ah d aa k t er
+ges_pn:			y uw sh uh d s iy ah d aa k t er
+l_dvc-spk-0.7f:	(0.0)	y uw sh uh d s iy ah d aa k t er
+l_dvc-spk-0.7:	(0.0)	y uw sh uh d s iy ah d aa k t er
+s_dvc-spk-3K:	(0.08)	y uw sh uh d sh iy ah d aa k t er
+l_t100-spk-3K:	(0.0)	y uw sh uh d s iy ah d aa k t er
+l_dvc-spk-3K:	(0.0)	y uw sh uh d s iy ah d aa k t er
+lrg_train-100:	(0.15)	y uw sh uh d s iy ah d ae k t hh er
+lrg_dev-clean:	(0.15)	y uw sh uh s iy r d aa k t er
+
+
+rec_id:			86AF9726-2433-4682-9F88-15F364E6D2A7
+target:			I go skiing all the time.
+guess:			Aiko Aiko ski all the time
+tar_pn:			ay g ow s k iy ih ng ao l dh ah t ay m
+ges_pn:			ey k ow ey k ow s k iy ao l dh ah t ay m
+l_dvc-spk-0.7f:	(0.47)	ay g ow s ay g ow s k iy f ao r dh ah t ay m
+l_dvc-spk-0.7:	(0.47)	ay g ow z ay g ow s k iy ao r dh ah t ay m
+s_dvc-spk-3K:	(0.53)	ay g ah l z ay g ow s k iy ao r dh ah t ay m
+l_t100-spk-3K:	(0.4)	ay g ow z ay g ow s k iy ao l dh ah t ay m
+l_dvc-spk-3K:	(0.47)	ay g ow s ay g ow s k iy ao r dh ah t ay m
+lrg_train-100:	(0.53)	ay k uw l z ay g ow s k iy ao r dh ah t ay m
+lrg_dev-clean:	(0.87)	ah k ow l v z ah g ow s k iy ao r t ah t aa n
+
+
+rec_id:			8C1B9FD7-5933-4783-88CC-3B5108E2FE3F
+target:			her siblings
+guess:			I siblings
+tar_pn:			hh er s ih b l ih ng z
+ges_pn:			ay s ih b l ih ng z
+l_dvc-spk-0.7f:	(0.44)	hh aw s t ey p l ih ng z
+l_dvc-spk-0.7:	(0.44)	hh aw s t ey p l ih ng z
+s_dvc-spk-3K:	(0.22)	hh aw z ih b l ih ng z
+l_t100-spk-3K:	(0.44)	hh aw s t ey b ah l ih ng z
+l_dvc-spk-3K:	(0.33)	hh aw s t ey b l ih ng z
+lrg_train-100:	(0.44)	hh aw s dh ey b r ih ng z
+lrg_dev-clean:	(0.56)	hh aw s t ah b r iy ng z
+
+
+rec_id:			8D120511-296A-47EA-83F7-585C18F1D5E0
+target:			Your party last night was pretty wild.
+guess:			Your pre-Pearly party last night was pretty wild
+tar_pn:			y ao r p aa r t iy l ae s t n ay t w aa z p r ih t iy w ay l d
+ges_pn:			y ao r <UNK> p aa r t iy l ae s t n ay t w aa z p r ih t iy w ay l d
+l_dvc-spk-0.7f:	(0.59)	y ao r p r iy p er l iy p er d iy l ae s t n ay t w aa z p r ih t iy v ay ah l d r r r r r
+l_dvc-spk-0.7:	(0.63)	y ao r p r ih t iy p er l iy p er t iy l ae s t n ay t w aa z p r ih t iy v ay l d r ao r r r r
+s_dvc-spk-3K:	(0.37)	y ao r p r ih t iy p er l iy p er t iy l ae s t n ay t w aa z p r ih t iy w ay l d
+l_t100-spk-3K:	(0.7)	y ao r p r ih t iy p er l iy p er t iy l ae s t n ay t w aa z p r ih t iy v ay l d r ao r ao r ao r ao
+l_dvc-spk-3K:	(0.37)	y ao r p r ih t iy p aa r t iy p aa r t iy l ae s t n ay t w aa z p r ih t iy w ay l d
+lrg_train-100:	(0.48)	y ao r p r p er l iy p er t iy l ae s n ay t w aa z p r iy t iy v ay l d r r r
+lrg_dev-clean:	(0.67)	y uh r p r ih t iy p er l iy p er t iy l ae s n ah t w ah z p r ih t iy v ay l d ih r r
+
+
+rec_id:			8F4E6C51-C423-47C9-A09E-15581F5BEF0B
+target:			I would’ve been on time.
+guess:			I wouldve a been an time
+tar_pn:			ay w uh d ah v b ih n aa n t ay m
+ges_pn:			ay w uh d v iy ah b ih n ae n t ay m
+l_dvc-spk-0.7f:	(0.5)	ay ow d uw v uw d uw b iy n aa n t ay m
+l_dvc-spk-0.7:	(0.5)	ay ao d er uw d er v iy n aa n t ay m
+s_dvc-spk-3K:	(0.57)	ay w uh d hh ae v w uh d hh ae v b ih n aa n t ay m
+l_t100-spk-3K:	(0.64)	ay k uh d hh ae v w uh d hh ae v b iy n aa n t ay m
+l_dvc-spk-3K:	(0.36)	ay uh d ah v w uh d uw b ih n aa n t ay m
+lrg_train-100:	(0.86)	ay w uh d hh ae v w uh d hh ae v b ah n ih n t l ey m
+lrg_dev-clean:	(0.86)	ay ow d uw v uw d uw v iy n ow ah n t ay n iy
+
+
+rec_id:			93260A32-64F2-4C14-9DAE-9DF644708C88
+target:			traveling around the world
+guess:			Traveling around the world
+tar_pn:			t r ae v ah l ih ng er aw n d dh ah w er l d
+ges_pn:			t r ae v ah l ih ng er aw n d dh ah w er l d
+l_dvc-spk-0.7f:	(0.17)	t r ae b ah l ih ng er aw n d dh ah w ao r d
+l_dvc-spk-0.7:	(0.0)	t r ae v ah l ih ng er aw n d dh ah w er l d
+s_dvc-spk-3K:	(0.0)	t r ae v ah l ih ng er aw n d dh ah w er l d
+l_t100-spk-3K:	(0.0)	t r ae v ah l ih ng er aw n d dh ah w er l d
+l_dvc-spk-3K:	(0.0)	t r ae v ah l ih ng er aw n d dh ah w er l d
+lrg_train-100:	(0.11)	t r ae v ah l ih ng er aw n dh ah w er d
+lrg_dev-clean:	(0.28)	t r ae b ah l ih ng ah aw n dh ah w ao r d
+
+
+rec_id:			944E3840-9F2C-4A25-970E-646F2347BB38
+target:			He reads a letter.
+guess:			He later later
+tar_pn:			hh iy r iy d z ah l eh t er
+ges_pn:			hh iy l ey t er l ey t er
+l_dvc-spk-0.7f:	(0.64)	hh iy r iy t s hh t ah p
+l_dvc-spk-0.7:	(0.27)	hh iy r iy d z p ih t er
+s_dvc-spk-3K:	(0.45)	hh iy r iy t s p iy t er
+l_t100-spk-3K:	(0.45)	hh iy l iy d z hh er p iy t er
+l_dvc-spk-3K:	(0.36)	hh iy iy d z t er
+lrg_train-100:	(0.55)	hh iy r iy t s p th ih t ah
+lrg_dev-clean:	(0.45)	hh iy iy d s p eh t ah
+
+
+Dataset PER Values
+------------------
+l_dvc-spk-0.7f	0.331
+l_dvc-spk-0.7	0.319
+s_dvc-spk-3K	0.25
+l_t100-spk-3K	0.266
+l_dvc-spk-3K	0.223
+lrg_train-100	0.446
+lrg_dev-clean	0.517
+------------------

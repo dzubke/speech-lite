@@ -4,14 +4,50 @@
 
 # standard lib
 import argparse
+import json
 import os
 from pathlib import Path
 import time
 # third-party libs
 import soundfile
 # project libs
+from speech.utils.data_helpers import path_to_id
 from speech.utils.io import read_data_json
+from speech.utils.wave import wav_duration
 
+
+def filter_w2v_files(tsv_path, phn_path, filter_path):
+    """This function will filter our the audio files specified in `filter_path`
+    from the tsv_path and phn_path files. th
+    """
+    
+    with open(filter_path, 'r') as filter_f:
+        filter_id_set = {path_to_id(path.strip()) for path in filter_f}
+    
+    tsv_out_path = tsv_path.replace(".tsv", "-filtered.tsv")
+    phn_out_path = phn_path.replace(".phn", "-filtered.phn")
+
+    with open(tsv_path, 'r') as tsv_in_f, open(tsv_out_path, 'w') as tsv_out_f, \
+        open(phn_path, 'r') as phn_in_f, open(phn_out_path, 'w') as phn_out_f:
+        
+        root = next(tsv_in_f).strip()
+        tsv_out_f.write(root + '\n')
+
+        tsv_in_f, phn_in_f = list(tsv_in_f), list(phn_in_f)
+        assert len(tsv_in_f) == len(phn_in_f), "tsv and phn files are not same length"
+
+        skipped_file_count = 0
+        for i, tsv_line in enumerate(tsv_in_f):
+            sub_path, _ = tsv_line.strip().split()
+            line_id = path_to_id(sub_path)
+            if line_id not in filter_id_set:
+                tsv_out_f.write(tsv_line+ '\n')
+                phn_out_f.write(phn_in_f[i]+ '\n')
+            else:
+                skipped_file_count += 1
+
+        assert skipped_file_count == len(filter_id_set), \
+            "{skipped_file_count} skipped, but should have skipped {len(filter_id_set)}"
 
 def create_w2v_files(json_path:str, data_dir:str, save_dir:str):
     """Creates the tsv, phn, and dict.phn.txt files for the wav2vec from
@@ -110,6 +146,27 @@ def check_manifest(json_dataset:dict, tsv_path:str, phn_path:str)->None:
         print("All files match. All good!")
 
 
+def w2v_to_json(w2v_tsv_path, w2v_phn_path, json_out_path)->None:
+    """This function takes in the tsv and phn files for the w2v models and writes a training-json
+    for the deepspeech models to the `json_out_path` location.
+    """ 
+
+    with open(w2v_tsv_path) as tsv_f, open(w2v_phn_path) as phn_f, open(json_out_path, 'w') as out_f:
+        root = next(tsv_f).strip()
+        
+        for tsv_line, phones in zip(tsv_f, phn_f):
+            sub_path, _ = tsv_line.strip().split()
+            full_path = os.path.join(root, sub_path)
+            phones = phones.strip().split()
+
+            duration = wav_duration(full_path)
+            
+            json.dump({'text': phones, 'duration': duration, 'audio': full_path}, out_f)
+            out_f.write('\n')
+    
+    
+    
+
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(
@@ -120,6 +177,9 @@ if __name__ == "__main__":
     )  
     parser.add_argument(
         "--data-dir", type=str, help="path root directory of dataset"
+    )
+    parser.add_argument(
+        "--filter-path", type=str, help="path to file with audio recordings to filter out of dataset"
     )
     parser.add_argument(
         "--json-path", type=str, help="path to training json file"
@@ -135,7 +195,8 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    os.makedirs(args.save_dir, exist_ok=True)
+    if args.save_dir is not None:
+        os.makedirs(args.save_dir, exist_ok=True)
 
     start_time = time.time()
     if args.action == "check-manifest":
@@ -144,4 +205,8 @@ if __name__ == "__main__":
         create_tsv_file(args.json_path, args.save_dir)
     elif args.action == "create-w2v-files":
         create_w2v_files(args.json_path, args.data_dir, args.save_dir)
+    elif args.action == "filter-w2v-files":
+        filter_w2v_files(args.tsv_path, args.phn_path, args.filter_path)
+    elif args.action == "w2v-to-json":
+        w2v_to_json(args.tsv_path, args.phn_path, args.json_path)
     print(f"script took: {round((time.time() - start_time)/ 60, 3)} min")  

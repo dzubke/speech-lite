@@ -897,6 +897,112 @@ class SpeakTrainMetadataPreprocessor(DataPreprocessor):
                         examples_collected += 1
 
 
+##################  Speak Eval 1   ###########################
+
+class SpeakEval1Preprocessor(DataPreprocessor):
+
+    def __init__(self, config:dict):
+        """
+        """
+        super().__init__(
+            dataset_dir = config['dataset_dir'], 
+            dataset_files = config['dataset_files'],
+            dataset_name = config['dataset_name'],
+            lexicon_path = config['lexicon_path'],
+            force_convert = config['force_convert'],
+            min_duration = config['min_duration'],
+            max_duration = config['max_duration'], 
+            process_transcript = config['process_transcript']
+        )
+        self.config = config
+
+
+    def process_datasets(self):
+        logging.info("Processing Speak Eval1 dataset")
+        for set_name, label_fn in self.dataset_dict.items():
+            self.clear_audio_trans()    # clears the audio_transcript buffer
+            label_path = os.path.join(self.dataset_dir, label_fn)
+            self.collect_audio_transcripts(label_path)
+            root, ext = os.path.splitext(label_path)
+            json_path = root + os.path.extsep + "json"
+            self.write_json(json_path)
+        unique_unknown_words(self.dataset_dir)
+    
+    def collect_audio_transcripts(self, label_path:str):
+        
+        mispro_id_set = self.get_mispro_ids()
+
+        with open(label_path, 'r') as tsv_file:
+            tsv_reader = csv.reader(tsv_file, delimiter='\t')
+            # header: id, target, lessonId, lineId, uid, redWords, date
+            header = next(tsv_reader)       
+
+            for row in tsv_reader:
+                audio_id, transcript = row[0], row[1]
+                if audio_id in mispro_id_set:
+                    file_path = os.path.join(self.dataset_dir, "audio", audio_id + ".wav")
+                    self.audio_trans.append((file_path, transcript))
+
+
+    def get_mispro_ids(self)->set:
+        """returns a list of file id's of recordings with mispronunciations."""
+        
+        return {
+            '00F931A9-6EA9-4233-85B4-94015A257352',
+            '012C1AC5-13E0-4337-B6CC-BFD58A12A8BC',
+            '054C13A4-9499-453F-90A0-950DA50C4576',
+            '125577CF-D7A3-4E95-9AAC-1EA298239BE7',
+            '16895C3F-1165-44CC-89B8-A812A200234D',
+            '1A416C3F-03C7-4D3D-9EDF-0431C09A1402',
+            '1CEB4E72-10DF-48FB-ACAC-CF3B7943ECD9',
+            '1DC83F33-A033-49EC-B087-A04421E252B9',
+            '1F3FAE4A-DFA3-41A9-A50C-494944C9BEFA',
+            '1FDCD134-800F-49D3-AA47-84B9ECF1DC69',
+            '1B9643B4-75FF-4E5C-8737-306551A36741',
+            '234DD0F7-62B2-4E64-B612-2226FFD59D5D',
+            '2383C84F-938C-4CAA-9E0F-FD453BE4F69F',
+            '29D6DE39-3207-4B37-9071-3DAB7EB262FA',
+            '2B411043-B9CD-4C24-B8F2-6E2D1870202F',
+            '2F7CD1CA-1F1B-4CE6-94A6-6FB6D2D88515',
+            '34244070-1737-4DCE-94FA-76CC0543631E',
+            '3693C53D-00E8-4610-AA6B-420C557760B2',
+            '388F9518-0E77-4CC6-A743-A225FF20DA42',
+            '397A600B-2753-4734-98AD-0FBBA7EB81A3',
+            '3F553895-5053-4508-B46B-ED0353C326F5',
+            '46F82565-F953-448C-B66A-83E657351367',
+            '496D952A-57EE-400E-90F8-99FAB5FC2D6D',
+            '4A962372-3625-4C9C-B3E1-BBAD8BD36CB3',
+            '4EBF9BEF-CDDE-42CC-9D00-B538848A31ED',
+            '53646E61-CE54-41AB-A970-4D2AF1D4A535',
+            '54748997-5146-41E0-BDAF-FE55EC192C87',
+            '008F3ACC-321C-4FA6-B9BF-5656B7823342',
+            '55A42749-B30E-4A89-B154-FFB91C468B13',
+            '566D960D-CD69-4635-9CA2-6226DAA9E962',
+            '56CD7BA6-A574-42CC-ACAF-8A84B6076813',
+            '57AABF81-2B3B-414A-817A-EED59F3593E9',
+            '58070A17-E25C-4B9C-B1A1-4F6EB401AB35',
+            '5A7332D2-E62C-4920-A811-8ED2947DF19B',
+            '5C76D7AF-FF2B-4E12-A8FA-693BCBEACE66',
+            '5CE84F44-F401-4CD1-B1BD-28757F959BE4',
+            '5F82FEF4-5E65-444C-9D60-D5D152EF62C3',
+            '614459EA-D662-409E-B04A-5A130EEAF65A',
+            '66870487-E8AB-4E67-9969-50A8DD3E5A66',
+            '66942053-D970-4E49-B5E0-C225C803EA47',
+            '69A965B4-37C0-417C-8BA5-99691FB99735',
+            '6A0D6FFE-86CB-4105-8759-07582E861A9E',
+            '6E05DDBE-91AC-4C72-95E2-73099AEF65DF',
+            '6E814FD9-0E39-4106-AE66-927CD04CBBD7',
+            '7EC91B8F-EA9F-4504-9781-250662210530',
+            '821C53A8-8EAB-4A87-93E9-3FB7A53E56D3',
+            '8371D4DB-8125-4DCA-B342-09C105D1DD3A',
+            '86AF9726-2433-4682-9F88-15F364E6D2A7',
+            '8C1B9FD7-5933-4783-88CC-3B5108E2FE3F',
+            '8D120511-296A-47EA-83F7-585C18F1D5E0',
+            '8F4E6C51-C423-47C9-A09E-15581F5BEF0B',
+            '93260A32-64F2-4C14-9DAE-9DF644708C88',
+            '944E3840-9F2C-4A25-970E-646F2347BB38'
+        }
+
 ################## Switchboard ###########################
 
 class SwitchboardPreprocessor(DataPreprocessor):

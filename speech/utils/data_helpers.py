@@ -37,10 +37,10 @@ def lexicon_to_dict(lexicon_path:str, corpus_name:str=None)->dict:
     """
     accepted_corpora = [
         "librispeech", "tedlium", "cmudict", "commonvoice", "voxforge", "tatoeba", "speaktrain", None,
-        "speaktrainmetadata", "switchboard", "peoplesspeech"
+        "speaktrainmetadata", "switchboard", "peoplesspeech", "speakeval1"
     ]
     if corpus_name not in accepted_corpora:
-        raise ValueError("corpus_name not accepted")
+        raise ValueError(f"corpus name: {corpus_name} not accepted")
     
     lex_dict = dict()
     with open(lexicon_path, 'r', encoding="ISO-8859-1") as fid:

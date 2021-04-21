@@ -1,0 +1,246 @@
+1DC83F33-A033-49EC-B087-A04421E252B9
+label: ay iy t
+preds: ay ih t
+metrics: PER: 0.333, dist: 1, len: 3, conf: 0.856
+
+00F931A9-6EA9-4233-85B4-94015A257352
+label: p r ih t iy sh
+preds: f r ih t iy
+metrics: PER: 0.333, dist: 2, len: 6, conf: 4.735
+
+16895C3F-1165-44CC-89B8-A812A200234D
+label: dh ah jh ih m
+preds: dh ow s iy m
+metrics: PER: 0.6, dist: 3, len: 5, conf: 3.543
+
+2F7CD1CA-1F1B-4CE6-94A6-6FB6D2D88515
+label: r eh r l iy
+preds: w eh l l iy
+metrics: PER: 0.4, dist: 2, len: 5, conf: 1.096
+
+566D960D-CD69-4635-9CA2-6226DAA9E962-1
+label: ay l er n
+preds: ay l er n
+metrics: PER: 0.0, dist: 0, len: 4, conf: 0.795
+
+58070A17-E25C-4B9C-B1A1-4F6EB401AB35
+label: m ao r n ih ng
+preds: l er n iy
+metrics: PER: 0.833, dist: 5, len: 6, conf: 3.938
+
+054C13A4-9499-453F-90A0-950DA50C4576
+label: ay r iy d
+preds: ay l ay d ah
+metrics: PER: 0.75, dist: 3, len: 4, conf: 3.055
+
+69A965B4-37C0-417C-8BA5-99691FB99735
+label: ao l dh ah t ay m
+preds: ao r dh ah t ay m
+metrics: PER: 0.143, dist: 1, len: 7, conf: 1.707
+
+56CD7BA6-A574-42CC-ACAF-8A84B6076813
+label: ao l w ey z
+preds: ao l w ey z
+metrics: PER: 0.0, dist: 0, len: 5, conf: 1.858
+
+012C1AC5-13E0-4337-B6CC-BFD58A12A8BC
+label: t eh l
+preds: t eh r
+metrics: PER: 0.333, dist: 1, len: 3, conf: 1.491
+
+388F9518-0E77-4CC6-A743-A225FF20DA42
+label: ay m s t ih l
+preds: ih m s t ih r
+metrics: PER: 0.333, dist: 2, len: 6, conf: 3.207
+
+34244070-1737-4DCE-94FA-76CC0543631E
+label: ao l dh ih s
+preds: aa r d ih s
+metrics: PER: 0.6, dist: 3, len: 5, conf: 1.705
+
+566D960D-CD69-4635-9CA2-6226DAA9E962
+label: l er n
+preds: ay l er n
+metrics: PER: 0.333, dist: 1, len: 3, conf: 0.795
+
+1DC83F33-A033-49EC-B087-A04421E252B9-0
+label: eh v er iy ah dh er
+preds: eh v er iy ah n er
+metrics: PER: 0.143, dist: 1, len: 7, conf: 1.554
+
+2383C84F-938C-4CAA-9E0F-FD453BE4F69F-0
+label: r eh n t
+preds: r eh
+metrics: PER: 0.5, dist: 2, len: 4, conf: 0.935
+
+388F9518-0E77-4CC6-A743-A225FF20DA42-0
+label: n ey v er
+preds: n ey b er
+metrics: PER: 0.25, dist: 1, len: 4, conf: 0.455
+
+00F931A9-6EA9-4233-85B4-94015A257352-0
+label: sh ao r t
+preds: sh aa r t
+metrics: PER: 0.25, dist: 1, len: 4, conf: 0.858
+
+4EBF9BEF-CDDE-42CC-9D00-B538848A31ED-0
+label: k l iy n ih ng
+preds: p l iy n
+metrics: PER: 0.5, dist: 3, len: 6, conf: 2.314
+
+53646E61-CE54-41AB-A970-4D2AF1D4A535-0
+label: l uh k
+preds: l uh
+metrics: PER: 0.333, dist: 1, len: 3, conf: 0.027
+
+57AABF81-2B3B-414A-817A-EED59F3593E9-0
+label: s l iy p ih ng
+preds: s ow ay p ih ng
+metrics: PER: 0.333, dist: 2, len: 6, conf: 2.989
+
+5A7332D2-E62C-4920-A811-8ED2947DF19B-0
+label: r ih l iy
+preds: r ih l
+metrics: PER: 0.25, dist: 1, len: 4, conf: 0.409
+
+5CE84F44-F401-4CD1-B1BD-28757F959BE4-0
+label: l ih v ih ng
+preds: l eh v
+metrics: PER: 0.6, dist: 3, len: 5, conf: 0.658
+
+46F82565-F953-448C-B66A-83E657351367-0
+label: w eh dh er
+preds: m ae t er
+metrics: PER: 0.75, dist: 3, len: 4, conf: 2.948
+
+46F82565-F953-448C-B66A-83E657351367-0
+label: w eh dh er
+preds: m ae t er
+metrics: PER: 0.75, dist: 3, len: 4, conf: 2.948
+
+4EBF9BEF-CDDE-42CC-9D00-B538848A31ED
+label: dh ah hh aw s
+preds: ah hh aw s
+metrics: PER: 0.2, dist: 1, len: 5, conf: 1.991
+
+5C76D7AF-FF2B-4E12-A8FA-693BCBEACE66
+label: dh ah ch eh k
+preds: ah ch eh k
+metrics: PER: 0.2, dist: 1, len: 5, conf: 2.057
+
+5F82FEF4-5E65-444C-9D60-D5D152EF62C3
+label: dh ih s w iy k eh n d
+preds: dh ih s w iy k eh
+metrics: PER: 0.222, dist: 2, len: 9, conf: 2.267
+
+93260A32-64F2-4C14-9DAE-9DF644708C88-0dh
+label: er aw n d dh ah w er d
+preds: er aw n d dh ah w er r d
+metrics: PER: 0.111, dist: 1, len: 9, conf: 2.712
+
+5CE84F44-F401-4CD1-B1BD-28757F959BE4-00
+label: ah n ah dh er
+preds: aa n n ah dh er
+metrics: PER: 0.4, dist: 2, len: 5, conf: 1.289
+
+1F3FAE4A-DFA3-41A9-A50C-494944C9BEFA-0
+label: hh ae v dh ah
+preds: hh ae v dh
+metrics: PER: 0.2, dist: 1, len: 5, conf: 0.605
+
+6E814FD9-0E39-4106-AE66-927CD04CBBD7-0
+label: w eh r dh ah
+preds: w iy aa r dh
+metrics: PER: 0.6, dist: 3, len: 5, conf: 0.376
+
+6E814FD9-0E39-4106-AE66-927CD04CBBD7-0
+label: w eh r dh ah
+preds: m eh r r dh
+metrics: PER: 0.6, dist: 3, len: 5, conf: 3.612
+
+1F3FAE4A-DFA3-41A9-A50C-494944C9BEFA
+label: s uw p
+preds: s ah f
+metrics: PER: 0.667, dist: 2, len: 3, conf: 3.233
+
+2B411043-B9CD-4C24-B8F2-6E2D1870202F
+label: ae p ah l z
+preds: ae f er s
+metrics: PER: 0.8, dist: 4, len: 5, conf: 3.996
+
+57AABF81-2B3B-414A-817A-EED59F3593E9
+label: eh r p ao r t
+preds: eh r f ao t
+metrics: PER: 0.333, dist: 2, len: 6, conf: 1.939
+
+66942053-D970-4E49-B5E0-C225C803EA47
+label: p uh l ah p s
+preds: p ao r ah s
+metrics: PER: 0.5, dist: 3, len: 6, conf: 5.178
+
+1F3FAE4A-DFA3-41A9-A50C-494944C9BEFA-0p
+label: ae p ah t ay z er
+preds: ae p ah t ay z er
+metrics: PER: 0.0, dist: 0, len: 7, conf: 4.072
+
+1B9643B4-75FF-4E5C-8737-306551A36741-0p
+label: p l iy z
+preds: w iy z
+metrics: PER: 0.5, dist: 2, len: 4, conf: 2.975
+
+2383C84F-938C-4CAA-9E0F-FD453BE4F69F-0p
+label: ch iy p
+preds: ch iy p
+metrics: PER: 0.0, dist: 0, len: 3, conf: 0.783
+
+8D120511-296A-47EA-83F7-585C18F1D5E0-0p
+label: p r ih t iy
+preds: k r iy d iy
+metrics: PER: 0.6, dist: 3, len: 5, conf: 1.399
+
+054C13A4-9499-453F-90A0-950DA50C4576-0p
+label: n uw z p ey p er z
+preds: ae n d ih s ah p ey p er
+metrics: PER: 0.75, dist: 6, len: 8, conf: 2.197
+
+1DC83F33-A033-49EC-B087-A04421E252B9, 0.333
+00F931A9-6EA9-4233-85B4-94015A257352, 0.333
+16895C3F-1165-44CC-89B8-A812A200234D, 0.6
+2F7CD1CA-1F1B-4CE6-94A6-6FB6D2D88515, 0.4
+566D960D-CD69-4635-9CA2-6226DAA9E962-1, 0.0
+58070A17-E25C-4B9C-B1A1-4F6EB401AB35, 0.833
+054C13A4-9499-453F-90A0-950DA50C4576, 0.75
+69A965B4-37C0-417C-8BA5-99691FB99735, 0.143
+56CD7BA6-A574-42CC-ACAF-8A84B6076813, 0.0
+012C1AC5-13E0-4337-B6CC-BFD58A12A8BC, 0.333
+388F9518-0E77-4CC6-A743-A225FF20DA42, 0.333
+34244070-1737-4DCE-94FA-76CC0543631E, 0.6
+566D960D-CD69-4635-9CA2-6226DAA9E962, 0.333
+1DC83F33-A033-49EC-B087-A04421E252B9-0, 0.143
+2383C84F-938C-4CAA-9E0F-FD453BE4F69F-0, 0.5
+388F9518-0E77-4CC6-A743-A225FF20DA42-0, 0.25
+00F931A9-6EA9-4233-85B4-94015A257352-0, 0.25
+4EBF9BEF-CDDE-42CC-9D00-B538848A31ED-0, 0.5
+53646E61-CE54-41AB-A970-4D2AF1D4A535-0, 0.333
+57AABF81-2B3B-414A-817A-EED59F3593E9-0, 0.333
+5A7332D2-E62C-4920-A811-8ED2947DF19B-0, 0.25
+5CE84F44-F401-4CD1-B1BD-28757F959BE4-0, 0.6
+46F82565-F953-448C-B66A-83E657351367-0, 0.75
+46F82565-F953-448C-B66A-83E657351367-0, 0.75
+4EBF9BEF-CDDE-42CC-9D00-B538848A31ED, 0.2
+5C76D7AF-FF2B-4E12-A8FA-693BCBEACE66, 0.2
+5F82FEF4-5E65-444C-9D60-D5D152EF62C3, 0.222
+93260A32-64F2-4C14-9DAE-9DF644708C88-0dh, 0.111
+5CE84F44-F401-4CD1-B1BD-28757F959BE4-00, 0.4
+1F3FAE4A-DFA3-41A9-A50C-494944C9BEFA-0, 0.2
+6E814FD9-0E39-4106-AE66-927CD04CBBD7-0, 0.6
+6E814FD9-0E39-4106-AE66-927CD04CBBD7-0, 0.6
+1F3FAE4A-DFA3-41A9-A50C-494944C9BEFA, 0.667
+2B411043-B9CD-4C24-B8F2-6E2D1870202F, 0.8
+57AABF81-2B3B-414A-817A-EED59F3593E9, 0.333
+66942053-D970-4E49-B5E0-C225C803EA47, 0.5
+1F3FAE4A-DFA3-41A9-A50C-494944C9BEFA-0p, 0.0
+1B9643B4-75FF-4E5C-8737-306551A36741-0p, 0.5
+2383C84F-938C-4CAA-9E0F-FD453BE4F69F-0p, 0.0
+8D120511-296A-47EA-83F7-585C18F1D5E0-0p, 0.6
+054C13A4-9499-453F-90A0-950DA50C4576-0p, 0.75
