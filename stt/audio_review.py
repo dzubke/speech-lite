@@ -10,31 +10,41 @@ import subprocess
 # third-party libs
 # project libs
 from speech.utils.io import read_data_json
+from speech.utils.data_helpers import path_to_id
 
-
-def review_audio(data_path:str, gcsfuse_dir:str):
+def review_audio(data_path:str, gcsfuse_dir:str, restart_path:str=None):
     """
 
     Args:
         data_path: path to dataset
         gcsfuse_dir: path to directory connected to gsc bucket
+        restart_path: path of example that the script will start from
     """
     dataset = read_data_json(data_path)
+
+    # start from restart_path
+    if restart_path is not None:
+        restart_id = path_to_id(restart_path)
+        restart_idx = 0
+        for i, xmpl in enumerate(dataset):
+            if path_to_id(xmpl['audio']) == restart_id:
+                restart_idx = i 
+                break
+        dataset = dataset[restart_idx:]
 
     for xmpl in dataset:
 
         next_recording = False
         while not next_recording:
-            
+            print('\n\n')
             print(xmpl['text'])
-            time.sleep(0.5)
-            plan_fn(xmpl['audio'], gcsfuse_dir)
+            play_fn(xmpl['audio'], gcsfuse_dir)
             
-            print("(n) next rec, (a) play again, (p) print full entry")    
+            print("(f) next rec, (j) play again, (p) print full entry")    
             action = input()
-            if action == 'n':
+            if action == 'f':
                 next_recording = True
-            elif action == 'a':
+            elif action == 'j':
                 pass
             elif action == 'p':
                 print(xmpl)
@@ -63,7 +73,9 @@ if __name__ == "__main__":
     parser.add_argument(
         "--gcsfuse-dir", help="path to directory connected to google storage bucket"
     )
-
+    parser.add_argument(
+        "--restart-path", default=None, help="path of entry that the script with start from"
+    )
     args = parser.parse_args()       
 
-    review_audio(args.dataset_path, args.gcsfuse_dir)
+    review_audio(args.dataset_path, args.gcsfuse_dir, args.restart_path)
