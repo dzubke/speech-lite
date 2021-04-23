@@ -6,7 +6,7 @@
 
 display_help(){
     echo "$(basename "$0") [-mp MODEL_PATH] [-mn MODEL_NAME] [-nf NUM_FRAMES] 
-            (options) [--quarter-precision] [--half-precision] [--best]" >& 2
+            (options) [--quarter-precision] [--half-precision] [--t TAG]" >& 2
     echo "call this function inside the <main>/model_convert directory"
     echo "where:
             -mp or --model-path:  is the path to the model directory
