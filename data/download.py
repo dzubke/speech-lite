@@ -59,7 +59,26 @@ class Downloader(object):
             urllib.request.urlretrieve(url, filename=save_path)
             print(f"Extracting: {name}...")
             with tarfile.open(save_path) as tf:
-                tf.extractall(path=save_dir)
+                def is_within_directory(directory, target):
+                    
+                    abs_directory = os.path.abspath(directory)
+                    abs_target = os.path.abspath(target)
+                
+                    prefix = os.path.commonprefix([abs_directory, abs_target])
+                    
+                    return prefix == abs_directory
+                
+                def safe_extract(tar, path=".", members=None, *, numeric_owner=False):
+                
+                    for member in tar.getmembers():
+                        member_path = os.path.join(path, member.name)
+                        if not is_within_directory(path, member_path):
+                            raise Exception("Attempted Path Traversal in Tar File")
+                
+                    tar.extractall(path, members, numeric_owner=numeric_owner) 
+                    
+                
+                safe_extract(tf, path=save_dir)
             os.remove(save_path)
             print(f"Processed: {name}")
         return save_dir
@@ -95,7 +114,26 @@ class VoxforgeDownloader(Downloader):
         print("Extracting and removing sample files...")
         for tar_file in tqdm(tar_files):
             with tarfile.open(tar_file) as tf:
-                tf.extractall(path=sample_dir)
+                def is_within_directory(directory, target):
+                    
+                    abs_directory = os.path.abspath(directory)
+                    abs_target = os.path.abspath(target)
+                
+                    prefix = os.path.commonprefix([abs_directory, abs_target])
+                    
+                    return prefix == abs_directory
+                
+                def safe_extract(tar, path=".", members=None, *, numeric_owner=False):
+                
+                    for member in tar.getmembers():
+                        member_path = os.path.join(path, member.name)
+                        if not is_within_directory(path, member_path):
+                            raise Exception("Attempted Path Traversal in Tar File")
+                
+                    tar.extractall(path, members, numeric_owner=numeric_owner) 
+                    
+                
+                safe_extract(tf, path=sample_dir)
             os.remove(tar_file)
 
 class TatoebaDownloader(Downloader):
@@ -133,7 +171,26 @@ class TatoebaDownloader(Downloader):
             print(f"Extracting: {name}...")
             raise NotImplementedError("Zip can't yet be extracted with tarfile code")
             with tarfile.open(save_path) as tf:
-                tf.extractall(path=save_dir)
+                def is_within_directory(directory, target):
+                    
+                    abs_directory = os.path.abspath(directory)
+                    abs_target = os.path.abspath(target)
+                
+                    prefix = os.path.commonprefix([abs_directory, abs_target])
+                    
+                    return prefix == abs_directory
+                
+                def safe_extract(tar, path=".", members=None, *, numeric_owner=False):
+                
+                    for member in tar.getmembers():
+                        member_path = os.path.join(path, member.name)
+                        if not is_within_directory(path, member_path):
+                            raise Exception("Attempted Path Traversal in Tar File")
+                
+                    tar.extractall(path, members, numeric_owner=numeric_owner) 
+                    
+                
+                safe_extract(tf, path=save_dir)
             os.remove(save_path)
             print(f"Processed: {name}")
         return save_dir
@@ -168,7 +225,26 @@ class TatoebaV2Downloader(Downloader):
             print(f"Extracting: {name}...")
             raise NotImplementedError("Zip can't yet be extracted with tarfile code")
             with tarfile.open(save_path) as tf:
-                tf.extractall(path=save_dir)
+                def is_within_directory(directory, target):
+                    
+                    abs_directory = os.path.abspath(directory)
+                    abs_target = os.path.abspath(target)
+                
+                    prefix = os.path.commonprefix([abs_directory, abs_target])
+                    
+                    return prefix == abs_directory
+                
+                def safe_extract(tar, path=".", members=None, *, numeric_owner=False):
+                
+                    for member in tar.getmembers():
+                        member_path = os.path.join(path, member.name)
+                        if not is_within_directory(path, member_path):
+                            raise Exception("Attempted Path Traversal in Tar File")
+                
+                    tar.extractall(path, members, numeric_owner=numeric_owner) 
+                    
+                
+                safe_extract(tf, path=save_dir)
             os.remove(save_path)
             print(f"Processed: {name}")
         return save_dir
